@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# LiDAR tiles: 750 MB of source data, fetched on demand by tools/lidar_heights.py
+tools/lidar/

@@ -101,6 +101,7 @@ const LAYERS = [
   ['roads',     'Streets',       '#dcd7cc', true],
   ['green',     'Other green',   '#dde5d0', true],
   ['lawn',      'Mall lawn',     '#d3ddc0', true],
+  ['parking',   'Parking',       '#e0dcd2', true],
   ['paths',     'Walkways',      '#eceadf', true],
   ['buildings', 'Buildings',     '#ddd6c6', true],
   ['canopy',    'Tree canopy',   '#c3d3ab', true],
@@ -152,6 +153,17 @@ function buildBase(d) {
   el('polygon', { points: ptsAttr(d.lawn), fill: '#d3ddc0', stroke: '#a9bb8c',
     'stroke-width': 1, ...hair }, $('#l-lawn'));
 
+  // Lot 9 sits off the south end of the mall and is the one flagged for
+  // event use, so it reads differently from the rest.
+  for (const k of (d.parking || [])) {
+    const nine = /\bLot 9\b/i.test(k.name || '');
+    el('polygon', { points: ptsAttr(k.ring),
+      fill: nine ? '#d8cfbc' : '#e2ded4',
+      stroke: nine ? '#8c7f66' : '#c0b9a9',
+      'stroke-width': nine ? 1.6 : 1,
+      'stroke-dasharray': nine ? '7 3' : null, ...hair }, $('#l-parking'));
+  }
+
   for (const p of d.paths)
     el('polyline', { points: ptsAttr(p.line), fill: 'none', stroke: '#eceadf',
       'stroke-width': p.w, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }, $('#l-paths'));
@@ -177,6 +189,7 @@ function buildBase(d) {
   });
 
   d.buildings.forEach(b => b.c = centroid(b.ring));     // for name placement
+  (d.parking || []).forEach(k => k.c = centroid(k.ring));
   syncLayers();
   reportConflicts();
 }
@@ -396,11 +409,16 @@ function selectTree(i) {
     row('Canopy', `${trim(+(t.r * 2).toFixed(1))} ft across`) +
     row('Height', t.h ? `${trim(t.h)} ft` : '') +
     row('Clear to', t.clr != null ? `${trim(t.clr)} ft` : '') +
+    row('Measured', t.hsrc === 'lidar'
+      ? `LiDAR, ${t.npts} returns` : 'no — estimated from trunk') +
     row('Fits under', t.gone ? '—' : (bandOf(t) ? bandOf(t).name : 'unknown')) +
     row('Condition', t.gone ? `${t.gone}, no canopy` : t.cond) +
     row('At', `E ${t.p[0].toFixed(0)}′ N ${t.p[1].toFixed(0)}′`) +
-    `</dl><em>Species and trunk are surveyed. Canopy, height and clearance are ` +
-    `estimated from trunk diameter — screening figures, not measurements.</em>`;
+    `</dl><em>${t.hsrc === 'lidar'
+      ? 'Height and clearance measured from 2014 LiDAR; crown spread still ' +
+        'estimated from trunk diameter.'
+      : 'Too few LiDAR returns here — height and clearance are estimated from ' +
+        'trunk diameter.'}</em>`;
   drawOverlay();
 }
 
@@ -511,6 +529,19 @@ function annotate(target, P, zoom, opts = {}) {
       if (far * zoom < 46) continue;           // too small on this surface to name
       if (!clear(sx, sy, b.name.length * 5.6 + 8, 14)) continue;
       txt(sx, sy, b.name, { size: 10, fill: '#6b6459' });
+    }
+    for (const k of (DATA.parking || [])) {
+      if (!k.name || !k.c) continue;
+      const [sx, sy] = P(k.c[0], k.c[1]);
+      if (!opts.inside(sx, sy)) continue;
+      const nine = /\bLot 9\b/i.test(k.name);
+      const d0 = k.ring[0];
+      const far = k.ring.reduce((m, p) =>
+        Math.max(m, Math.hypot(p[0] - d0[0], p[1] - d0[1])), 0);
+      if (far * zoom < 40 && !nine) continue;
+      if (!clear(sx, sy, k.name.length * 5.6 + 8, 14)) continue;
+      txt(sx, sy, k.name, { size: nine ? 10.5 : 9.5,
+        weight: nine ? 600 : 400, fill: nine ? '#6b5a3e' : '#8b8378' });
     }
   }
 
@@ -900,6 +931,7 @@ function sheetColumn(s, sp, ftPerIn) {
       if (byClearance) for (const b of BANDS) rows.push([b.fill, b.line, b.name + ', ' + b.sub]);
       else rows.push(['#c3d3ab', '#8aa76a', 'Tree canopy']);
     }
+    if ((DATA.parking || []).length) rows.push(['#e2ded4', '#c0b9a9', 'Parking']);
     if (items.length) rows.push([MARK + '26', MARK, 'Placed item']);
     for (const [f, st2, label] of rows) {
       y += 13;

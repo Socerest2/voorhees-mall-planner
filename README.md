@@ -74,9 +74,8 @@ but **how high its lowest limbs are**. A 54-inch elm limbed up to 25 ft is a
 roof; a Kousa dogwood branching at 3 ft is a wall. The mall has 77 of the
 former and 69 of the latter.
 
-The inventory records trunk diameter but **no height at all**, so total height
-and height-to-lowest-limb are derived in `tools/fetch_trees.py` from DBH by
-growth habit:
+Height and crown base are now **measured from LiDAR** where the point cloud
+allows — see below. The DBH model still fills the gaps, and it works like this:
 
 | Habit | Examples | Height | Crown base |
 |---|---|---|---|
@@ -100,10 +99,61 @@ peak, a box truck 13 ft 6 in, a banquet table 2 ft 6 in — so placing one
 immediately reports which trees it fouls, and the item draws dashed until it
 clears.
 
-**These are screening figures, not survey data.** Position, species and trunk
-diameter come from Rutgers; every height on this map is inferred. Use it to
-narrow down where a tent can go, then measure the two or three candidate spots
-on site before you commit.
+### Height from LiDAR
+
+`tools/lidar_heights.py` replaces the inference with a measurement. New Jersey
+publishes statewide LiDAR on an open S3 bucket needing no credentials:
+
+```bash
+mkdir -p tools/lidar
+B=https://njogis-elevation.s3.us-west-2.amazonaws.com/NortheastNJPostSandy_2014_QL2/LAS_1.2_Classified
+curl -o tools/lidar/18TWK460820.las $B/18TWK460820.las
+curl -o tools/lidar/18TWK460835.las $B/18TWK460835.las
+python3 tools/lidar_heights.py
+```
+
+Those two tiles straddle the mall at about 3.4 points/m², flown 21 October
+2014. The LAS is parsed directly with numpy — no PDAL, no laspy.
+
+Two things make it awkward. The tiles carry **no vegetation class at all**:
+2 and 18 are ground, 1 and 17 are everything else — canopy *and* rooftops. So
+buildings are masked out using the OSM footprints, by true polygon test, not
+bounding box; a box round an L-shaped hall swallows the courtyard and every
+tree beside it. And there is no single "height" in a point cloud, so:
+
+- **total height** = 98th percentile of returns within 40% of the estimated
+  crown radius, above a 2 m ground raster
+- **crown base** = the lowest 1 m bin where two consecutive bins each hold 15%
+  of the peak count — where returns stop being stray understory and become a
+  crown
+
+**224 of the 294 trees on the plan are measured this way.** The rest had too
+few returns and keep the DBH estimate; the tree panel says which you are
+looking at, and how many returns backed it.
+
+It was worth doing. Against the DBH model, across 395 live trees measured both
+ways, **62% landed in a different clearance band** — the estimates were
+misleading for most of the mall. Heights ran about 4 ft lower than modelled
+(the 85 ft cap was too generous; real tops are 52–81 ft), and the conifers I
+had assumed were skirted to the ground turned out to be limbed up by a median
+of 13 ft.
+
+**Still not survey data.** The flight is 12 years old and late-October
+leaf-off, which helps for crown base and ground but understates crown spread.
+Tree positions come from the inventory's GPS, so a tree recorded a few metres
+off samples its neighbour's crown. Use this to narrow down where a tent can
+go, then measure the two or three candidate spots on site.
+
+### Extent, and Lot 9
+
+The map is cropped to the mall itself — 150 ft of context past the lawn, which
+carries the buildings that front it and the streets that bound it, and nothing
+further. That is 31 buildings and 294 trees, down from 54 and 427.
+
+Parking is included as its own layer. **Lot 9** sits directly off the south tip
+of the mall (centre E −2, N −344 on the plan grid; about 10,300 sq ft, call it
+34 spaces) and draws with a dashed edge, since it is the one flagged for event
+use — staging, load-in or accessible parking.
 
 ### Tilt
 

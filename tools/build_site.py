@@ -8,12 +8,13 @@ Everything downstream is 1:1 — one unit in the JSON is one real-world foot.
 
 Usage:  python3 tools/build_site.py [--refetch]
 """
-import json, math, os, subprocess, sys, urllib.parse, urllib.request
+import json, math, os, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 RAW = os.path.join(HERE, "osm_raw.json")
 TREES = os.path.join(HERE, "trees_raw.json")
+LIDAR = os.path.join(HERE, "lidar_trees.json")
 OUT = os.path.join(ROOT, "data", "voorhees-mall.json")
 
 BBOX = "40.4985,-74.4505,40.5030,-74.4440"   # generous box around the mall
@@ -24,6 +25,7 @@ QUERY = f"""
   way["leisure"]({BBOX});
   way["landuse"]({BBOX});
   way["highway"]({BBOX});
+  way["amenity"="parking"]({BBOX});
   way["natural"]({BBOX});
   node["natural"="tree"]({BBOX});
 );
@@ -45,17 +47,33 @@ DEFAULT_WIDTH = {
 }
 
 
+ENDPOINTS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.osm.jp/api/interpreter",
+]
+
+
 def fetch():
-    url = "https://overpass-api.de/api/interpreter"
+    """Overpass is free and often busy — retry, then try a mirror."""
     data = urllib.parse.urlencode({"data": QUERY}).encode()
-    print("fetching overpass…", file=sys.stderr)
-    req = urllib.request.Request(url, data=data,
-                                 headers={"User-Agent": "voorhees-mall-planner/1.0"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        blob = r.read()
-    with open(RAW, "wb") as f:
-        f.write(blob)
-    return json.loads(blob)
+    last = None
+    for url in ENDPOINTS:
+        for attempt in range(3):
+            try:
+                print(f"fetching {url} (try {attempt + 1})…", file=sys.stderr)
+                req = urllib.request.Request(url, data=data, headers={
+                    "User-Agent": "voorhees-mall-planner/1.0"})
+                with urllib.request.urlopen(req, timeout=240) as r:
+                    blob = r.read()
+                with open(RAW, "wb") as f:
+                    f.write(blob)
+                return json.loads(blob)
+            except Exception as e:
+                last = e
+                print(f"  {e}", file=sys.stderr)
+                time.sleep(10 * (attempt + 1))
+    raise SystemExit(f"every Overpass endpoint failed; last error: {last}")
 
 
 def load():
@@ -141,12 +159,22 @@ def gen_trees(lawn, buildings, inset=26.0, spacing=55.0, clear=24.0, min_width=7
         carry = d - L
     return out
 
+def load_lidar():
+    """lat/lon -> measured height and crown base, where the point cloud had enough."""
+    if not os.path.exists(LIDAR):
+        return {}
+    doc = json.load(open(LIDAR))
+    return {(t["lat"], t["lon"]): t for t in doc["trees"] if "height_ft" in t}
+
+
 def load_inventory(proj, near):
     """Real trees from Rutgers' TreePlotter inventory, if fetch_trees.py has run."""
     if not os.path.exists(TREES):
         return []
     doc = json.load(open(TREES))
+    measured = load_lidar()
     out = []
+    n_meas = 0
     for t in doc["trees"]:
         st = t.get("status") or ""
         if st in ("Removed",) or st.startswith("Proposed"):
@@ -159,14 +187,23 @@ def load_inventory(proj, near):
         rec = {"p": p, "r": max(4.0, min(45.0, r)), "src": "rutgers",
                "sp": t.get("species") or "", "dbh": t.get("dbh_in"),
                "cond": t.get("condition") or "",
-               # h = total height, clr = height to the lowest limbs. Both are
-               # estimated from DBH; clr is what decides what fits underneath.
+               # h = total height, clr = height to the lowest limbs -- clr is
+               # what decides what fits underneath. Measured off the LiDAR
+               # where the cloud was dense enough, inferred from DBH otherwise.
                "h": t.get("height_ft"), "clr": t.get("clear_ft"),
-               "hab": t.get("habit")}
+               "hab": t.get("habit"), "hsrc": "dbh"}
+        m = measured.get((t["lat"], t["lon"]))
+        if m:
+            rec["h"] = m["height_ft"]
+            rec["clr"] = m["clear_ft"]
+            rec["hsrc"] = "lidar"
+            rec["npts"] = m["n"]
+            n_meas += 1
         # a dead tree or a stump casts no shade -- flag it so the app can say so
         if st in ("Dead", "Stump") or rec["cond"] == "Dead":
             rec["gone"] = st or "Dead"
         out.append(rec)
+    print(f"{n_meas} of {len(out)} trees have LiDAR-measured height", file=sys.stderr)
     return out
 
 
@@ -210,7 +247,9 @@ def main():
         return min(xs), min(ys), max(xs), max(ys)
 
     lx0, ly0, lx1, ly1 = bbox(lawn)
-    PAD = 320.0   # feet of context to keep around the lawn
+    # Just the mall. Enough to carry the buildings that front it, the streets
+    # that bound it and Lot 9 off the south end -- nothing beyond that.
+    PAD = 150.0
 
     def near(ring_):
         x0, y0, x1, y1 = bbox(ring_)
@@ -219,7 +258,7 @@ def main():
     # buildings/paths are collected before the inventory is read, so hold onto
     # the projection and the window test for load_inventory below
 
-    buildings, paths, roads, greens, trees = [], [], [], [], []
+    buildings, paths, roads, greens, trees, parking = [], [], [], [], [], []
     for e in els:
         t = e.get("tags", {})
         if e["type"] == "node":
@@ -245,6 +284,10 @@ def main():
         elif t.get("highway") in ROAD_KINDS:
             roads.append({"id": e["id"], "name": name, "kind": t["highway"],
                           "line": pts, "w": DEFAULT_WIDTH[t["highway"]]})
+        elif t.get("amenity") == "parking":
+            parking.append({"id": e["id"], "name": name, "ring": pts,
+                            "access": t.get("access", ""),
+                            "op": t.get("operator", "")})
         elif e["id"] != mall["id"] and (
                 t.get("leisure") in {"park", "village_green", "garden", "pitch"}
                 or t.get("landuse") == "grass"):
@@ -269,12 +312,15 @@ def main():
             "source": "OpenStreetMap contributors, ODbL 1.0",
             "tree_source": ("Rutgers TreePlotter Community Engagement Map "
                             "(PlanIT Geo). Species, DBH, condition and status "
-                            "are surveyed; crown, height and clearance are "
-                            "estimated from DBH by growth habit"),
+                            "are surveyed; crown spread is estimated from DBH. "
+                            "Height and clearance are measured from NJ 2014 "
+                            "LiDAR where the point cloud allowed, else "
+                            "estimated from DBH"),
             "generated_by": "tools/build_site.py",
         },
         "lawn": lawn,
         "greens": greens,
+        "parking": sorted(parking, key=lambda p: p["name"] or "zz"),
         "buildings": sorted(buildings, key=lambda b: -abs(b["ring"][0][0])),
         "paths": paths,
         "roads": roads,
@@ -287,7 +333,7 @@ def main():
     span = math.hypot(lx1 - lx0, ly1 - ly0)
     print(f"lawn bbox {lx1-lx0:.0f} x {ly1-ly0:.0f} ft (diag {span:.0f} ft), axis {axis_deg:.1f}°")
     print(f"{len(buildings)} buildings, {len(paths)} paths, {len(roads)} roads, "
-          f"{len(greens)} other green, {len(trees)} trees "
+          f"{len(greens)} other green, {len(parking)} parking, {len(trees)} trees "
           f"({sum(1 for t in trees if t['src'] == 'rutgers')} from the Rutgers "
           f"inventory, {sum(1 for t in trees if t['src'] == 'approx')} approximated)")
     print(f"wrote {OUT} ({os.path.getsize(OUT)/1024:.0f} KB)")
