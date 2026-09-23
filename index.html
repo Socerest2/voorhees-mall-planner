@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voorhees Mall — Site Plan</title>
+<style id="pagesize"></style>
+<style>
+  :root{
+    --paper:#f2f0ea;        /* the drawing ground */
+    --panelbg:#e8e5dd;      /* trace paper */
+    --ink:#23211d;
+    --ink2:#6a655c;
+    --ink3:#948d80;
+    --rule:#c5bfb1;
+    --rule2:#d9d4c7;
+    --mark:#9e2233;         /* the one accent, used only for selection */
+    --lawn:#d3ddc0;
+    --lawnline:#a9bb8c;
+    --walk:#eceadf;
+    --road:#dedad0;
+    --bldg:#ddd6c6;
+    --bldgline:#a49a86;
+    --tree:#7d9c5e;
+    --num:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{
+    font:12.5px/1.45 ui-sans-serif,-apple-system,"SF Pro Text",system-ui,sans-serif;
+    color:var(--ink);background:var(--paper);
+    display:flex;overflow:hidden;-webkit-font-smoothing:antialiased;
+  }
+  .num{font-family:var(--num);font-variant-numeric:tabular-nums}
+
+  /* ---------- drawing-set panel ---------- */
+  #side{
+    width:252px;flex:0 0 252px;height:100%;background:var(--panelbg);
+    border-right:1px solid var(--rule);display:flex;flex-direction:column;
+    transition:margin-left .18s ease;
+  }
+  #side.hide{margin-left:-252px}
+  #side .scroll{overflow-y:auto;flex:1}
+
+  /* title block, same information a drawing sheet carries */
+  #titleblock{padding:13px 14px 11px;border-bottom:1px solid var(--rule);position:relative}
+  #titleblock h1{
+    margin:0;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  }
+  #titleblock .sub{margin:2px 0 0;color:var(--ink2);font-size:11px}
+  #titleblock .meta{
+    margin-top:9px;display:grid;grid-template-columns:auto 1fr;gap:1px 10px;
+    font-size:10.5px;color:var(--ink2);
+  }
+  #titleblock .meta b{
+    font-weight:500;color:var(--ink3);text-transform:uppercase;letter-spacing:.07em;font-size:9.5px;
+  }
+  #titleblock .meta span{font-family:var(--num);font-variant-numeric:tabular-nums;color:var(--ink)}
+  #collapse,#hamb{
+    background:none;border:0;color:var(--ink3);cursor:pointer;font:inherit;padding:2px 4px;
+  }
+  #collapse{position:absolute;right:9px;top:11px;font-size:14px}
+  #collapse:hover,#hamb:hover{color:var(--ink)}
+  #hamb{
+    position:absolute;left:0;top:10px;z-index:5;background:var(--panelbg);
+    border:1px solid var(--rule);border-left:0;padding:7px 8px;font-size:13px;line-height:1;
+  }
+
+  section{padding:11px 14px;border-bottom:1px solid var(--rule)}
+  section:last-child{border-bottom:0}
+  h2{
+    margin:0 0 7px;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--ink3);font-weight:600;
+  }
+
+  /* layer list reads as a drawing index */
+  .lyr{
+    display:flex;align-items:center;gap:8px;padding:2.5px 0;cursor:pointer;user-select:none;
+    font-size:11.5px;
+  }
+  .lyr input{accent-color:var(--mark);margin:0;width:12px;height:12px}
+  .lyr .sw{width:14px;height:9px;flex:0 0 14px;border:1px solid #0002}
+  .lyr.off{color:var(--ink3)}
+
+  /* palette as a schedule table, not cards */
+  table.sched{width:100%;border-collapse:collapse;font-size:11.5px}
+  table.sched tr{cursor:pointer}
+  table.sched td{padding:3px 0;border-bottom:1px solid var(--rule2)}
+  table.sched tr:last-child td{border-bottom:0}
+  table.sched td.dim{
+    text-align:right;color:var(--ink2);font-family:var(--num);
+    font-variant-numeric:tabular-nums;font-size:10.5px;white-space:nowrap;
+  }
+  table.sched tr:hover td{color:var(--ink);background:#0000000a}
+  table.sched tr.on td{color:var(--mark);font-weight:600}
+  table.sched tr.on td.dim{color:var(--mark)}
+
+  .btn{
+    background:transparent;border:1px solid var(--rule);color:var(--ink);
+    padding:4px 9px;cursor:pointer;font:inherit;font-size:11px;
+  }
+  .btn:hover{background:#0000000d}
+  .btn.on{background:var(--mark);border-color:var(--mark);color:#fff}
+  .btn.wide{width:100%;padding:6px;font-size:11.5px;letter-spacing:.04em}
+  .btn.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+  .btn.primary:hover{background:#000}
+  .btnrow{display:flex;gap:5px;flex-wrap:wrap}
+
+  table.tally{width:100%;border-collapse:collapse;font-size:11.5px}
+  table.tally td{padding:2px 0;color:var(--ink2)}
+  table.tally td:last-child{
+    text-align:right;color:var(--ink);font-family:var(--num);font-variant-numeric:tabular-nums;
+  }
+  table.tally tr.total td{
+    border-top:1px solid var(--rule);padding-top:4px;color:var(--ink);font-weight:600;
+  }
+  .empty{color:var(--ink3);font-size:11px}
+
+  #treeinfo{font-size:11.5px}
+  #treeinfo b{display:block;font-size:12.5px;margin-bottom:3px}
+  #treeinfo dl{display:grid;grid-template-columns:auto 1fr;gap:1px 10px;margin:0}
+  #treeinfo dt{color:var(--ink3)}
+  #treeinfo dd{margin:0;font-family:var(--num);font-variant-numeric:tabular-nums}
+  #treeinfo em{color:var(--ink3);font-style:normal;font-size:10px;display:block;margin-top:5px}
+
+  .note{color:var(--ink2);font-size:10.5px;margin:7px 0 0;line-height:1.4}
+  .note a{color:var(--ink2)}
+  kbd{font-family:var(--num);font-size:10px;color:var(--ink)}
+
+  /* ---------- drawing ---------- */
+  #stage{position:relative;flex:1;height:100%;background:var(--paper);overflow:hidden;cursor:grab}
+  #stage.panning{cursor:grabbing}
+  #stage.placing,#stage.measuring{cursor:crosshair}
+  #svg{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
+  text{font:11px ui-sans-serif,system-ui,sans-serif}
+
+  .hud{position:absolute;pointer-events:none;color:var(--ink2)}
+  #scalebar{left:18px;bottom:16px}
+  #scalebar .bar{height:6px;border:1px solid var(--ink);border-top:0;position:relative}
+  #scalebar .bar i{position:absolute;top:0;bottom:0;width:50%;background:var(--ink)}
+  #scalebar .lbl{
+    font-family:var(--num);font-size:10px;font-variant-numeric:tabular-nums;
+    margin-bottom:2px;display:flex;justify-content:space-between;color:var(--ink);
+  }
+  #readout{
+    right:18px;bottom:16px;text-align:right;font-family:var(--num);font-size:10.5px;
+    font-variant-numeric:tabular-nums;line-height:1.55;
+  }
+  #readout b{font-weight:600;color:var(--ink)}
+  #compass{right:20px;top:18px;width:34px;height:52px}
+  #status{
+    left:18px;top:16px;font-size:11px;color:var(--ink2);opacity:0;transition:opacity .18s;
+  }
+  #status.show{opacity:1}
+
+  /* ---------- print setup ---------- */
+  #dlg[hidden]{display:none}
+  #dlg{
+    position:fixed;inset:0;z-index:40;background:#23211db3;
+    display:flex;align-items:center;justify-content:center;
+  }
+  #dlgbox{
+    background:var(--paper);border:1px solid var(--ink);width:min(960px,94vw);
+    max-height:92vh;display:flex;overflow:hidden;
+  }
+  #dlgform{width:250px;flex:0 0 250px;border-right:1px solid var(--rule);overflow-y:auto}
+  #dlgform h3{
+    margin:0;padding:12px 14px;border-bottom:1px solid var(--rule);
+    font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink3);font-weight:600;
+  }
+  .fld{padding:10px 14px;border-bottom:1px solid var(--rule2)}
+  .fld label{display:block;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--ink3);margin-bottom:4px;font-weight:600}
+  .fld select,.fld input[type=text]{
+    width:100%;font:inherit;font-size:12px;padding:4px 6px;
+    border:1px solid var(--rule);background:#fff;color:var(--ink);border-radius:0;
+  }
+  .fld .row2{display:flex;gap:6px}
+  .fld .chk{display:flex;align-items:center;gap:7px;font-size:11.5px;
+    text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 3px;font-weight:400}
+  .fld .chk input{accent-color:var(--mark);margin:0}
+  #dlgright{flex:1;display:flex;flex-direction:column;min-width:0}
+  #dlgprev{
+    flex:1;overflow:auto;background:#cfcabd;display:flex;align-items:center;
+    justify-content:center;padding:18px;
+  }
+  #dlgfoot{
+    border-top:1px solid var(--rule);padding:9px 14px;display:flex;
+    align-items:center;gap:10px;justify-content:flex-end;
+  }
+  #dlgfoot .msg{margin-right:auto;font-size:11px;color:var(--ink2)}
+
+  /* the sheet itself — same element previews on screen and goes to the printer */
+  #sheet{
+    background:#fff;box-shadow:0 1px 10px #0003;transform-origin:center;
+    position:relative;flex:0 0 auto;
+    /* fills and tints must survive the printer without the user having to
+       find the "background graphics" checkbox */
+    -webkit-print-color-adjust:exact;print-color-adjust:exact;
+  }
+  #sheet .edge{position:absolute;inset:.25in;border:1px solid var(--ink);pointer-events:none}
+  #sheet svg{position:absolute;inset:0;width:100%;height:100%}
+
+  @media print{
+    body{display:block;background:#fff;overflow:visible;height:auto}
+    #side,#stage,#dlgform,#dlgfoot{display:none!important}
+    #dlg,#dlg[hidden]{
+      position:static;display:block!important;background:none;inset:auto;
+    }
+    #dlgbox{display:block;border:0;width:auto;max-height:none;overflow:visible}
+    #dlgright{display:block}
+    #dlgprev{display:block;padding:0;background:#fff;overflow:visible}
+    #sheet{box-shadow:none;transform:none!important;margin:0!important}
+  }
+</style>
+</head>
+<body>
+<aside id="side">
+  <div id="titleblock">
+    <button id="collapse" title="Hide panel">&#10094;</button>
+    <h1>Voorhees Mall</h1>
+    <p class="sub">Rutgers–New Brunswick · College Avenue</p>
+    <div class="meta">
+      <b>Drawing</b><span>Site plan, 1:1</span>
+      <b>Scale</b><span id="tb-scale">—</span>
+      <b>North</b><span id="tb-north">—</span>
+    </div>
+  </div>
+  <div class="scroll">
+    <section>
+      <h2>Layers</h2>
+      <div id="layers"></div>
+    </section>
+
+    <section id="treebox" hidden>
+      <h2>Tree</h2>
+      <div id="treeinfo"></div>
+    </section>
+
+    <section>
+      <h2>View</h2>
+      <div class="btnrow">
+        <button class="btn" id="t-measure">Measure</button>
+        <button class="btn" id="t-north">North up</button>
+        <button class="btn" id="t-fit">Extents</button>
+      </div>
+      <p class="note">Scroll to zoom, drag to pan. <kbd>M</kbd> measure, <kbd>Esc</kbd> cancel.</p>
+    </section>
+
+    <section>
+      <h2>Place</h2>
+      <table class="sched" id="palette"></table>
+      <p class="note">Pick one, then click the plan. Drag to move,
+        <kbd>[</kbd><kbd>]</kbd> rotate, <kbd>⌫</kbd> delete, <kbd>D</kbd> duplicate.</p>
+    </section>
+
+    <section>
+      <h2>Schedule</h2>
+      <table class="tally" id="tally"></table>
+      <div class="btnrow" style="margin-top:9px">
+        <button class="btn wide primary" id="t-print">Print / PDF…</button>
+      </div>
+      <div class="btnrow" style="margin-top:5px">
+        <button class="btn" id="t-save">Save</button>
+        <button class="btn" id="t-load">Open</button>
+        <button class="btn" id="t-png">PNG</button>
+        <button class="btn" id="t-clear">Clear</button>
+      </div>
+      <input type="file" id="file" accept="application/json" hidden>
+    </section>
+
+    <section>
+      <h2>Sources</h2>
+      <p class="note" id="credit">Loading…</p>
+    </section>
+  </div>
+</aside>
+
+<main id="stage">
+  <button id="hamb" hidden title="Show panel">&#10095;</button>
+  <svg id="svg" xmlns="http://www.w3.org/2000/svg">
+    <g id="world">
+      <g id="l-grid"></g>
+      <g id="l-roads"></g>
+      <g id="l-green"></g>
+      <g id="l-lawn"></g>
+      <g id="l-paths"></g>
+      <g id="l-buildings"></g>
+      <g id="l-canopy"></g>
+      <g id="l-trees"></g>
+      <g id="l-objects"></g>
+    </g>
+    <g id="overlay"></g>
+  </svg>
+  <div class="hud" id="scalebar">
+    <div class="lbl"><span>0</span><span id="sb-max">100 ft</span></div>
+    <div class="bar" id="sb-bar" style="width:150px"><i></i></div>
+  </div>
+  <div class="hud" id="readout"></div>
+  <svg class="hud" id="compass" viewBox="-17 -26 34 52">
+    <g id="needle">
+      <path d="M0,-21 L5.5,7 L0,1.5 L-5.5,7 Z" fill="#23211d"/>
+      <path d="M0,-21 L0,1.5 L-5.5,7 Z" fill="#6a655c"/>
+      <text y="19" text-anchor="middle" font-size="10.5" font-weight="600" fill="#23211d">N</text>
+    </g>
+  </svg>
+  <div class="hud" id="status"></div>
+</main>
+
+<div id="dlg" hidden>
+  <div id="dlgbox">
+    <form id="dlgform" onsubmit="return false">
+      <h3>Sheet setup</h3>
+      <div class="fld">
+        <label for="p-title">Sheet title</label>
+        <input type="text" id="p-title" value="Event Site Plan">
+      </div>
+      <div class="fld">
+        <label for="p-size">Sheet size</label>
+        <div class="row2">
+          <select id="p-size"></select>
+          <select id="p-orient">
+            <option value="land">Landscape</option>
+            <option value="port">Portrait</option>
+          </select>
+        </div>
+      </div>
+      <div class="fld">
+        <label for="p-scale">Scale</label>
+        <select id="p-scale"></select>
+      </div>
+      <div class="fld">
+        <label for="p-extent">Show</label>
+        <select id="p-extent">
+          <option value="plan">The mall and everything placed</option>
+          <option value="view">What's on screen now</option>
+        </select>
+      </div>
+      <div class="fld">
+        <label>Include</label>
+        <label class="chk"><input type="checkbox" id="p-legend" checked> Legend</label>
+        <label class="chk"><input type="checkbox" id="p-sched" checked> Item schedule</label>
+        <label class="chk"><input type="checkbox" id="p-grid"> 50 ft grid</label>
+        <label class="chk"><input type="checkbox" id="p-labels" checked> Building names</label>
+        <label class="chk"><input type="checkbox" id="p-trees" checked> Trees</label>
+      </div>
+      <div class="fld">
+        <label for="p-by">Drawn by</label>
+        <input type="text" id="p-by" placeholder="initials">
+      </div>
+    </form>
+    <div id="dlgright">
+      <div id="dlgprev"><div id="sheet"><div class="edge"></div></div></div>
+      <div id="dlgfoot">
+        <span class="msg" id="p-msg"></span>
+        <button class="btn" id="p-cancel">Cancel</button>
+        <button class="btn primary" id="p-go">Print</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

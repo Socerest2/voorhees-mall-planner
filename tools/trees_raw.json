@@ -1,0 +1,7565 @@
+{
+ "source": "Rutgers TreePlotter Community Engagement Map (PlanIT Geo) \u2014 cem.pg-cloud.com/Rutgers",
+ "tiles": "https://cem.pg-cloud.com/customers/Rutgers/trees/{z}/{x}/{y}.pbf",
+ "zoom": 15,
+ "bbox": [
+  40.498,
+  -74.4512,
+  40.5036,
+  -74.4432
+ ],
+ "note": "dbh_in is surveyed; crown_ft is ESTIMATED from dbh by growth habit",
+ "trees": [
+  {
+   "lat": 40.5035149,
+   "lon": -74.4509742,
+   "species": "Hawthorn",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.503466,
+   "lon": -74.4509661,
+   "species": "Hawthorn",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5034191,
+   "lon": -74.450942,
+   "species": "Hawthorn",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5034252,
+   "lon": -74.4509044,
+   "species": "Hawthorn",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5034293,
+   "lon": -74.4508347,
+   "species": "Hawthorn",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5033844,
+   "lon": -74.4508991,
+   "species": "Honeylocust",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.5034232,
+   "lon": -74.4508696,
+   "species": "Hawthorn",
+   "dbh_in": 4.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5034069,
+   "lon": -74.4508132,
+   "species": "Hawthorn",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5033661,
+   "lon": -74.4506255,
+   "species": "Pine",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.6
+  },
+  {
+   "lat": 40.5033885,
+   "lon": -74.4503814,
+   "species": "Weeping Alaskan Cedar",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.8
+  },
+  {
+   "lat": 40.5035149,
+   "lon": -74.4501427,
+   "species": "Weeping Alaskan Cedar",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.8
+  },
+  {
+   "lat": 40.5034395,
+   "lon": -74.4501454,
+   "species": "Japanese zelkova",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 48.4
+  },
+  {
+   "lat": 40.5033926,
+   "lon": -74.4500837,
+   "species": "Flowering dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5035109,
+   "lon": -74.449912,
+   "species": "Hawthorn",
+   "dbh_in": 6.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5034497,
+   "lon": -74.4500354,
+   "species": "Hawthorn",
+   "dbh_in": 7.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5034069,
+   "lon": -74.4499603,
+   "species": "Honeylocust",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.5034823,
+   "lon": -74.4498771,
+   "species": "Hawthorn",
+   "dbh_in": 6.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5034211,
+   "lon": -74.449845,
+   "species": "American elm",
+   "dbh_in": 26.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.5034374,
+   "lon": -74.4495124,
+   "species": "Magnolia",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.503468,
+   "lon": -74.4494721,
+   "species": "Japanese scholar tree",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.5034191,
+   "lon": -74.4495338,
+   "species": "",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.503364,
+   "lon": -74.4495285,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.503519,
+   "lon": -74.4492924,
+   "species": "Japanese scholar tree",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5035394,
+   "lon": -74.449228,
+   "species": "Japanese scholar tree",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5034497,
+   "lon": -74.4491985,
+   "species": "Japanese scholar tree",
+   "dbh_in": 9.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5035292,
+   "lon": -74.4491127,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5034986,
+   "lon": -74.4490778,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5034109,
+   "lon": -74.449102,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5031295,
+   "lon": -74.4510815,
+   "species": "Honeylocust",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 32.3
+  },
+  {
+   "lat": 40.5031927,
+   "lon": -74.4509634,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5030785,
+   "lon": -74.4511968,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.502846,
+   "lon": -74.4509205,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5027848,
+   "lon": -74.4511941,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5027257,
+   "lon": -74.451111,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5026747,
+   "lon": -74.4511029,
+   "species": "Japanese scholar tree",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.5026237,
+   "lon": -74.4511485,
+   "species": "Elm",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5027807,
+   "lon": -74.4510117,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5027461,
+   "lon": -74.4510546,
+   "species": "Sawtooth oak",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5027073,
+   "lon": -74.4510305,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.502793,
+   "lon": -74.4509232,
+   "species": "Hackberry",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.502744,
+   "lon": -74.4509634,
+   "species": "Japanese scholar tree",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5026257,
+   "lon": -74.45106,
+   "species": "Japanese scholar tree",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.5026624,
+   "lon": -74.4509795,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5023708,
+   "lon": -74.4511834,
+   "species": "Elm",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5025584,
+   "lon": -74.4510734,
+   "species": "Chinese elm",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.502485,
+   "lon": -74.4510037,
+   "species": "Elm",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.8
+  },
+  {
+   "lat": 40.5025666,
+   "lon": -74.4509956,
+   "species": "Japanese scholar tree",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5025095,
+   "lon": -74.4509232,
+   "species": "Japanese scholar tree",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.5033253,
+   "lon": -74.4509071,
+   "species": "Scotch pine",
+   "dbh_in": 7.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 9.1
+  },
+  {
+   "lat": 40.5033457,
+   "lon": -74.4507435,
+   "species": "Honeylocust",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 36.1
+  },
+  {
+   "lat": 40.5032926,
+   "lon": -74.4506791,
+   "species": "Honeylocust",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 43.7
+  },
+  {
+   "lat": 40.5033273,
+   "lon": -74.4505852,
+   "species": "Honeylocust",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5030744,
+   "lon": -74.4508642,
+   "species": "Flowering dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5030092,
+   "lon": -74.4508186,
+   "species": "Honeylocust",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 36.1
+  },
+  {
+   "lat": 40.5028725,
+   "lon": -74.4508347,
+   "species": "Horsechestnut",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.502952,
+   "lon": -74.4507703,
+   "species": "Honeylocust",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.4
+  },
+  {
+   "lat": 40.502897,
+   "lon": -74.4507757,
+   "species": "Elm",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5032702,
+   "lon": -74.4505343,
+   "species": "Honeylocust",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.5033497,
+   "lon": -74.4502956,
+   "species": "Japanese zelkova",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5031744,
+   "lon": -74.4503814,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5032213,
+   "lon": -74.4503197,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5031376,
+   "lon": -74.4502339,
+   "species": "Honeylocust",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.5030479,
+   "lon": -74.4504538,
+   "species": "Apple",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.503003,
+   "lon": -74.4504431,
+   "species": "Apple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5030581,
+   "lon": -74.4503224,
+   "species": "Honeylocust",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5030867,
+   "lon": -74.4502929,
+   "species": "Honeylocust",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5029622,
+   "lon": -74.4503841,
+   "species": "Apple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5028868,
+   "lon": -74.4503707,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5028664,
+   "lon": -74.450258,
+   "species": "Sawtooth oak",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5028093,
+   "lon": -74.4508964,
+   "species": "Elm",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.5027726,
+   "lon": -74.4508857,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5027461,
+   "lon": -74.4508803,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5027216,
+   "lon": -74.4508401,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5027012,
+   "lon": -74.4508964,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5026461,
+   "lon": -74.4508508,
+   "species": "Japanese scholar tree",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5025911,
+   "lon": -74.4509044,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5027012,
+   "lon": -74.4507971,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.502587,
+   "lon": -74.4507784,
+   "species": "Japanese scholar tree",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5027236,
+   "lon": -74.4506201,
+   "species": "Flowering dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5027257,
+   "lon": -74.4505745,
+   "species": "Sawtooth oak",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5026808,
+   "lon": -74.4506899,
+   "species": "Witch hazel",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.502693,
+   "lon": -74.450663,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5026502,
+   "lon": -74.4506577,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5026767,
+   "lon": -74.4506201,
+   "species": "Eastern red cedar",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.5
+  },
+  {
+   "lat": 40.502638,
+   "lon": -74.4506335,
+   "species": "Willow oak",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.5025543,
+   "lon": -74.4508508,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5023443,
+   "lon": -74.4507462,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5023892,
+   "lon": -74.4506738,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.502432,
+   "lon": -74.4506148,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5027726,
+   "lon": -74.4505611,
+   "species": "Kousa dogwood",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5027318,
+   "lon": -74.450435,
+   "species": "Star magnolia",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5027522,
+   "lon": -74.4503492,
+   "species": "Magnolia",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5026951,
+   "lon": -74.4503358,
+   "species": "Magnolia",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5026339,
+   "lon": -74.4503278,
+   "species": "Magnolia",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5025319,
+   "lon": -74.4505289,
+   "species": "Sawtooth oak",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.8
+  },
+  {
+   "lat": 40.5024667,
+   "lon": -74.4504753,
+   "species": "Cornelian cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5025095,
+   "lon": -74.4504055,
+   "species": "Witch hazel",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.5024055,
+   "lon": -74.4505289,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.502381,
+   "lon": -74.450486,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5023545,
+   "lon": -74.4505343,
+   "species": "Japanese scholar tree",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5023178,
+   "lon": -74.4504914,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5023545,
+   "lon": -74.4504565,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5023178,
+   "lon": -74.4504324,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.502534,
+   "lon": -74.4503412,
+   "species": "Flowering dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5025605,
+   "lon": -74.4502714,
+   "species": "Kousa dogwood",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5021403,
+   "lon": -74.4511673,
+   "species": "Cherry",
+   "dbh_in": 11.0,
+   "condition": "Dead",
+   "status": "Stump",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5021199,
+   "lon": -74.4510922,
+   "species": "Northern red oak",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.502073,
+   "lon": -74.4509795,
+   "species": "Rose-of-sharon",
+   "dbh_in": 4.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5023137,
+   "lon": -74.4508079,
+   "species": "Elm",
+   "dbh_in": 9.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5022545,
+   "lon": -74.4507435,
+   "species": "Elm",
+   "dbh_in": 8.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5020975,
+   "lon": -74.4508535,
+   "species": "Pin oak",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 48.4
+  },
+  {
+   "lat": 40.5023015,
+   "lon": -74.4506282,
+   "species": "Japanese scholar tree",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5022545,
+   "lon": -74.4505826,
+   "species": "Japanese scholar tree",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5022321,
+   "lon": -74.4506523,
+   "species": "Japanese scholar tree",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.5021995,
+   "lon": -74.4506174,
+   "species": "Japanese scholar tree",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.502177,
+   "lon": -74.4506684,
+   "species": "Elm",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5020057,
+   "lon": -74.4509071,
+   "species": "White oak",
+   "dbh_in": 50.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 110.0
+  },
+  {
+   "lat": 40.5020343,
+   "lon": -74.4507945,
+   "species": "Pin oak",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.5018059,
+   "lon": -74.4508642,
+   "species": "Norway maple",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5018364,
+   "lon": -74.4507918,
+   "species": "Norway maple",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5018711,
+   "lon": -74.4507274,
+   "species": "Elm",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.5021995,
+   "lon": -74.4505396,
+   "species": "Norway spruce",
+   "dbh_in": 40.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 52.0
+  },
+  {
+   "lat": 40.5022403,
+   "lon": -74.4505182,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5022974,
+   "lon": -74.4504726,
+   "species": "Japanese snowbell",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.502279,
+   "lon": -74.4504377,
+   "species": "Japanese scholar tree",
+   "dbh_in": 8.0,
+   "condition": "Poor",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5022036,
+   "lon": -74.450435,
+   "species": "Norway spruce",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 42.9
+  },
+  {
+   "lat": 40.5021301,
+   "lon": -74.4504914,
+   "species": "Norway maple",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5020812,
+   "lon": -74.450427,
+   "species": "Norway maple",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5020343,
+   "lon": -74.4505396,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5020282,
+   "lon": -74.450368,
+   "species": "Norway maple",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.5019547,
+   "lon": -74.4503063,
+   "species": "Norway maple",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.5019099,
+   "lon": -74.4503868,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5016978,
+   "lon": -74.4506657,
+   "species": "Red maple",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5015795,
+   "lon": -74.4504941,
+   "species": "English holly",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.6
+  },
+  {
+   "lat": 40.5015162,
+   "lon": -74.4502956,
+   "species": "Scarlet oak",
+   "dbh_in": 29.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.5012899,
+   "lon": -74.4502366,
+   "species": "Eastern hemlock",
+   "dbh_in": 17.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 22.1
+  },
+  {
+   "lat": 40.5032804,
+   "lon": -74.4502071,
+   "species": "Honeylocust",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.5033457,
+   "lon": -74.4500756,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.503209,
+   "lon": -74.450148,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5032743,
+   "lon": -74.4500086,
+   "species": "Honeylocust",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 32.3
+  },
+  {
+   "lat": 40.5031478,
+   "lon": -74.4499925,
+   "species": "Magnolia",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5031784,
+   "lon": -74.4499415,
+   "species": "Magnolia",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5031968,
+   "lon": -74.449912,
+   "species": "Magnolia",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5031621,
+   "lon": -74.4499657,
+   "species": "Magnolia",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5030479,
+   "lon": -74.4501963,
+   "species": "American beech",
+   "dbh_in": 25.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.5029826,
+   "lon": -74.4500649,
+   "species": "Japanese scholar tree",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.5029582,
+   "lon": -74.4502124,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5029153,
+   "lon": -74.4501615,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.502846,
+   "lon": -74.4500917,
+   "species": "Honeylocust",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5030948,
+   "lon": -74.4500354,
+   "species": "Japanese scholar tree",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5030357,
+   "lon": -74.4499576,
+   "species": "Japanese scholar tree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.5028684,
+   "lon": -74.4500193,
+   "species": "Eastern white pine",
+   "dbh_in": 27.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 35.1
+  },
+  {
+   "lat": 40.5028582,
+   "lon": -74.4499522,
+   "species": "Honeylocust",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 32.3
+  },
+  {
+   "lat": 40.5032417,
+   "lon": -74.4498396,
+   "species": "Eastern hemlock",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 31.2
+  },
+  {
+   "lat": 40.50326,
+   "lon": -74.4497833,
+   "species": "Apple",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.0
+  },
+  {
+   "lat": 40.5032437,
+   "lon": -74.4497162,
+   "species": "Apple",
+   "dbh_in": 11.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5032111,
+   "lon": -74.4498771,
+   "species": "Magnolia",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5032355,
+   "lon": -74.4496679,
+   "species": "Eastern hemlock",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.9
+  },
+  {
+   "lat": 40.5029194,
+   "lon": -74.4498396,
+   "species": "Honeylocust",
+   "dbh_in": 16.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 30.4
+  },
+  {
+   "lat": 40.502844,
+   "lon": -74.4497833,
+   "species": "Honeylocust",
+   "dbh_in": 13.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.5029684,
+   "lon": -74.4495875,
+   "species": "Honeylocust",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.4
+  },
+  {
+   "lat": 40.5027542,
+   "lon": -74.4501373,
+   "species": "Willow oak",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.5026808,
+   "lon": -74.4501427,
+   "species": "Apple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5026155,
+   "lon": -74.4500729,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5028032,
+   "lon": -74.450022,
+   "species": "Honeylocust",
+   "dbh_in": 11.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.5027807,
+   "lon": -74.4499093,
+   "species": "Honeylocust",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.5026482,
+   "lon": -74.4500247,
+   "species": "Apple",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.502691,
+   "lon": -74.4499308,
+   "species": "Cherry",
+   "dbh_in": 12.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.5025727,
+   "lon": -74.450132,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5025564,
+   "lon": -74.4499496,
+   "species": "Honeylocust",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.5028134,
+   "lon": -74.449861,
+   "species": "Honeylocust",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.502642,
+   "lon": -74.4498825,
+   "species": "Eastern red cedar",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.7
+  },
+  {
+   "lat": 40.5025788,
+   "lon": -74.4497511,
+   "species": "Magnolia",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5028154,
+   "lon": -74.4496492,
+   "species": "Magnolia",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5027889,
+   "lon": -74.4496545,
+   "species": "Magnolia",
+   "dbh_in": 10.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5026155,
+   "lon": -74.4497001,
+   "species": "Magnolia",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5025482,
+   "lon": -74.4498342,
+   "species": "American elm",
+   "dbh_in": 29.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.502383,
+   "lon": -74.4496921,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5023504,
+   "lon": -74.4496733,
+   "species": "Kousa dogwood",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5023769,
+   "lon": -74.4496009,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5033049,
+   "lon": -74.4494614,
+   "species": "Norway spruce",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 9.1
+  },
+  {
+   "lat": 40.5033273,
+   "lon": -74.4493595,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5033028,
+   "lon": -74.449271,
+   "species": "Sweetbay magnolia",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5033294,
+   "lon": -74.449228,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5030765,
+   "lon": -74.4495365,
+   "species": "Magnolia",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5031642,
+   "lon": -74.4490591,
+   "species": "Norway maple",
+   "dbh_in": 16.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5033497,
+   "lon": -74.4488874,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5030316,
+   "lon": -74.4490993,
+   "species": "Apple",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5029888,
+   "lon": -74.4490537,
+   "species": "Apple",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5029439,
+   "lon": -74.4490135,
+   "species": "Apple",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5028236,
+   "lon": -74.44922,
+   "species": "Serviceberry",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.502642,
+   "lon": -74.4493622,
+   "species": "Hawthorn",
+   "dbh_in": 9.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5023157,
+   "lon": -74.4494721,
+   "species": "Bigleaf linden",
+   "dbh_in": 31.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 68.2
+  },
+  {
+   "lat": 40.5025605,
+   "lon": -74.4493541,
+   "species": "Hawthorn",
+   "dbh_in": 6.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.502691,
+   "lon": -74.44911,
+   "species": "English holly",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.4
+  },
+  {
+   "lat": 40.5026522,
+   "lon": -74.4490832,
+   "species": "Eastern white pine",
+   "dbh_in": 24.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 31.2
+  },
+  {
+   "lat": 40.5026094,
+   "lon": -74.4489706,
+   "species": "Littleleaf linden",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5026461,
+   "lon": -74.4489196,
+   "species": "Littleleaf linden",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5027012,
+   "lon": -74.4488686,
+   "species": "Littleleaf linden",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.8
+  },
+  {
+   "lat": 40.5023341,
+   "lon": -74.4490805,
+   "species": "Sawtooth oak",
+   "dbh_in": 6.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5021587,
+   "lon": -74.4500595,
+   "species": "Flowering dogwood",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5020853,
+   "lon": -74.4500247,
+   "species": "Eastern white pine",
+   "dbh_in": 50.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 65.0
+  },
+  {
+   "lat": 40.5017936,
+   "lon": -74.4501722,
+   "species": "Sugar maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5022851,
+   "lon": -74.449845,
+   "species": "Norway maple",
+   "dbh_in": 15.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.5023055,
+   "lon": -74.4497967,
+   "species": "Elm",
+   "dbh_in": 31.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 68.2
+  },
+  {
+   "lat": 40.5021934,
+   "lon": -74.4497833,
+   "species": "American hornbeam",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5021709,
+   "lon": -74.4498369,
+   "species": "American hornbeam",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5022362,
+   "lon": -74.4496894,
+   "species": "American hornbeam",
+   "dbh_in": 15.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 28.5
+  },
+  {
+   "lat": 40.5017018,
+   "lon": -74.4502097,
+   "species": "Cherry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5015917,
+   "lon": -74.4501024,
+   "species": "Cherry",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5013408,
+   "lon": -74.4501695,
+   "species": "Northern red oak",
+   "dbh_in": 36.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 79.2
+  },
+  {
+   "lat": 40.5012797,
+   "lon": -74.4500569,
+   "species": "Northern red oak",
+   "dbh_in": 28.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 61.6
+  },
+  {
+   "lat": 40.5014877,
+   "lon": -74.4499952,
+   "species": "Cherry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5013918,
+   "lon": -74.4498906,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.501296,
+   "lon": -74.4497913,
+   "species": "Cherry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5022525,
+   "lon": -74.4488874,
+   "species": "Scarlet oak",
+   "dbh_in": 7.0,
+   "condition": "Dead",
+   "status": "Dead",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5010777,
+   "lon": -74.45025,
+   "species": "Scarlet oak",
+   "dbh_in": 33.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.5005128,
+   "lon": -74.4502795,
+   "species": "Elm",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.500474,
+   "lon": -74.4502687,
+   "species": "Norway maple",
+   "dbh_in": 8.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5011797,
+   "lon": -74.4501507,
+   "species": "Eastern hemlock",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5011654,
+   "lon": -74.4500971,
+   "species": "Eastern white pine",
+   "dbh_in": 19.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.5009391,
+   "lon": -74.4499174,
+   "species": "Apple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5010431,
+   "lon": -74.4497886,
+   "species": "Japanese zelkova",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5011736,
+   "lon": -74.4496572,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5010818,
+   "lon": -74.4495553,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5009125,
+   "lon": -74.4498798,
+   "species": "Apple",
+   "dbh_in": 4.0,
+   "condition": "Dead",
+   "status": "Stump",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5007718,
+   "lon": -74.4497404,
+   "species": "Tree of heaven",
+   "dbh_in": 44.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 83.6
+  },
+  {
+   "lat": 40.5009493,
+   "lon": -74.4497001,
+   "species": "Northern hackberry",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.5008452,
+   "lon": -74.4495955,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5005107,
+   "lon": -74.4501132,
+   "species": "Mulberry",
+   "dbh_in": 26.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 49.4
+  },
+  {
+   "lat": 40.500729,
+   "lon": -74.449802,
+   "species": "Tree of heaven",
+   "dbh_in": 17.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 32.3
+  },
+  {
+   "lat": 40.5009737,
+   "lon": -74.4494534,
+   "species": "Cherry",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5007718,
+   "lon": -74.4495392,
+   "species": "Japanese zelkova",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5008595,
+   "lon": -74.4493487,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.500784,
+   "lon": -74.4489357,
+   "species": "Eastern red cedar",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.8
+  },
+  {
+   "lat": 40.5007004,
+   "lon": -74.4494802,
+   "species": "Japanese zelkova",
+   "dbh_in": 18.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5006025,
+   "lon": -74.4495365,
+   "species": "Callery pear",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5006658,
+   "lon": -74.4492066,
+   "species": "Littleleaf linden",
+   "dbh_in": 26.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.5005719,
+   "lon": -74.4493622,
+   "species": "Japanese tree lilac",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5005026,
+   "lon": -74.4492629,
+   "species": "Northern red oak",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5005944,
+   "lon": -74.4491154,
+   "species": "Littleleaf linden",
+   "dbh_in": 26.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.5004027,
+   "lon": -74.4491449,
+   "species": "Japanese tree lilac",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5003333,
+   "lon": -74.4490832,
+   "species": "Sawtooth oak",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5004842,
+   "lon": -74.4489893,
+   "species": "Littleleaf linden",
+   "dbh_in": 31.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 68.2
+  },
+  {
+   "lat": 40.5003884,
+   "lon": -74.4489035,
+   "species": "Littleleaf linden",
+   "dbh_in": 19.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5001824,
+   "lon": -74.4488981,
+   "species": "Norway maple",
+   "dbh_in": 16.0,
+   "condition": "Poor",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5000906,
+   "lon": -74.4489491,
+   "species": "Kousa dogwood",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5033701,
+   "lon": -74.4488418,
+   "species": "Cherry",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5033926,
+   "lon": -74.4488043,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5035517,
+   "lon": -74.4486514,
+   "species": "Japanese tree lilac",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5035639,
+   "lon": -74.448536,
+   "species": "Eastern white pine",
+   "dbh_in": 17.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 22.1
+  },
+  {
+   "lat": 40.5035435,
+   "lon": -74.4485199,
+   "species": "Eastern white pine",
+   "dbh_in": 16.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 20.8
+  },
+  {
+   "lat": 40.5032213,
+   "lon": -74.4487587,
+   "species": "Red maple",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5032233,
+   "lon": -74.4487265,
+   "species": "Red maple",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5032967,
+   "lon": -74.4486353,
+   "species": "Red maple",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5032722,
+   "lon": -74.4486648,
+   "species": "Red maple",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5033069,
+   "lon": -74.448579,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5029378,
+   "lon": -74.4485521,
+   "species": "Littleleaf linden",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5030948,
+   "lon": -74.4482598,
+   "species": "Littleleaf linden",
+   "dbh_in": 26.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.5029419,
+   "lon": -74.4482598,
+   "species": "Sawtooth oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.502897,
+   "lon": -74.4483322,
+   "species": "Sawtooth oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.502744,
+   "lon": -74.4487908,
+   "species": "Littleleaf linden",
+   "dbh_in": 11.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5026563,
+   "lon": -74.4486755,
+   "species": "Sawtooth oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5026135,
+   "lon": -74.4485575,
+   "species": "Scarlet oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5024483,
+   "lon": -74.4488391,
+   "species": "Scarlet oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5023953,
+   "lon": -74.4488284,
+   "species": "Scarlet oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5023382,
+   "lon": -74.4487882,
+   "species": "Scarlet oak",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5027399,
+   "lon": -74.4484878,
+   "species": "Swamp white oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5027318,
+   "lon": -74.4484153,
+   "species": "Swamp white oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5026135,
+   "lon": -74.4484851,
+   "species": "Scarlet oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5026155,
+   "lon": -74.4484261,
+   "species": "Scarlet oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5026951,
+   "lon": -74.448351,
+   "species": "Swamp white oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5026094,
+   "lon": -74.4483483,
+   "species": "Scarlet oak",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.5026563,
+   "lon": -74.4482705,
+   "species": "Swamp white oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5025788,
+   "lon": -74.4482893,
+   "species": "Oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5026278,
+   "lon": -74.4482088,
+   "species": "Swamp white oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5025197,
+   "lon": -74.4482356,
+   "species": "Pin oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.502485,
+   "lon": -74.4482034,
+   "species": "Scarlet oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5024279,
+   "lon": -74.4481686,
+   "species": "Elm",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5032478,
+   "lon": -74.4480613,
+   "species": "Apple",
+   "dbh_in": 9.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5031193,
+   "lon": -74.4479781,
+   "species": "Sawtooth oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5031784,
+   "lon": -74.4478709,
+   "species": "Sawtooth oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.502999,
+   "lon": -74.4481471,
+   "species": "Sawtooth oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5030499,
+   "lon": -74.4480506,
+   "species": "Sawtooth oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5031662,
+   "lon": -74.447726,
+   "species": "Willow oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5031152,
+   "lon": -74.4476241,
+   "species": "Willow oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.503054,
+   "lon": -74.4475275,
+   "species": "Willow oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.502846,
+   "lon": -74.4474927,
+   "species": "Black tupelo",
+   "dbh_in": 4.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.502589,
+   "lon": -74.4481364,
+   "species": "Swamp white oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5025503,
+   "lon": -74.4480613,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5024768,
+   "lon": -74.4480613,
+   "species": "Eastern redbud",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5025054,
+   "lon": -74.4480076,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5024544,
+   "lon": -74.4479996,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.502434,
+   "lon": -74.4480693,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5024646,
+   "lon": -74.4479379,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5025482,
+   "lon": -74.4478896,
+   "species": "Red maple",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5025217,
+   "lon": -74.4478574,
+   "species": "Red maple",
+   "dbh_in": 8.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5023892,
+   "lon": -74.4479004,
+   "species": "Ginkgo",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5024075,
+   "lon": -74.4478655,
+   "species": "Swamp white oak",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.50233,
+   "lon": -74.4478467,
+   "species": "Ginkgo",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.502744,
+   "lon": -74.4476911,
+   "species": "Black tupelo",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5026951,
+   "lon": -74.4478011,
+   "species": "Black tupelo",
+   "dbh_in": 4.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5025849,
+   "lon": -74.4478092,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5026053,
+   "lon": -74.4477582,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.502793,
+   "lon": -74.4475973,
+   "species": "Black tupelo",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5026706,
+   "lon": -74.4476482,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5027012,
+   "lon": -74.4475812,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5026992,
+   "lon": -74.4475088,
+   "species": "",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5025645,
+   "lon": -74.4478199,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5025462,
+   "lon": -74.4478065,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5025217,
+   "lon": -74.4477931,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5024789,
+   "lon": -74.4478172,
+   "species": "Red maple",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5024667,
+   "lon": -74.4477904,
+   "species": "Magnolia",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5024014,
+   "lon": -74.4476965,
+   "species": "Red maple",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5023484,
+   "lon": -74.4476482,
+   "species": "Red maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5023993,
+   "lon": -74.4475329,
+   "species": "Magnolia",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5024238,
+   "lon": -74.4474953,
+   "species": "Common crapemyrtle",
+   "dbh_in": 4.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5022056,
+   "lon": -74.4488472,
+   "species": "Shingle oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5022974,
+   "lon": -74.4487238,
+   "species": "Scarlet oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5021301,
+   "lon": -74.4487935,
+   "species": "Scarlet oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.502071,
+   "lon": -74.4487453,
+   "species": "Shingle oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5022811,
+   "lon": -74.4486755,
+   "species": "Scarlet oak",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5021934,
+   "lon": -74.4486514,
+   "species": "Sugar maple",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Dead",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5022219,
+   "lon": -74.4485709,
+   "species": "Scarlet oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.50202,
+   "lon": -74.4486862,
+   "species": "Scarlet oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5022382,
+   "lon": -74.4483751,
+   "species": "Scarlet oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5022117,
+   "lon": -74.4482651,
+   "species": "Elm",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5021077,
+   "lon": -74.448182,
+   "species": "Sugar maple",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.501865,
+   "lon": -74.448072,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.501816,
+   "lon": -74.4478789,
+   "species": "Elm",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5022688,
+   "lon": -74.4477904,
+   "species": "Ginkgo",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5022892,
+   "lon": -74.4477287,
+   "species": "Swamp white oak",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5022443,
+   "lon": -74.4477019,
+   "species": "Swamp white oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5021893,
+   "lon": -74.4476616,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5023055,
+   "lon": -74.4476026,
+   "species": "Red maple",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5023015,
+   "lon": -74.4475248,
+   "species": "Northern red oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.502224,
+   "lon": -74.4475383,
+   "species": "Sugar maple",
+   "dbh_in": 5.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.5021281,
+   "lon": -74.4476321,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.502073,
+   "lon": -74.4475731,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5020098,
+   "lon": -74.4475329,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5016733,
+   "lon": -74.4479325,
+   "species": "Scarlet oak",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.5014306,
+   "lon": -74.4480881,
+   "species": "Elm",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5015224,
+   "lon": -74.4480801,
+   "species": "Eastern redbud",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5014734,
+   "lon": -74.4480211,
+   "species": "Elm",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5013979,
+   "lon": -74.4481659,
+   "species": "Elm",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5012715,
+   "lon": -74.4481444,
+   "species": "American elm",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.5014245,
+   "lon": -74.4478279,
+   "species": "Elm",
+   "dbh_in": 22.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 48.4
+  },
+  {
+   "lat": 40.5013347,
+   "lon": -74.4479835,
+   "species": "Elm",
+   "dbh_in": 24.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.5012899,
+   "lon": -74.4479594,
+   "species": "Magnolia",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5013837,
+   "lon": -74.447903,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5013204,
+   "lon": -74.4478843,
+   "species": "Magnolia",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5012797,
+   "lon": -74.4478279,
+   "species": "Magnolia",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5016631,
+   "lon": -74.4478118,
+   "species": "Sugar maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5017855,
+   "lon": -74.4475678,
+   "species": "Scarlet oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5017202,
+   "lon": -74.4475248,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5015835,
+   "lon": -74.447498,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5014612,
+   "lon": -74.4477502,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.501502,
+   "lon": -74.4476777,
+   "species": "Elm",
+   "dbh_in": 33.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.5014285,
+   "lon": -74.4476777,
+   "species": "Magnolia",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5013878,
+   "lon": -74.4477582,
+   "species": "Magnolia",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5012735,
+   "lon": -74.4477823,
+   "species": "Saucer magnolia",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5013531,
+   "lon": -74.447718,
+   "species": "Magnolia",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.5013082,
+   "lon": -74.4477019,
+   "species": "Magnolia",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.0
+  },
+  {
+   "lat": 40.5015224,
+   "lon": -74.4475302,
+   "species": "Cherry",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.0
+  },
+  {
+   "lat": 40.5014,
+   "lon": -74.4476214,
+   "species": "Magnolia",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5013449,
+   "lon": -74.4476241,
+   "species": "Magnolia",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.501296,
+   "lon": -74.4476375,
+   "species": "Magnolia",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5013266,
+   "lon": -74.4475517,
+   "species": "Red maple",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.5029806,
+   "lon": -74.4473666,
+   "species": "Sawtooth oak",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.502899,
+   "lon": -74.4473746,
+   "species": "Black tupelo",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.502844,
+   "lon": -74.4472942,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.502848,
+   "lon": -74.4472352,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5027338,
+   "lon": -74.4474792,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5028113,
+   "lon": -74.447211,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.502538,
+   "lon": -74.4473451,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5024565,
+   "lon": -74.4473827,
+   "species": "Northern red oak",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.502328,
+   "lon": -74.4474256,
+   "species": "Common crapemyrtle",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5025707,
+   "lon": -74.44727,
+   "species": "Common crapemyrtle",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.5024952,
+   "lon": -74.4472432,
+   "species": "Sugar maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5025727,
+   "lon": -74.4472083,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5025258,
+   "lon": -74.447152,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Dead",
+   "status": "Dead",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5023422,
+   "lon": -74.4472244,
+   "species": "Elm",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5027603,
+   "lon": -74.4470313,
+   "species": "Red maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5027175,
+   "lon": -74.4469884,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5026522,
+   "lon": -74.4469401,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.502642,
+   "lon": -74.4468972,
+   "species": "Red maple",
+   "dbh_in": null,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5024095,
+   "lon": -74.4470984,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5023688,
+   "lon": -74.4470716,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5025645,
+   "lon": -74.4468275,
+   "species": "Kousa dogwood",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.502536,
+   "lon": -74.446806,
+   "species": "Kousa dogwood",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5025074,
+   "lon": -74.4467953,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5024626,
+   "lon": -74.4467497,
+   "species": "Red maple",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5023565,
+   "lon": -74.4466907,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5023178,
+   "lon": -74.4466665,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5022505,
+   "lon": -74.4473693,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5021872,
+   "lon": -74.4473907,
+   "species": "Magnolia",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5021811,
+   "lon": -74.4474471,
+   "species": "Black tupelo",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5022913,
+   "lon": -74.4471413,
+   "species": "sourwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.5019527,
+   "lon": -74.4474766,
+   "species": "Swamp white oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.5018834,
+   "lon": -74.4474444,
+   "species": "Swamp white oak",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5018059,
+   "lon": -74.4473934,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5019241,
+   "lon": -74.4471467,
+   "species": "Elm",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5018854,
+   "lon": -74.4472298,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.501967,
+   "lon": -74.4470689,
+   "species": "Elm",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5019976,
+   "lon": -74.4470152,
+   "species": "Elm",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5018609,
+   "lon": -74.4469723,
+   "species": "Japanese zelkova",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5018201,
+   "lon": -74.4470474,
+   "species": "Japanese zelkova",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5018446,
+   "lon": -74.446806,
+   "species": "Norway spruce",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.5017651,
+   "lon": -74.4474605,
+   "species": "Elm",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5016672,
+   "lon": -74.4473666,
+   "species": "Japanese zelkova",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.501553,
+   "lon": -74.4474256,
+   "species": "Honeylocust",
+   "dbh_in": 23.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 43.7
+  },
+  {
+   "lat": 40.5017793,
+   "lon": -74.4471627,
+   "species": "Bigleaf linden",
+   "dbh_in": 25.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.5016407,
+   "lon": -74.4473022,
+   "species": "Hackberry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5016447,
+   "lon": -74.4472942,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5014347,
+   "lon": -74.4474766,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5013653,
+   "lon": -74.4474658,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5013327,
+   "lon": -74.4474363,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.501298,
+   "lon": -74.4473505,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5013408,
+   "lon": -74.447144,
+   "species": "Amur honeysuckle",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.501296,
+   "lon": -74.4471923,
+   "species": "Elm",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5013041,
+   "lon": -74.4471386,
+   "species": "Elm",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.5012735,
+   "lon": -74.4471493,
+   "species": "Elm",
+   "dbh_in": 4.0,
+   "condition": "Poor",
+   "status": "Alive",
+   "crown_ft": 8.8
+  },
+  {
+   "lat": 40.5016753,
+   "lon": -74.4470796,
+   "species": "Honeylocust",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.2
+  },
+  {
+   "lat": 40.5014265,
+   "lon": -74.446983,
+   "species": "Honeylocust",
+   "dbh_in": 8.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 15.2
+  },
+  {
+   "lat": 40.5013714,
+   "lon": -74.4470984,
+   "species": "Honeylocust",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5012858,
+   "lon": -74.4471037,
+   "species": "Elm",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.5013816,
+   "lon": -74.4470313,
+   "species": "Honeylocust",
+   "dbh_in": 9.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5021934,
+   "lon": -74.4466451,
+   "species": "Elm",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5020791,
+   "lon": -74.4465753,
+   "species": "Japanese zelkova",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5019996,
+   "lon": -74.4467255,
+   "species": "Japanese zelkova",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5020363,
+   "lon": -74.4466344,
+   "species": "Japanese zelkova",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.8
+  },
+  {
+   "lat": 40.5019364,
+   "lon": -74.446637,
+   "species": "Norway spruce",
+   "dbh_in": 24.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 31.2
+  },
+  {
+   "lat": 40.5019486,
+   "lon": -74.4465002,
+   "species": "Eastern white pine",
+   "dbh_in": 29.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 37.7
+  },
+  {
+   "lat": 40.5017651,
+   "lon": -74.4467631,
+   "species": "Lilac",
+   "dbh_in": 4.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5017018,
+   "lon": -74.4467631,
+   "species": "Norway maple",
+   "dbh_in": null,
+   "condition": "",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5016814,
+   "lon": -74.4467363,
+   "species": "Norway maple",
+   "dbh_in": 25.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.5015835,
+   "lon": -74.4466478,
+   "species": "Atlas cedar",
+   "dbh_in": 16.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 20.8
+  },
+  {
+   "lat": 40.5016692,
+   "lon": -74.4466075,
+   "species": "Norway maple",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.5016284,
+   "lon": -74.4464895,
+   "species": "Elm",
+   "dbh_in": 54.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 118.8
+  },
+  {
+   "lat": 40.5009656,
+   "lon": -74.4487292,
+   "species": "Zelkova",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5009513,
+   "lon": -74.4487345,
+   "species": "Japanese zelkova",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5009798,
+   "lon": -74.4485897,
+   "species": "Osage orange",
+   "dbh_in": 36.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 68.4
+  },
+  {
+   "lat": 40.5009044,
+   "lon": -74.448587,
+   "species": "Osage orange",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5007535,
+   "lon": -74.448638,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5007718,
+   "lon": -74.4486111,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5011471,
+   "lon": -74.4483697,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5010798,
+   "lon": -74.4484717,
+   "species": "Littleleaf linden",
+   "dbh_in": 31.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 68.2
+  },
+  {
+   "lat": 40.5010696,
+   "lon": -74.4484958,
+   "species": "American basswood",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 60.8
+  },
+  {
+   "lat": 40.5011287,
+   "lon": -74.4483912,
+   "species": "Kousa dogwood",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5011654,
+   "lon": -74.4483188,
+   "species": "Zelkova",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5009146,
+   "lon": -74.4485092,
+   "species": "Osage orange",
+   "dbh_in": 37.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 70.3
+  },
+  {
+   "lat": 40.5007412,
+   "lon": -74.4487184,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5007473,
+   "lon": -74.4486836,
+   "species": "Kousa dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5007412,
+   "lon": -74.4486541,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5003027,
+   "lon": -74.4488204,
+   "species": "Littleleaf linden",
+   "dbh_in": 18.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5002476,
+   "lon": -74.4486648,
+   "species": "Dotted hawthorn",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5006454,
+   "lon": -74.4483483,
+   "species": "Japanese zelkova",
+   "dbh_in": 18.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5005719,
+   "lon": -74.4484502,
+   "species": "Magnolia",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.0
+  },
+  {
+   "lat": 40.5002864,
+   "lon": -74.4482061,
+   "species": "Northern red oak",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 66.0
+  },
+  {
+   "lat": 40.5011552,
+   "lon": -74.4480559,
+   "species": "Japanese zelkova",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5012368,
+   "lon": -74.4478574,
+   "species": "Magnolia",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.501194,
+   "lon": -74.4478869,
+   "species": "Japanese zelkova",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.5010737,
+   "lon": -74.4479781,
+   "species": "Shagbark hickory",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.50099,
+   "lon": -74.4481015,
+   "species": "Eastern hemlock",
+   "dbh_in": 21.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 27.3
+  },
+  {
+   "lat": 40.5010064,
+   "lon": -74.4478977,
+   "species": "Black tupelo",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.5009574,
+   "lon": -74.4478977,
+   "species": "Weeping cherry",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5009431,
+   "lon": -74.4478574,
+   "species": "Weeping cherry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5009125,
+   "lon": -74.447844,
+   "species": "Weeping cherry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5008044,
+   "lon": -74.4478387,
+   "species": "Kousa dogwood",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5012246,
+   "lon": -74.4477931,
+   "species": "Magnolia",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.0
+  },
+  {
+   "lat": 40.5011512,
+   "lon": -74.4477931,
+   "species": "Magnolia",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5011532,
+   "lon": -74.4477394,
+   "species": "Magnolia",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.0
+  },
+  {
+   "lat": 40.5010757,
+   "lon": -74.4478092,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.501092,
+   "lon": -74.4476965,
+   "species": "Northern red oak",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.501247,
+   "lon": -74.4475114,
+   "species": "Japanese zelkova",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.501143,
+   "lon": -74.4475463,
+   "species": "Scarlet oak",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.5010512,
+   "lon": -74.4475007,
+   "species": "Elm",
+   "dbh_in": 26.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.5009798,
+   "lon": -74.4477448,
+   "species": "Elm",
+   "dbh_in": 35.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 77.0
+  },
+  {
+   "lat": 40.5008881,
+   "lon": -74.4476643,
+   "species": "Elm",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5008208,
+   "lon": -74.4477797,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5007596,
+   "lon": -74.4478011,
+   "species": "Kousa dogwood",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5007698,
+   "lon": -74.4477502,
+   "species": "Kousa dogwood",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.5009207,
+   "lon": -74.4475517,
+   "species": "Elm",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5007983,
+   "lon": -74.4476375,
+   "species": "American elm",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5007616,
+   "lon": -74.4476241,
+   "species": "White oak",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5007657,
+   "lon": -74.4475731,
+   "species": "American elm",
+   "dbh_in": 49.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 107.8
+  },
+  {
+   "lat": 40.5007677,
+   "lon": -74.4475034,
+   "species": "American elm",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5007167,
+   "lon": -74.4480935,
+   "species": "Japanese maple",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5003455,
+   "lon": -74.4480425,
+   "species": "Scarlet oak",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5002578,
+   "lon": -74.4479701,
+   "species": "Shagbark hickory",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5006515,
+   "lon": -74.4476536,
+   "species": "Paperbark Maple",
+   "dbh_in": 1.0,
+   "condition": "Poor",
+   "status": "Alive",
+   "crown_ft": 2.2
+  },
+  {
+   "lat": 40.5005067,
+   "lon": -74.4477394,
+   "species": "Japanese zelkova",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.5005964,
+   "lon": -74.4476804,
+   "species": "Paperbark Maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.50068,
+   "lon": -74.4475892,
+   "species": "Japanese zelkova",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5006678,
+   "lon": -74.4475383,
+   "species": "Japanese zelkova",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5006168,
+   "lon": -74.4476348,
+   "species": "Paperbark Maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5005536,
+   "lon": -74.4476295,
+   "species": "Northern red oak",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.5004149,
+   "lon": -74.4476724,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5002721,
+   "lon": -74.4477126,
+   "species": "Elm",
+   "dbh_in": 36.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 79.2
+  },
+  {
+   "lat": 40.5004434,
+   "lon": -74.4475892,
+   "species": "Kwanzan cherry",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5003741,
+   "lon": -74.4475812,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5004414,
+   "lon": -74.44749,
+   "species": "Cherry",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5004027,
+   "lon": -74.447557,
+   "species": "Cherry",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.500421,
+   "lon": -74.4475248,
+   "species": "Cherry",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.5003761,
+   "lon": -74.4475222,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5003884,
+   "lon": -74.4475007,
+   "species": "Cherry",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5003353,
+   "lon": -74.4475839,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5002986,
+   "lon": -74.447608,
+   "species": "Elm",
+   "dbh_in": 27.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.5003048,
+   "lon": -74.4475812,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.5002884,
+   "lon": -74.4475731,
+   "species": "Cherry",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5003517,
+   "lon": -74.4475248,
+   "species": "Cherry",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5003313,
+   "lon": -74.4475383,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.500315,
+   "lon": -74.4475383,
+   "species": "Cherry",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.5002966,
+   "lon": -74.4475356,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.500213,
+   "lon": -74.4487157,
+   "species": "Littleleaf linden",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.5000947,
+   "lon": -74.4488177,
+   "species": "Northern hackberry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5001192,
+   "lon": -74.4486353,
+   "species": "Silver linden",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5000335,
+   "lon": -74.448528,
+   "species": "Ash",
+   "dbh_in": 17.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4998785,
+   "lon": -74.448705,
+   "species": "Red maple",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5001253,
+   "lon": -74.4482034,
+   "species": "Northern red oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4997602,
+   "lon": -74.4482544,
+   "species": "Green ash",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4998214,
+   "lon": -74.4482249,
+   "species": "Ash",
+   "dbh_in": 15.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.4993339,
+   "lon": -74.4487104,
+   "species": "Ginkgo",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.4993849,
+   "lon": -74.4486165,
+   "species": "Ginkgo",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.4994175,
+   "lon": -74.4485521,
+   "species": "Ginkgo",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.4994563,
+   "lon": -74.4485065,
+   "species": "Ginkgo",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 19.0
+  },
+  {
+   "lat": 40.4994971,
+   "lon": -74.4484502,
+   "species": "Ginkgo",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.1
+  },
+  {
+   "lat": 40.5001824,
+   "lon": -74.4480613,
+   "species": "Sugar maple",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.500009,
+   "lon": -74.4481203,
+   "species": "Northern red oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5000784,
+   "lon": -74.4480157,
+   "species": "American elm",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4999213,
+   "lon": -74.4480452,
+   "species": "Elm",
+   "dbh_in": 40.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 88.0
+  },
+  {
+   "lat": 40.5001844,
+   "lon": -74.4476992,
+   "species": "Black tupelo",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.5000722,
+   "lon": -74.4477475,
+   "species": "Elm",
+   "dbh_in": 35.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 77.0
+  },
+  {
+   "lat": 40.5000315,
+   "lon": -74.4477233,
+   "species": "Red maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4997072,
+   "lon": -74.4475168,
+   "species": "Hackberry",
+   "dbh_in": 22.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4996378,
+   "lon": -74.4480103,
+   "species": "Apple",
+   "dbh_in": 10.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.499648,
+   "lon": -74.4479915,
+   "species": "Apple",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4995562,
+   "lon": -74.4479164,
+   "species": "Witch hazel",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.4995481,
+   "lon": -74.4478682,
+   "species": "Witch hazel",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.4995032,
+   "lon": -74.447895,
+   "species": "Witch hazel",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.8
+  },
+  {
+   "lat": 40.4993829,
+   "lon": -74.4478735,
+   "species": "Northern red oak",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.4994543,
+   "lon": -74.4478065,
+   "species": "Witch hazel",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.499701,
+   "lon": -74.4474819,
+   "species": "Northern hackberry",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4996582,
+   "lon": -74.4475141,
+   "species": "Spruce",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.4994155,
+   "lon": -74.4478172,
+   "species": "Witch hazel",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.4994298,
+   "lon": -74.4477609,
+   "species": "Witch hazel",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.9
+  },
+  {
+   "lat": 40.4992217,
+   "lon": -74.4477019,
+   "species": "Northern red oak",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.2
+  },
+  {
+   "lat": 40.4992238,
+   "lon": -74.4476053,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5011491,
+   "lon": -74.4474363,
+   "species": "American elm",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.5010206,
+   "lon": -74.4473237,
+   "species": "Northern red oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5012062,
+   "lon": -74.4472834,
+   "species": "Chinese elm",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5012022,
+   "lon": -74.4472861,
+   "species": "Japanese elm",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5011614,
+   "lon": -74.4472352,
+   "species": "Paperbark Maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5012654,
+   "lon": -74.4471413,
+   "species": "Elm",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.501247,
+   "lon": -74.447144,
+   "species": "Elm",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5011552,
+   "lon": -74.4471708,
+   "species": "Paperbark Maple",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5011247,
+   "lon": -74.4473049,
+   "species": "Paperbark Maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5010675,
+   "lon": -74.4472674,
+   "species": "Paperbark Maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5009554,
+   "lon": -74.4474497,
+   "species": "Elm",
+   "dbh_in": 41.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 90.2
+  },
+  {
+   "lat": 40.5008065,
+   "lon": -74.4474229,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5008493,
+   "lon": -74.4472539,
+   "species": "American elm",
+   "dbh_in": 44.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 96.8
+  },
+  {
+   "lat": 40.5007902,
+   "lon": -74.4471869,
+   "species": "American elm",
+   "dbh_in": 38.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 83.6
+  },
+  {
+   "lat": 40.5012307,
+   "lon": -74.4471225,
+   "species": "Elm",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5012613,
+   "lon": -74.447093,
+   "species": "Elm",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.501247,
+   "lon": -74.4470716,
+   "species": "Elm",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.5012307,
+   "lon": -74.4470716,
+   "species": "Elm",
+   "dbh_in": 41.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 90.2
+  },
+  {
+   "lat": 40.5011818,
+   "lon": -74.446983,
+   "species": "Elm",
+   "dbh_in": 16.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5010594,
+   "lon": -74.4471332,
+   "species": "Seven Son Flower",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5010125,
+   "lon": -74.4471332,
+   "species": "Seven Son Flower",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5010329,
+   "lon": -74.4471064,
+   "species": "Seven Son Flower",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.501192,
+   "lon": -74.4468489,
+   "species": "Japanese red cedar",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.8
+  },
+  {
+   "lat": 40.5009533,
+   "lon": -74.4471118,
+   "species": "Seven Son Flower",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5009676,
+   "lon": -74.4470823,
+   "species": "Seven Son Flower",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5008942,
+   "lon": -74.4471064,
+   "species": "Sugar maple",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.0
+  },
+  {
+   "lat": 40.500937,
+   "lon": -74.4470447,
+   "species": "Seven Son Flower",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Removed",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5007575,
+   "lon": -74.4470635,
+   "species": "Saucer magnolia",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5008024,
+   "lon": -74.4469911,
+   "species": "Cherry",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5008921,
+   "lon": -74.4468597,
+   "species": "Serviceberry",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.5008942,
+   "lon": -74.4468516,
+   "species": "Elm",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Stump",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5007657,
+   "lon": -74.4469562,
+   "species": "Cherry",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.5008187,
+   "lon": -74.4468167,
+   "species": "Spruce",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.4
+  },
+  {
+   "lat": 40.5006086,
+   "lon": -74.4474632,
+   "species": "American elm",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.5005006,
+   "lon": -74.4474122,
+   "species": "Northern red oak",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 70.4
+  },
+  {
+   "lat": 40.5005801,
+   "lon": -74.4473451,
+   "species": "Northern red oak",
+   "dbh_in": 35.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 77.0
+  },
+  {
+   "lat": 40.5007065,
+   "lon": -74.4471413,
+   "species": "Northern red oak",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.5005026,
+   "lon": -74.4472834,
+   "species": "Northern red oak",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 70.4
+  },
+  {
+   "lat": 40.500474,
+   "lon": -74.4474122,
+   "species": "Northern red oak",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5004088,
+   "lon": -74.4474739,
+   "species": "Cherry",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.5004516,
+   "lon": -74.4473693,
+   "species": "Flowering dogwood",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.5004373,
+   "lon": -74.4473693,
+   "species": "Flowering dogwood",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5002374,
+   "lon": -74.4472539,
+   "species": "Elm",
+   "dbh_in": 34.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 74.8
+  },
+  {
+   "lat": 40.5007371,
+   "lon": -74.4470313,
+   "species": "Saucer magnolia",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.0
+  },
+  {
+   "lat": 40.5005984,
+   "lon": -74.4470313,
+   "species": "White oak",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Dead",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5006433,
+   "lon": -74.4468731,
+   "species": "American basswood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.5005944,
+   "lon": -74.4468462,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.5005515,
+   "lon": -74.4468087,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.50037,
+   "lon": -74.4470689,
+   "species": "Scarlet oak",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5004373,
+   "lon": -74.4470152,
+   "species": "Elm",
+   "dbh_in": 42.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 92.4
+  },
+  {
+   "lat": 40.5003353,
+   "lon": -74.4470528,
+   "species": "Scarlet oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.5002436,
+   "lon": -74.4470447,
+   "species": "Red maple",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.5003476,
+   "lon": -74.4468918,
+   "species": "Northern red oak",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.500264,
+   "lon": -74.4469616,
+   "species": "Elm",
+   "dbh_in": 36.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 79.2
+  },
+  {
+   "lat": 40.5002599,
+   "lon": -74.4468248,
+   "species": "Elm",
+   "dbh_in": 46.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 101.2
+  },
+  {
+   "lat": 40.5010186,
+   "lon": -74.4467658,
+   "species": "Arborvitae",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 2.6
+  },
+  {
+   "lat": 40.5010247,
+   "lon": -74.446739,
+   "species": "Arborvitae",
+   "dbh_in": 3.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 3.9
+  },
+  {
+   "lat": 40.5009778,
+   "lon": -74.4467765,
+   "species": "Norway maple",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.500884,
+   "lon": -74.4466746,
+   "species": "Northern red oak",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.5008514,
+   "lon": -74.4467041,
+   "species": "Elm",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.5012654,
+   "lon": -74.44635,
+   "species": "Eastern red cedar",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.6
+  },
+  {
+   "lat": 40.5011552,
+   "lon": -74.4462132,
+   "species": "Littleleaf linden",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.5003823,
+   "lon": -74.4467229,
+   "species": "River birch",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.5004394,
+   "lon": -74.4467041,
+   "species": "Ginkgo",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5003455,
+   "lon": -74.4467014,
+   "species": "River birch",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.5003435,
+   "lon": -74.4466665,
+   "species": "Elm",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.5002619,
+   "lon": -74.4466639,
+   "species": "River birch",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5003598,
+   "lon": -74.4466183,
+   "species": "Two-wing silverbell",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.5003761,
+   "lon": -74.4465458,
+   "species": "River birch",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 43.7
+  },
+  {
+   "lat": 40.5004455,
+   "lon": -74.4464654,
+   "species": "Elm",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5004516,
+   "lon": -74.4464546,
+   "species": "Elm",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5004047,
+   "lon": -74.4464573,
+   "species": "Pine",
+   "dbh_in": 12.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 15.6
+  },
+  {
+   "lat": 40.5004516,
+   "lon": -74.4464251,
+   "species": "Pine",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.6
+  },
+  {
+   "lat": 40.500423,
+   "lon": -74.4464278,
+   "species": "Littleleaf linden",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.5004149,
+   "lon": -74.446409,
+   "species": "Pine",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.4
+  },
+  {
+   "lat": 40.5001701,
+   "lon": -74.447313,
+   "species": "Japanese scholar tree",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 47.5
+  },
+  {
+   "lat": 40.5000743,
+   "lon": -74.447329,
+   "species": "Eastern hemlock",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.1
+  },
+  {
+   "lat": 40.5001477,
+   "lon": -74.4472459,
+   "species": "Japanese scholar tree",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5001028,
+   "lon": -74.4472378,
+   "species": "Japanese scholar tree",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 57.0
+  },
+  {
+   "lat": 40.4999234,
+   "lon": -74.4472057,
+   "species": "Eastern hemlock",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 23.4
+  },
+  {
+   "lat": 40.5000967,
+   "lon": -74.4468731,
+   "species": "Sugar maple",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.5000233,
+   "lon": -74.4469455,
+   "species": "Japanese zelkova",
+   "dbh_in": 29.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.4999764,
+   "lon": -74.4468623,
+   "species": "Red maple",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4999968,
+   "lon": -74.446806,
+   "species": "Pin oak",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 70.4
+  },
+  {
+   "lat": 40.4998744,
+   "lon": -74.4468194,
+   "species": "Japanese zelkova",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4996766,
+   "lon": -74.4474658,
+   "species": "Hackberry",
+   "dbh_in": 21.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 39.9
+  },
+  {
+   "lat": 40.4994094,
+   "lon": -74.447372,
+   "species": "Elm",
+   "dbh_in": 37.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 81.4
+  },
+  {
+   "lat": 40.4993135,
+   "lon": -74.4473103,
+   "species": "English holly",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.3
+  },
+  {
+   "lat": 40.4991871,
+   "lon": -74.44738,
+   "species": "Japanese zelkova",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.4993808,
+   "lon": -74.4472808,
+   "species": "Sweetbay magnolia",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.4994196,
+   "lon": -74.447203,
+   "species": "Sorrel",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.4994379,
+   "lon": -74.4471949,
+   "species": "sourwood",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4992136,
+   "lon": -74.4472888,
+   "species": "Japanese zelkova",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.4992687,
+   "lon": -74.447144,
+   "species": "Japanese zelkova",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.499236,
+   "lon": -74.4472164,
+   "species": "Japanese zelkova",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 15.4
+  },
+  {
+   "lat": 40.4996888,
+   "lon": -74.4468892,
+   "species": "Eastern redbud",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.4996541,
+   "lon": -74.4468623,
+   "species": "Eastern redbud",
+   "dbh_in": 4.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.4996133,
+   "lon": -74.4468221,
+   "species": "Japanese snowbell",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 7.6
+  },
+  {
+   "lat": 40.4992809,
+   "lon": -74.4470876,
+   "species": "Japanese zelkova",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.4993931,
+   "lon": -74.4469213,
+   "species": "Yellowwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.3
+  },
+  {
+   "lat": 40.4994135,
+   "lon": -74.4468436,
+   "species": "Yellowwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.4993523,
+   "lon": -74.4468623,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.500111,
+   "lon": -74.4467336,
+   "species": "Elm",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.5002109,
+   "lon": -74.4466531,
+   "species": "River birch",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.5001375,
+   "lon": -74.4466236,
+   "species": "River birch",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.4999988,
+   "lon": -74.4466987,
+   "species": "Shagbark hickory",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4999376,
+   "lon": -74.4466236,
+   "species": "American elm",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4999132,
+   "lon": -74.4466612,
+   "species": "Pin oak",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4997867,
+   "lon": -74.4467846,
+   "species": "Tulip tree",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.4997378,
+   "lon": -74.4466987,
+   "species": "Elm",
+   "dbh_in": 39.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 85.8
+  },
+  {
+   "lat": 40.499907,
+   "lon": -74.4464681,
+   "species": "River birch",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.4997908,
+   "lon": -74.4464868,
+   "species": "Pin oak",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 66.0
+  },
+  {
+   "lat": 40.5001967,
+   "lon": -74.4462186,
+   "species": "Zelkova",
+   "dbh_in": 8.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5001722,
+   "lon": -74.4462132,
+   "species": "Zelkova",
+   "dbh_in": 8.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 17.6
+  },
+  {
+   "lat": 40.5001457,
+   "lon": -74.4462025,
+   "species": "Zelkova",
+   "dbh_in": 10.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.499854,
+   "lon": -74.4464386,
+   "species": "River birch",
+   "dbh_in": 5.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 9.5
+  },
+  {
+   "lat": 40.4995827,
+   "lon": -74.4466853,
+   "species": "Scarlet oak",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4996011,
+   "lon": -74.4466451,
+   "species": "Northern red oak",
+   "dbh_in": 35.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 77.0
+  },
+  {
+   "lat": 40.4995338,
+   "lon": -74.446637,
+   "species": "American elm",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.499646,
+   "lon": -74.4465646,
+   "species": "Scarlet oak",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4994502,
+   "lon": -74.4465539,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.4995522,
+   "lon": -74.446519,
+   "species": "American elm",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.499442,
+   "lon": -74.446739,
+   "species": "Eastern hophornbeam",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.4994012,
+   "lon": -74.4466826,
+   "species": "Japanese zelkova",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.4992442,
+   "lon": -74.4466129,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4995909,
+   "lon": -74.4463688,
+   "species": "Elm",
+   "dbh_in": 48.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 105.6
+  },
+  {
+   "lat": 40.4996786,
+   "lon": -74.4462776,
+   "species": "Cherry",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.4995848,
+   "lon": -74.4462159,
+   "species": "Cherry",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 28.0
+  },
+  {
+   "lat": 40.4996174,
+   "lon": -74.4461516,
+   "species": "Cherry",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.0
+  },
+  {
+   "lat": 40.4993135,
+   "lon": -74.4462964,
+   "species": "Elm",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 66.0
+  },
+  {
+   "lat": 40.4992931,
+   "lon": -74.4464386,
+   "species": "Japanese zelkova",
+   "dbh_in": 28.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 61.6
+  },
+  {
+   "lat": 40.49903,
+   "lon": -74.4480693,
+   "species": "London planetree",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.4991585,
+   "lon": -74.4476375,
+   "species": "Northern red oak",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4991524,
+   "lon": -74.4475034,
+   "species": "American elm",
+   "dbh_in": 29.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.4989097,
+   "lon": -74.4476992,
+   "species": "Elm",
+   "dbh_in": 39.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 85.8
+  },
+  {
+   "lat": 40.4986608,
+   "lon": -74.4478065,
+   "species": "Sweetbay magnolia",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.4986976,
+   "lon": -74.4477099,
+   "species": "Common crapemyrtle",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.4
+  },
+  {
+   "lat": 40.4988036,
+   "lon": -74.4476402,
+   "species": "Honeylocust",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.6
+  },
+  {
+   "lat": 40.4986058,
+   "lon": -74.4479218,
+   "species": "Elm",
+   "dbh_in": 44.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 96.8
+  },
+  {
+   "lat": 40.4982733,
+   "lon": -74.4475383,
+   "species": "Eastern redbud",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.4982774,
+   "lon": -74.4474927,
+   "species": "Honeylocust",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 43.7
+  },
+  {
+   "lat": 40.4989729,
+   "lon": -74.4473532,
+   "species": "Northern red oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4990219,
+   "lon": -74.4471467,
+   "species": "Austrian pine",
+   "dbh_in": 19.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.4987853,
+   "lon": -74.4473398,
+   "species": "Scarlet oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4988587,
+   "lon": -74.4472754,
+   "species": "Pin oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4988628,
+   "lon": -74.447152,
+   "species": "Japanese zelkova",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 48.4
+  },
+  {
+   "lat": 40.4986955,
+   "lon": -74.4472539,
+   "species": "American elm",
+   "dbh_in": 24.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.499134,
+   "lon": -74.4471332,
+   "species": "Japanese tree lilac",
+   "dbh_in": 2.0,
+   "condition": "Dead",
+   "status": "Dead",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4991034,
+   "lon": -74.4469938,
+   "species": "Elm",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 66.0
+  },
+  {
+   "lat": 40.498979,
+   "lon": -74.4470608,
+   "species": "American elm",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.4990545,
+   "lon": -74.4468918,
+   "species": "Black tupelo",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.4989688,
+   "lon": -74.4469509,
+   "species": "Pin oak",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4990259,
+   "lon": -74.4468436,
+   "species": "Japanese zelkova",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4987751,
+   "lon": -74.4469053,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.498465,
+   "lon": -74.4474551,
+   "species": "Northern red oak",
+   "dbh_in": 28.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 61.6
+  },
+  {
+   "lat": 40.4985446,
+   "lon": -74.44727,
+   "species": "Crimson king maple",
+   "dbh_in": 14.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 30.8
+  },
+  {
+   "lat": 40.4984508,
+   "lon": -74.4471949,
+   "species": "Crimson king maple",
+   "dbh_in": 10.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.498155,
+   "lon": -74.44727,
+   "species": "Crimson king maple",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.4984895,
+   "lon": -74.4470286,
+   "species": "Japanese scholar tree",
+   "dbh_in": 21.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 39.9
+  },
+  {
+   "lat": 40.4984447,
+   "lon": -74.4470018,
+   "species": "Willow oak",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.4985793,
+   "lon": -74.4469455,
+   "species": "Japanese snowbell",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4986037,
+   "lon": -74.4468704,
+   "species": "Atlas cedar",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4985833,
+   "lon": -74.446865,
+   "species": "Atlas cedar",
+   "dbh_in": 19.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.4985079,
+   "lon": -74.4469079,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.4984161,
+   "lon": -74.4468784,
+   "species": "Lilac",
+   "dbh_in": 2.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4984447,
+   "lon": -74.4468194,
+   "species": "Viburnum",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4982366,
+   "lon": -74.4470903,
+   "species": "Norway maple",
+   "dbh_in": 15.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.4981489,
+   "lon": -74.447034,
+   "species": "Norway maple",
+   "dbh_in": 13.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.4983855,
+   "lon": -74.4469616,
+   "species": "Lilac",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.4991524,
+   "lon": -74.4467792,
+   "species": "Japanese zelkova",
+   "dbh_in": 28.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 61.6
+  },
+  {
+   "lat": 40.4989301,
+   "lon": -74.4467095,
+   "species": "Littleleaf linden",
+   "dbh_in": 23.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 50.6
+  },
+  {
+   "lat": 40.4990443,
+   "lon": -74.4466746,
+   "species": "Scarlet oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4989403,
+   "lon": -74.4466397,
+   "species": "Scarlet oak",
+   "dbh_in": 39.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 85.8
+  },
+  {
+   "lat": 40.4991361,
+   "lon": -74.4466156,
+   "species": "Red maple",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4990892,
+   "lon": -74.4465056,
+   "species": "Flowering dogwood",
+   "dbh_in": 7.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.4989933,
+   "lon": -74.4465432,
+   "species": "Hackberry",
+   "dbh_in": 17.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 32.3
+  },
+  {
+   "lat": 40.4989158,
+   "lon": -74.4467846,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.4988669,
+   "lon": -74.4466209,
+   "species": "Kousa dogwood",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.498875,
+   "lon": -74.4465324,
+   "species": "Littleleaf linden",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.4991014,
+   "lon": -74.446401,
+   "species": "Kousa dogwood",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4989566,
+   "lon": -74.4464225,
+   "species": "Japanese zelkova",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4990973,
+   "lon": -74.4462401,
+   "species": "Northern red oak",
+   "dbh_in": 42.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 92.4
+  },
+  {
+   "lat": 40.499079,
+   "lon": -74.4461408,
+   "species": "Elm",
+   "dbh_in": 37.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 81.4
+  },
+  {
+   "lat": 40.4989953,
+   "lon": -74.4462615,
+   "species": "Sugar maple",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.4
+  },
+  {
+   "lat": 40.498926,
+   "lon": -74.4462508,
+   "species": "Japanese zelkova",
+   "dbh_in": 28.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 61.6
+  },
+  {
+   "lat": 40.498979,
+   "lon": -74.4461811,
+   "species": "Elm",
+   "dbh_in": 37.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 81.4
+  },
+  {
+   "lat": 40.4988872,
+   "lon": -74.4463876,
+   "species": "Northern red oak",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4983875,
+   "lon": -74.4466478,
+   "species": "Northern red oak",
+   "dbh_in": 29.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.4983896,
+   "lon": -74.4464949,
+   "species": "Elm",
+   "dbh_in": 41.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 90.2
+  },
+  {
+   "lat": 40.4982692,
+   "lon": -74.4464815,
+   "species": "Northern red oak",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4986364,
+   "lon": -74.4464305,
+   "species": "Serviceberry",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.4986241,
+   "lon": -74.4464117,
+   "species": "Serviceberry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.4986201,
+   "lon": -74.4463903,
+   "species": "Serviceberry",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4986303,
+   "lon": -74.4463527,
+   "species": "Serviceberry",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.4985344,
+   "lon": -74.4461784,
+   "species": "Black tupelo",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.4984569,
+   "lon": -74.4461516,
+   "species": "Scarlet oak",
+   "dbh_in": 29.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.4983508,
+   "lon": -74.4463822,
+   "species": "Elm",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4983977,
+   "lon": -74.4462857,
+   "species": "Scarlet oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4981713,
+   "lon": -74.4464412,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.498155,
+   "lon": -74.4463018,
+   "species": "Scarlet oak",
+   "dbh_in": 24.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 52.8
+  },
+  {
+   "lat": 40.4983712,
+   "lon": -74.446165,
+   "species": "European beech",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4983529,
+   "lon": -74.4461274,
+   "species": "Elm",
+   "dbh_in": 29.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 63.8
+  },
+  {
+   "lat": 40.4982774,
+   "lon": -74.4461569,
+   "species": "Willow oak",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 70.4
+  },
+  {
+   "lat": 40.498257,
+   "lon": -74.4462588,
+   "species": "Elm",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.498155,
+   "lon": -74.4461569,
+   "species": "Littleleaf linden",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4981387,
+   "lon": -74.4461355,
+   "species": "Littleleaf linden",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4980734,
+   "lon": -74.4474337,
+   "species": "Kousa dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.4981244,
+   "lon": -74.447372,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.4980796,
+   "lon": -74.4473425,
+   "species": "Pine",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 27.3
+  },
+  {
+   "lat": 40.4980224,
+   "lon": -74.4469589,
+   "species": "American elm",
+   "dbh_in": 34.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 74.8
+  },
+  {
+   "lat": 40.4980102,
+   "lon": -74.4468194,
+   "species": "Kousa dogwood",
+   "dbh_in": 6.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.498,
+   "lon": -74.4469455,
+   "species": "American elm",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4980388,
+   "lon": -74.4466129,
+   "species": "Eastern redbud",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 22.0
+  },
+  {
+   "lat": 40.4981102,
+   "lon": -74.4465056,
+   "species": "Red maple",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4980184,
+   "lon": -74.4465029,
+   "species": "Northern red oak",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4980632,
+   "lon": -74.4463715,
+   "species": "Japanese zelkova",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4980367,
+   "lon": -74.4462186,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.5012022,
+   "lon": -74.4460791,
+   "species": "Littleleaf linden",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.500525,
+   "lon": -74.4458887,
+   "species": "Cherry",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 20.0
+  },
+  {
+   "lat": 40.500421,
+   "lon": -74.4456795,
+   "species": "Cherry",
+   "dbh_in": 8.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.5004434,
+   "lon": -74.4456607,
+   "species": "Horsechestnut",
+   "dbh_in": 24.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 45.6
+  },
+  {
+   "lat": 40.500421,
+   "lon": -74.4456285,
+   "species": "Cherry",
+   "dbh_in": 8.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 16.0
+  },
+  {
+   "lat": 40.4997541,
+   "lon": -74.4459102,
+   "species": "Paperbark Maple",
+   "dbh_in": 11.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.2
+  },
+  {
+   "lat": 40.4997683,
+   "lon": -74.4456312,
+   "species": "Cherry",
+   "dbh_in": 6.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 12.0
+  },
+  {
+   "lat": 40.4997989,
+   "lon": -74.4455722,
+   "species": "Cherry",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.4998112,
+   "lon": -74.4454971,
+   "species": "Cherry",
+   "dbh_in": 13.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 26.0
+  },
+  {
+   "lat": 40.4996358,
+   "lon": -74.4460845,
+   "species": "Cherry",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 34.0
+  },
+  {
+   "lat": 40.4996582,
+   "lon": -74.4460174,
+   "species": "Cherry",
+   "dbh_in": 12.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.0
+  },
+  {
+   "lat": 40.4996786,
+   "lon": -74.4459611,
+   "species": "Cherry",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.0
+  },
+  {
+   "lat": 40.4993625,
+   "lon": -74.4460765,
+   "species": "Willow oak",
+   "dbh_in": 30.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 66.0
+  },
+  {
+   "lat": 40.4992544,
+   "lon": -74.4459906,
+   "species": "Japanese zelkova",
+   "dbh_in": 19.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4994053,
+   "lon": -74.4459209,
+   "species": "Elm",
+   "dbh_in": 34.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 74.8
+  },
+  {
+   "lat": 40.499391,
+   "lon": -74.4457895,
+   "species": "Japanese zelkova",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4995807,
+   "lon": -74.4454837,
+   "species": "White oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4995583,
+   "lon": -74.4455749,
+   "species": "Black tupelo",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.4995664,
+   "lon": -74.4454542,
+   "species": "Elm",
+   "dbh_in": 31.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 68.2
+  },
+  {
+   "lat": 40.4994359,
+   "lon": -74.4456312,
+   "species": "Austrian pine",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 27.3
+  },
+  {
+   "lat": 40.5000335,
+   "lon": -74.4454086,
+   "species": "Flowering dogwood",
+   "dbh_in": 5.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 10.0
+  },
+  {
+   "lat": 40.4996052,
+   "lon": -74.4452718,
+   "species": "Elm",
+   "dbh_in": 34.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 74.8
+  },
+  {
+   "lat": 40.4994808,
+   "lon": -74.4453201,
+   "species": "Japanese zelkova",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4993094,
+   "lon": -74.4451886,
+   "species": "Austrian pine",
+   "dbh_in": 22.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 28.6
+  },
+  {
+   "lat": 40.499234,
+   "lon": -74.4451806,
+   "species": "Tulip tree",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.4991687,
+   "lon": -74.4460362,
+   "species": "Japanese zelkova",
+   "dbh_in": 16.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.4989933,
+   "lon": -74.4460899,
+   "species": "Japanese zelkova",
+   "dbh_in": 17.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 37.4
+  },
+  {
+   "lat": 40.4987363,
+   "lon": -74.4460228,
+   "species": "Serviceberry",
+   "dbh_in": 4.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 8.0
+  },
+  {
+   "lat": 40.498771,
+   "lon": -74.445996,
+   "species": "Serviceberry",
+   "dbh_in": 3.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 6.0
+  },
+  {
+   "lat": 40.4987445,
+   "lon": -74.446004,
+   "species": "Serviceberry",
+   "dbh_in": 2.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 4.0
+  },
+  {
+   "lat": 40.4989505,
+   "lon": -74.4455266,
+   "species": "Eastern hemlock",
+   "dbh_in": 10.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 13.0
+  },
+  {
+   "lat": 40.4989913,
+   "lon": -74.4454649,
+   "species": "Eastern hemlock",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 11.7
+  },
+  {
+   "lat": 40.4986751,
+   "lon": -74.4456688,
+   "species": "Scarlet oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4988648,
+   "lon": -74.445473,
+   "species": "Honeylocust",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 47.5
+  },
+  {
+   "lat": 40.4987995,
+   "lon": -74.4454354,
+   "species": "Flowering dogwood",
+   "dbh_in": 7.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 14.0
+  },
+  {
+   "lat": 40.4986119,
+   "lon": -74.4460496,
+   "species": "Elm",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4984895,
+   "lon": -74.4460469,
+   "species": "Elm",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.4986507,
+   "lon": -74.4459343,
+   "species": "Elm",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4985589,
+   "lon": -74.4459316,
+   "species": "Scarlet oak",
+   "dbh_in": 25.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 55.0
+  },
+  {
+   "lat": 40.4986568,
+   "lon": -74.4458485,
+   "species": "Scarlet oak",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 48.4
+  },
+  {
+   "lat": 40.4984385,
+   "lon": -74.4457975,
+   "species": "Scarlet oak",
+   "dbh_in": 43.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 94.6
+  },
+  {
+   "lat": 40.4982815,
+   "lon": -74.446106,
+   "species": "Willow oak",
+   "dbh_in": null,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": null
+  },
+  {
+   "lat": 40.4983977,
+   "lon": -74.4459772,
+   "species": "Sugar maple",
+   "dbh_in": 18.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.4981856,
+   "lon": -74.4459155,
+   "species": "Japanese zelkova",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.4981836,
+   "lon": -74.4457707,
+   "species": "Elm",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4985507,
+   "lon": -74.4457492,
+   "species": "Scarlet oak",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.4985813,
+   "lon": -74.4456285,
+   "species": "Northern red oak",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4984814,
+   "lon": -74.4456795,
+   "species": "Scarlet oak",
+   "dbh_in": 21.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 46.2
+  },
+  {
+   "lat": 40.4986445,
+   "lon": -74.44554,
+   "species": "Honeylocust",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.498359,
+   "lon": -74.4456688,
+   "species": "Scarlet oak",
+   "dbh_in": 20.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 44.0
+  },
+  {
+   "lat": 40.4982203,
+   "lon": -74.4456419,
+   "species": "Scarlet oak",
+   "dbh_in": 36.0,
+   "condition": "Dead",
+   "status": "Removed",
+   "crown_ft": 79.2
+  },
+  {
+   "lat": 40.4982733,
+   "lon": -74.4454515,
+   "species": "Austrian pine",
+   "dbh_in": 19.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.4982325,
+   "lon": -74.445591,
+   "species": "Tulip tree",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 5.7
+  },
+  {
+   "lat": 40.4990137,
+   "lon": -74.4453523,
+   "species": "Elm",
+   "dbh_in": 32.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 70.4
+  },
+  {
+   "lat": 40.4989505,
+   "lon": -74.445312,
+   "species": "Kousa dogwood",
+   "dbh_in": 9.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 18.0
+  },
+  {
+   "lat": 40.499132,
+   "lon": -74.4451591,
+   "species": "Japanese zelkova",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.4989994,
+   "lon": -74.4451323,
+   "species": "Elm",
+   "dbh_in": 16.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 35.2
+  },
+  {
+   "lat": 40.4988689,
+   "lon": -74.4453737,
+   "species": "Japanese zelkova",
+   "dbh_in": 15.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 33.0
+  },
+  {
+   "lat": 40.4987975,
+   "lon": -74.4452691,
+   "species": "Japanese zelkova",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.8
+  },
+  {
+   "lat": 40.4987445,
+   "lon": -74.4453147,
+   "species": "Honeylocust",
+   "dbh_in": 22.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 41.8
+  },
+  {
+   "lat": 40.4988505,
+   "lon": -74.4452074,
+   "species": "Austrian pine",
+   "dbh_in": 19.0,
+   "condition": "Fair",
+   "status": "Alive",
+   "crown_ft": 24.7
+  },
+  {
+   "lat": 40.49872,
+   "lon": -74.4452235,
+   "species": "Northern red oak",
+   "dbh_in": 18.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 39.6
+  },
+  {
+   "lat": 40.4986608,
+   "lon": -74.4451323,
+   "species": "Japanese zelkova",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.8
+  },
+  {
+   "lat": 40.4988791,
+   "lon": -74.4450679,
+   "species": "Japanese zelkova",
+   "dbh_in": 27.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 59.4
+  },
+  {
+   "lat": 40.4986996,
+   "lon": -74.4450304,
+   "species": "Pin oak",
+   "dbh_in": 38.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 83.6
+  },
+  {
+   "lat": 40.4986037,
+   "lon": -74.4453791,
+   "species": "Honeylocust",
+   "dbh_in": 26.0,
+   "condition": "Good",
+   "status": "Alive",
+   "crown_ft": 49.4
+  },
+  {
+   "lat": 40.498516,
+   "lon": -74.4452959,
+   "species": "White oak",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 4.4
+  },
+  {
+   "lat": 40.4984548,
+   "lon": -74.4451055,
+   "species": "Tulip tree",
+   "dbh_in": 2.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 3.8
+  },
+  {
+   "lat": 40.4983916,
+   "lon": -74.4453603,
+   "species": "Northern red oak",
+   "dbh_in": 26.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 57.2
+  },
+  {
+   "lat": 40.49831,
+   "lon": -74.4453067,
+   "species": "Scarlet oak",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4983488,
+   "lon": -74.4451886,
+   "species": "American elm",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4985364,
+   "lon": -74.444966,
+   "species": "Pin oak",
+   "dbh_in": 33.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 72.6
+  },
+  {
+   "lat": 40.4983733,
+   "lon": -74.4450411,
+   "species": "Freeman maple",
+   "dbh_in": 3.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 6.6
+  },
+  {
+   "lat": 40.4980796,
+   "lon": -74.446106,
+   "species": "Japanese zelkova",
+   "dbh_in": 14.0,
+   "condition": "Excellent",
+   "status": "Alive",
+   "crown_ft": 30.8
+  }
+ ]
+}
