@@ -1,5 +1,7 @@
 # Voorhees Mall Planner
 
+**Live: https://socerest2.github.io/voorhees-mall-planner/**
+
 A true-to-scale site plan of Voorhees Mall (Rutgers–New Brunswick) in the browser.
 Everything on screen is drawn in real feet — a 6-foot table is six feet against
 the lawn, at every zoom level.
@@ -144,3 +146,17 @@ origin at the centroid of the lawn polygon:
 
 `meta.origin` plus `meta.ft_per_deg` converts any plan coordinate back to
 lat/lon, so a layout built here can be handed to anything that speaks GPS.
+
+## Running it locally
+
+No build step and no dependencies — it is three static files plus a JSON base
+map. Any static server works:
+
+```bash
+python3 -m http.server 5173
+```
+
+Then open http://localhost:5173. Opening `index.html` straight off disk will
+not work: the page fetches `data/voorhees-mall.json`, which `file://` blocks.
+
+Deployed from `main` at the repository root via GitHub Pages.
