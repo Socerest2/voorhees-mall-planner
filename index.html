@@ -123,6 +123,30 @@
   #treeinfo dd{margin:0;font-family:var(--num);font-variant-numeric:tabular-nums}
   #treeinfo em{color:var(--ink3);font-style:normal;font-size:10px;display:block;margin-top:5px}
 
+  .fits{
+    display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink2);
+    margin-bottom:9px;
+  }
+  .fits input{
+    width:52px;font:inherit;font-family:var(--num);font-size:12px;padding:3px 5px;
+    border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:0;
+  }
+  .bandrow{
+    display:flex;align-items:center;gap:8px;padding:2.5px 0;font-size:11px;
+  }
+  .bandrow .sw{width:14px;height:9px;flex:0 0 14px;border:1px solid #0003}
+  .bandrow .nm{flex:1;color:var(--ink)}
+  .bandrow .ft{color:var(--ink3);font-family:var(--num);font-size:10px}
+  .bandrow .ct{
+    font-family:var(--num);font-size:11px;font-variant-numeric:tabular-nums;color:var(--ink2);
+  }
+  .bandrow.blocked .nm{color:var(--mark);font-weight:600}
+  .tiltrow{
+    display:flex;align-items:center;gap:8px;margin-top:9px;font-size:11.5px;color:var(--ink2);
+  }
+  .tiltrow input[type=range]{flex:1;accent-color:var(--mark);margin:0}
+  .tiltrow .num{font-family:var(--num);font-size:11px;width:26px;text-align:right}
+  #conflict.bad{color:var(--mark)}
   .note{color:var(--ink2);font-size:10.5px;margin:7px 0 0;line-height:1.4}
   .note a{color:var(--ink2)}
   kbd{font-family:var(--num);font-size:10px;color:var(--ink)}
@@ -232,6 +256,17 @@
       <div id="layers"></div>
     </section>
 
+    <section>
+      <h2>Clearance</h2>
+      <label class="fits">Fits under
+        <input type="number" id="need" value="10" min="0" max="60" step="0.5">ft
+      </label>
+      <div id="bands"></div>
+      <label class="lyr" style="margin-top:7px"><input type="checkbox" id="bycl" checked>
+        Colour canopy by clearance</label>
+      <p class="note" id="conflict">Nothing placed yet.</p>
+    </section>
+
     <section id="treebox" hidden>
       <h2>Tree</h2>
       <div id="treeinfo"></div>
@@ -244,6 +279,10 @@
         <button class="btn" id="t-north">North up</button>
         <button class="btn" id="t-fit">Extents</button>
       </div>
+      <label class="tiltrow">Tilt
+        <input type="range" id="tilt" min="0" max="60" step="1" value="0">
+        <span class="num" id="tiltval">0°</span>
+      </label>
       <p class="note">Scroll to zoom, drag to pan. <kbd>M</kbd> measure, <kbd>Esc</kbd> cancel.</p>
     </section>
 
@@ -290,6 +329,7 @@
       <g id="l-trees"></g>
       <g id="l-objects"></g>
     </g>
+    <g id="l-up"></g>
     <g id="overlay"></g>
   </svg>
   <div class="hud" id="scalebar">

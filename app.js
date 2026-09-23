@@ -20,7 +20,13 @@ const MARK = '#9e2233', PAPER = '#f2f0ea';
 
 /* ------------------------------------------------------------------ view */
 
-const view = { cx: 0, cy: 0, zoom: 0.55, rot: 0 };   // zoom = px per foot
+// tilt lays the ground plane back: 0 is a true plan, 60 is a bird's-eye. It
+// only foreshortens the y axis, so the plan stays measurable along x and every
+// hit test still lands on the ground plane.
+const view = { cx: 0, cy: 0, zoom: 0.55, rot: 0, tilt: 0 };
+const rad = d => d * Math.PI / 180;
+const tiltY = () => Math.cos(rad(view.tilt));          // ground foreshortening
+const tiltZ = () => Math.sin(rad(view.tilt));          // how much height shows
 let W = 0, H = 0, lastPtr = [0, 0];
 let autoSide = () => {};
 
@@ -33,27 +39,35 @@ function resize() {
   apply();
 }
 
-function toScreen(x, y) {
-  const r = view.rot * Math.PI / 180, c = Math.cos(r), s = Math.sin(r);
+function toScreen(x, y, z) {
+  const r = rad(view.rot), c = Math.cos(r), s = Math.sin(r);
   const dx = x - view.cx, dy = y - view.cy;
-  return [W / 2 + view.zoom * (dx * c - dy * s), H / 2 - view.zoom * (dx * s + dy * c)];
+  return [W / 2 + view.zoom * (dx * c - dy * s),
+          H / 2 - view.zoom * ((dx * s + dy * c) * tiltY() + (z || 0) * tiltZ())];
 }
 function toWorld(sx, sy) {
-  const r = view.rot * Math.PI / 180, c = Math.cos(r), s = Math.sin(r);
-  const px = (sx - W / 2) / view.zoom, py = (sy - H / 2) / view.zoom;
+  const r = rad(view.rot), c = Math.cos(r), s = Math.sin(r);
+  const px = (sx - W / 2) / view.zoom, py = (sy - H / 2) / view.zoom / tiltY();
   return [view.cx + px * c - py * s, view.cy - (px * s + py * c)];
+}
+// how far along the view axis a point sits — the painter's-order key
+function depth(x, y) {
+  const r = rad(view.rot);
+  return x * Math.sin(r) + y * Math.cos(r);
 }
 
 // The one transform that puts feet on a surface, screen or sheet alike.
-function worldTransform(cx, cy, zoom, rot, ox, oy) {
-  return `translate(${ox} ${oy}) scale(${zoom}) rotate(${-rot}) scale(1 -1) ` +
-         `translate(${-cx} ${-cy})`;
+function worldTransform(cx, cy, zoom, rot, ox, oy, ty) {
+  return `translate(${ox} ${oy}) scale(${zoom} ${zoom * (ty == null ? 1 : ty)}) ` +
+         `rotate(${-rot}) scale(1 -1) translate(${-cx} ${-cy})`;
 }
 
 function apply() {
-  world.setAttribute('transform', worldTransform(view.cx, view.cy, view.zoom, view.rot, W / 2, H / 2));
+  world.setAttribute('transform',
+    worldTransform(view.cx, view.cy, view.zoom, view.rot, W / 2, H / 2, tiltY()));
   $('#needle').setAttribute('transform', `rotate(${-view.rot})`);
   drawScalebar();
+  drawUpright();
   drawOverlay();
   readout(...toWorld(lastPtr[0], lastPtr[1]));
   $('#tb-scale').textContent = `1″ = ${fmtScale(PPI / view.zoom)}`;
@@ -62,7 +76,7 @@ function apply() {
 
 // Rotated bounding box of a set of world points, in view-aligned axes.
 function boundsIn(pts, rot) {
-  const r = rot * Math.PI / 180, c = Math.cos(r), s = Math.sin(r);
+  const r = rad(rot), c = Math.cos(r), s = Math.sin(r);
   let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
   for (const [x, y] of pts) {
     const a = x * c - y * s, b = x * s + y * c;
@@ -76,7 +90,7 @@ function boundsIn(pts, rot) {
 function fit(pts, pad = 1.1) {
   const b = boundsIn(pts, view.rot);
   view.cx = b.cx; view.cy = b.cy;
-  view.zoom = Math.min(W / (b.w * pad), H / (b.h * pad));
+  view.zoom = Math.min(W / (b.w * pad), H / (b.h * pad * Math.max(.35, tiltY())));
   apply();
 }
 
@@ -97,6 +111,24 @@ const LAYERS = [
 const on = {}; LAYERS.forEach(l => on[l[0]] = l[3]);
 
 let DATA = null;
+
+/* What fits underneath. `clr` is the estimated height to the lowest limbs, so
+   these bands are really "what can stand here", not a description of the tree. */
+const BANDS = [
+  { max: 8,    key: 'block',  name: 'Blocks everything', sub: 'under 8 ft',
+    fill: '#a8532c', line: '#83371a' },
+  { max: 14,   key: 'people', name: 'People only',       sub: '8 – 14 ft',
+    fill: '#cf9a3c', line: '#a97a24' },
+  { max: 20,   key: 'popup',  name: 'Pop-up tents',      sub: '14 – 20 ft',
+    fill: '#93ab6b', line: '#728b4b' },
+  { max: 1e9,  key: 'clear',  name: 'Trucks, big tents', sub: '20 ft and over',
+    fill: '#c3d3ab', line: '#8aa76a' },
+];
+function bandOf(t) {
+  if (t.gone || t.clr == null) return null;      // no crown, or nothing to go on
+  return BANDS.find(b => t.clr < b.max);
+}
+let need = 10;                                   // the clearance you care about
 
 function buildBase(d) {
   const ptsAttr = r => r.map(p => p.join(',')).join(' ');
@@ -137,6 +169,7 @@ function buildBase(d) {
       fill: t.gone ? 'none' : '#a8c187', 'fill-opacity': .30,
       stroke: t.gone ? '#a8917a' : '#8aa76a', 'stroke-width': .7,
       'stroke-dasharray': t.gone ? '4 4' : null, 'data-tree': i, ...hair }, C);
+    /* index matters: paintTrees addresses these by position */
     const rt = t.dbh ? Math.max(0.6, t.dbh / 24) : 0.8;   // trunk at true diameter
     el('circle', { cx: t.p[0], cy: t.p[1], r: rt,
       fill: t.gone ? '#8a7458' : '#4d6135',
@@ -145,6 +178,100 @@ function buildBase(d) {
 
   d.buildings.forEach(b => b.c = centroid(b.ring));     // for name placement
   syncLayers();
+  reportConflicts();
+}
+
+/* A tree is in the way of a placed item when its crown overlaps the item's
+   footprint AND its lowest limbs sit below the item's height. Tables clear
+   almost everything; a 13'6" box truck clears almost nothing.               */
+function overlaps(it, t) {
+  const cx = t.p[0] - it.x, cy = t.p[1] - it.y;
+  if (it.shape === 'circle') return Math.hypot(cx, cy) < t.r + it.w / 2;
+  const r = rad(-it.rot), c = Math.cos(r), sn = Math.sin(r);
+  const lx = cx * c - cy * sn, ly = cx * sn + cy * c;      // into the item's frame
+  const qx = Math.max(Math.abs(lx) - it.w / 2, 0);
+  const qy = Math.max(Math.abs(ly) - it.h / 2, 0);
+  return Math.hypot(qx, qy) < t.r;
+}
+
+function findConflicts() {
+  const byItem = new Map(), hitTrees = new Set();
+  if (!DATA) return { byItem, hitTrees };
+  for (const it of items) {
+    const hits = [];
+    DATA.trees.forEach((t, i) => {
+      if (t.gone || t.clr == null || t.clr >= it.z) return;
+      if (overlaps(it, t)) { hits.push(i); hitTrees.add(i); }
+    });
+    if (hits.length) byItem.set(it.id, hits);
+  }
+  return { byItem, hitTrees };
+}
+let clash = { byItem: new Map(), hitTrees: new Set() };
+
+function paintTrees() {
+  if (!DATA) return;
+  const counts = {};
+  const canopies = $('#l-canopy').children;
+  DATA.trees.forEach((t, i) => {
+    const b = bandOf(t);
+    if (b) counts[b.key] = (counts[b.key] || 0) + 1;
+    const c = canopies[i];
+    if (!c) return;
+    const blocks = b && t.clr < need;
+    if (t.gone) {
+      c.setAttribute('fill', 'none');
+      c.setAttribute('stroke', '#a8917a');
+      c.setAttribute('stroke-width', .7);
+    } else if (byClearance) {
+      c.setAttribute('fill', b ? b.fill : '#c3d3ab');
+      c.setAttribute('fill-opacity', blocks ? .42 : .26);
+      c.setAttribute('stroke', b ? b.line : '#8aa76a');
+      c.setAttribute('stroke-width', blocks ? 1.3 : .7);
+    } else {
+      c.setAttribute('fill', '#a8c187');
+      c.setAttribute('fill-opacity', .30);
+      c.setAttribute('stroke', '#8aa76a');
+      c.setAttribute('stroke-width', .7);
+    }
+    c.setAttribute('stroke-opacity', clash.hitTrees.has(i) ? 1 : .55);
+    if (clash.hitTrees.has(i)) {
+      c.setAttribute('stroke', MARK);
+      c.setAttribute('stroke-width', 2);
+    }
+  });
+  const total = Object.values(counts).reduce((a, b) => a + b, 0);
+  $('#bands').innerHTML = BANDS.map(b =>
+    `<div class="bandrow${b.max <= need ? ' blocked' : ''}">` +
+    `<span class="sw" style="background:${b.fill}"></span>` +
+    `<span class="nm">${b.name}</span><span class="ft">${b.sub}</span>` +
+    `<span class="ct">${counts[b.key] || 0}</span></div>`).join('') +
+    `<div class="bandrow"><span class="sw" style="border-style:dashed;background:none">` +
+    `</span><span class="nm">Dead or stump</span><span class="ct">` +
+    `${DATA.trees.length - total}</span></div>`;
+}
+let byClearance = true;
+
+function reportConflicts() {
+  clash = findConflicts();
+  const n = clash.hitTrees.size, m = clash.byItem.size;
+  const el2 = $('#conflict');
+  if (!items.length) {
+    el2.textContent = 'Nothing placed yet.'; el2.classList.remove('bad');
+  } else if (!m) {
+    el2.textContent = `All ${items.length} items clear the trees they sit under.`;
+    el2.classList.remove('bad');
+  } else {
+    const worst = [...clash.byItem.entries()]
+      .map(([id, h]) => [items.find(i => i.id === id), h])
+      .filter(([it]) => it)
+      .sort((a, b) => b[1].length - a[1].length)[0];
+    el2.innerHTML = `<strong>${m} item${m > 1 ? 's' : ''} won't fit</strong> — ` +
+      `${n} tree${n > 1 ? 's' : ''} branch too low. Worst: ${worst[0].t} at ` +
+      `${trim(worst[0].z)}′ into ${worst[1].length} tree${worst[1].length > 1 ? 's' : ''}.`;
+    el2.classList.add('bad');
+  }
+  paintTrees();
 }
 
 function centroid(ring) {
@@ -161,6 +288,7 @@ function centroid(ring) {
 }
 
 function syncLayers() {
+  drawUpright();
   for (const [k] of LAYERS) {
     const g = $('#l-' + k);
     if (g) g.style.display = on[k] ? '' : 'none';
@@ -173,28 +301,29 @@ function syncLayers() {
 /* --------------------------------------------------------- placed items */
 
 const CATALOG = [
-  { t: '6 ft table',  w: 6,   h: 2.5, shape: 'rect',   note: '72 × 30″' },
-  { t: '8 ft table',  w: 8,   h: 2.5, shape: 'rect',   note: '96 × 30″' },
-  { t: '60″ round',   w: 5,   h: 5,   shape: 'circle', note: 'seats 8' },
-  { t: '72″ round',   w: 6,   h: 6,   shape: 'circle', note: 'seats 10' },
-  { t: 'Highboy',     w: 2.5, h: 2.5, shape: 'circle', note: '30″ dia' },
-  { t: 'Chair',       w: 1.5, h: 1.5, shape: 'rect',   note: '18 × 18″' },
-  { t: '10 × 10 tent', w: 10, h: 10,  shape: 'rect',   note: 'pop-up' },
-  { t: '20 × 20 tent', w: 20, h: 20,  shape: 'rect',   note: 'frame' },
-  { t: '20 × 40 tent', w: 20, h: 40,  shape: 'rect',   note: 'frame' },
-  { t: 'Stage',       w: 24,  h: 16,  shape: 'rect',   note: '24 × 16′' },
-  { t: 'Dance floor', w: 30,  h: 30,  shape: 'rect',   note: '900 sf' },
-  { t: 'Barricade',   w: 8,   h: 1.5, shape: 'rect',   note: '8′ bike rack' },
-  { t: 'Porta-john',  w: 4,   h: 4,   shape: 'rect',   note: '4 × 4′' },
-  { t: 'Box truck',   w: 26,  h: 8.5, shape: 'rect',   note: '26′ load-in' },
-  { t: 'Dumpster',    w: 8,   h: 6,   shape: 'rect',   note: '6 yd' },
-  { t: 'Custom…',     w: 10,  h: 10,  shape: 'rect',   note: 'any size' },
+  { t: '6 ft table',  w: 6,   h: 2.5, shape: 'rect',   z: 2.5,  note: '72 × 30″' },
+  { t: '8 ft table',  w: 8,   h: 2.5, shape: 'rect',   z: 2.5,  note: '96 × 30″' },
+  { t: '60″ round',   w: 5,   h: 5,   shape: 'circle', z: 2.5,  note: 'seats 8' },
+  { t: '72″ round',   w: 6,   h: 6,   shape: 'circle', z: 2.5,  note: 'seats 10' },
+  { t: 'Highboy',     w: 2.5, h: 2.5, shape: 'circle', z: 3.5,  note: '30″ dia' },
+  { t: 'Chair',       w: 1.5, h: 1.5, shape: 'rect',   z: 3,    note: '18 × 18″' },
+  { t: '10 × 10 tent', w: 10, h: 10,  shape: 'rect',   z: 11,   note: 'pop-up, 11′ peak' },
+  { t: '20 × 20 tent', w: 20, h: 20,  shape: 'rect',   z: 16,   note: 'frame, 16′ peak' },
+  { t: '20 × 40 tent', w: 20, h: 40,  shape: 'rect',   z: 18,   note: 'frame, 18′ peak' },
+  { t: 'Stage',       w: 24,  h: 16,  shape: 'rect',   z: 4,    note: '24 × 16′ deck' },
+  { t: 'Dance floor', w: 30,  h: 30,  shape: 'rect',   z: 0.5,  note: '900 sf' },
+  { t: 'Barricade',   w: 8,   h: 1.5, shape: 'rect',   z: 3.5,  note: '8′ bike rack' },
+  { t: 'Porta-john',  w: 4,   h: 4,   shape: 'rect',   z: 7.5,  note: '7′6″ tall' },
+  { t: 'Box truck',   w: 26,  h: 8.5, shape: 'rect',   z: 13.5, note: '13′6″ tall' },
+  { t: 'Dumpster',    w: 8,   h: 6,   shape: 'rect',   z: 5,    note: '6 yd' },
+  { t: 'Custom…',     w: 10,  h: 10,  shape: 'rect',   z: 10,   note: 'any size' },
 ];
 
 let items = [], nextId = 1, selected = null, pending = null;
 
 function addItem(spec, x, y) {
   const it = { id: nextId++, t: spec.t, w: spec.w, h: spec.h, shape: spec.shape,
+               z: spec.z == null ? 8 : spec.z,
                x: +x.toFixed(2), y: +y.toFixed(2), rot: -view.rot };
   items.push(it); selected = it.id; touched = true; drawItems(); save(); return it;
 }
@@ -210,9 +339,12 @@ function drawItemShapes(target, sel) {
   target.textContent = '';
   for (const it of items) {
     const isSel = it.id === sel;
+    const bad = clash.byItem.has(it.id);
+    const hue = bad ? '#b8471f' : MARK;
     const g = el('g', { 'data-id': it.id, style: 'cursor:move' }, target);
-    const style = { fill: MARK, 'fill-opacity': isSel ? .26 : .13,
-      stroke: MARK, 'stroke-width': isSel ? 2 : 1.1,
+    const style = { fill: hue, 'fill-opacity': isSel ? .26 : .13,
+      stroke: hue, 'stroke-width': isSel ? 2 : 1.1,
+      'stroke-dasharray': bad ? '6 3' : null,
       'vector-effect': 'non-scaling-stroke' };
     if (it.shape === 'circle') {
       el('circle', { cx: it.x, cy: it.y, r: it.w / 2, ...style }, g);
@@ -221,13 +353,16 @@ function drawItemShapes(target, sel) {
       el('polygon', { points: cs.map(p => p.join(',')).join(' '), ...style }, g);
       // heavier front edge, so which way it faces reads at a glance
       el('line', { x1: cs[0][0], y1: cs[0][1], x2: cs[1][0], y2: cs[1][1],
-        stroke: MARK, 'stroke-width': isSel ? 3.5 : 2.5,
+        stroke: hue, 'stroke-width': isSel ? 3.5 : 2.5,
         'vector-effect': 'non-scaling-stroke' }, g);
     }
   }
 }
 
-function drawItems() { drawItemShapes($('#l-objects'), selected); tally(); drawOverlay(); }
+function drawItems() {
+  drawItemShapes($('#l-objects'), selected);
+  tally(); reportConflicts(); drawUpright(); drawOverlay();
+}
 
 function itemCounts() {
   const c = new Map();
@@ -258,11 +393,87 @@ function selectTree(i) {
   $('#treeinfo').innerHTML =
     `<b>${t.sp || 'Unidentified'}</b><dl>` +
     row('Trunk', t.dbh ? `${trim(t.dbh)}″ DBH` : '') +
-    row('Canopy', `${trim(+(t.r * 2).toFixed(1))} ft`) +
+    row('Canopy', `${trim(+(t.r * 2).toFixed(1))} ft across`) +
+    row('Height', t.h ? `${trim(t.h)} ft` : '') +
+    row('Clear to', t.clr != null ? `${trim(t.clr)} ft` : '') +
+    row('Fits under', t.gone ? '—' : (bandOf(t) ? bandOf(t).name : 'unknown')) +
     row('Condition', t.gone ? `${t.gone}, no canopy` : t.cond) +
     row('At', `E ${t.p[0].toFixed(0)}′ N ${t.p[1].toFixed(0)}′`) +
-    `</dl><em>Trunk and species are surveyed; canopy is estimated from DBH.</em>`;
+    `</dl><em>Species and trunk are surveyed. Canopy, height and clearance are ` +
+    `estimated from trunk diameter — screening figures, not measurements.</em>`;
   drawOverlay();
+}
+
+/* ------------------------------------------------------------ upright
+   With the ground laid back, anything with height gets drawn standing up in
+   screen space: trunks to the first limb, crowns as spheroids above them,
+   placed items extruded to their real height. Painted far-to-near, so a tent
+   that sits under a crown looks like it sits under it.                      */
+
+function drawUpright() {
+  const L = $('#l-up');
+  L.textContent = '';
+  if (view.tilt < 0.5 || !DATA) return;
+  const q = [];
+  if (on.canopy)
+    DATA.trees.forEach((t, i) => {
+      if (!t.gone && t.clr != null) q.push({ d: depth(t.p[0], t.p[1]), t, i });
+    });
+  if (on.objects)
+    for (const it of items) q.push({ d: depth(it.x, it.y), it });
+  q.sort((a, b) => b.d - a.d);                     // farthest first
+  for (const o of q) o.t ? treeUp(L, o.t, o.i) : itemUp(L, o.it);
+}
+
+function treeUp(L, t, i) {
+  const z = view.zoom, top = t.h || t.clr + 12;
+  const [gx, gy] = toScreen(t.p[0], t.p[1], 0);
+  const [bx, by] = toScreen(t.p[0], t.p[1], t.clr);
+  const [mx, my] = toScreen(t.p[0], t.p[1], (t.clr + top) / 2);
+  const vh = Math.max(3, (top - t.clr) / 2);
+  const b = bandOf(t), hit = clash.hitTrees.has(i);
+  el('line', { x1: gx, y1: gy, x2: bx, y2: by, stroke: '#6d5c43',
+    'stroke-width': Math.max(1.1, (t.dbh || 8) / 12 * z) }, L);
+  el('ellipse', { cx: mx, cy: my,
+    rx: t.r * z,
+    ry: Math.hypot(t.r * z * tiltY(), vh * z * tiltZ()),
+    fill: byClearance && b ? b.fill : '#a8c187',
+    'fill-opacity': t.clr < need ? .46 : .3,
+    stroke: hit ? MARK : (byClearance && b ? b.line : '#8aa76a'),
+    'stroke-width': hit ? 2 : .9 }, L);
+}
+
+function itemUp(L, it) {
+  const hgt = it.z || 0;
+  if (hgt < 0.2) return;
+  const bad = clash.byItem.has(it.id);
+  const hue = bad ? '#b8471f' : MARK;
+  const face = { fill: hue, 'fill-opacity': .3, stroke: hue, 'stroke-width': 1,
+                 'stroke-dasharray': bad ? '6 3' : null };
+
+  if (it.shape === 'circle') {
+    const r = it.w / 2 * view.zoom;
+    const [cx0, cy0] = toScreen(it.x, it.y, 0);
+    const [cx1, cy1] = toScreen(it.x, it.y, hgt);
+    const ry = r * tiltY();
+    el('rect', { x: cx1 - r, y: cy1, width: r * 2, height: Math.max(0, cy0 - cy1),
+      fill: hue, 'fill-opacity': .22, stroke: 'none' }, L);
+    el('ellipse', { cx: cx1, cy: cy1, rx: r, ry, ...face }, L);
+    return;
+  }
+
+  const cs = corners(it);
+  const lo = cs.map(p => toScreen(p[0], p[1], 0));
+  const hi = cs.map(p => toScreen(p[0], p[1], hgt));
+  const dc = depth(it.x, it.y);
+  for (let k = 0; k < 4; k++) {
+    const n = (k + 1) % 4;
+    const mid = [(cs[k][0] + cs[n][0]) / 2, (cs[k][1] + cs[n][1]) / 2];
+    if (depth(mid[0], mid[1]) > dc) continue;      // back wall, hidden
+    el('polygon', { points: [lo[k], lo[n], hi[n], hi[k]].map(p => p.join(',')).join(' '),
+      fill: hue, 'fill-opacity': .2, stroke: hue, 'stroke-width': .8 }, L);
+  }
+  el('polygon', { points: hi.map(p => p.join(',')).join(' '), ...face }, L);
 }
 
 /* ---------------------------------------------------------- annotation
@@ -311,7 +522,8 @@ function annotate(target, P, zoom, opts = {}) {
       const isSel = it.id === opts.selected;
       if (!isSel && big < 34) continue;
       const lines = isSel
-        ? [it.t, `${trim(it.w)}′ × ${trim(it.h)}′ · ${Math.round(((it.rot % 360) + 360) % 360)}°`]
+        ? [it.t, `${trim(it.w)}′ × ${trim(it.h)}′ × ${trim(it.z)}′ h · ` +
+                 `${Math.round(((it.rot % 360) + 360) % 360)}°`]
         : [it.t];
       lines.forEach((s, i) =>
         txt(sx, sy + (i - (lines.length - 1) / 2) * 12, s,
@@ -343,6 +555,11 @@ function drawOverlay() {
   if (selTree !== null && DATA && (on.trees || on.canopy)) {
     const t = DATA.trees[selTree];
     const [sx, sy] = toScreen(t.p[0], t.p[1]);
+    if (view.tilt > .5 && t.clr != null && !t.gone) {
+      const [ux, uy] = toScreen(t.p[0], t.p[1], (t.clr + (t.h || t.clr + 12)) / 2);
+      el('line', { x1: sx, y1: sy, x2: ux, y2: uy, stroke: MARK,
+        'stroke-width': 1, 'stroke-dasharray': '3 3' }, overlay);
+    }
     el('circle', { cx: sx, cy: sy, r: Math.max(7, t.r * view.zoom), fill: 'none',
       stroke: MARK, 'stroke-width': 1.5 }, overlay);
     txt(sx, sy - Math.max(12, t.r * view.zoom) - 6,
@@ -569,6 +786,8 @@ function renderSheet() {
   el('rect', { x: dx, y: dy, width: dw, height: dh, fill: '#fff' }, area);
 
   const plan = world.cloneNode(true);
+  // A sheet is a plan: the screen's tilt never reaches it, so printed
+  // dimensions stay measurable with a scale rule.
   // the sheet's own include list overrides the screen's layer switches
   const show = (id, yes) => {
     const g = plan.querySelector('#' + id);
@@ -676,13 +895,17 @@ function sheetColumn(s, sp, ftPerIn) {
       ['#eceadf', '#d7d2c4', 'Walkway'],
       ['#ddd6c6', '#a49a86', 'Building'],
     ];
-    if ($('#p-trees').checked && on.canopy) rows.push(['#c3d3ab', '#8aa76a', 'Tree canopy']);
+    // when the canopy is colour-coded, the bands are the legend that matters
+    if ($('#p-trees').checked && on.canopy) {
+      if (byClearance) for (const b of BANDS) rows.push([b.fill, b.line, b.name + ', ' + b.sub]);
+      else rows.push(['#c3d3ab', '#8aa76a', 'Tree canopy']);
+    }
     if (items.length) rows.push([MARK + '26', MARK, 'Placed item']);
     for (const [f, st2, label] of rows) {
       y += 13;
       el('rect', { x: x + 9, y: y - 7, width: 15, height: 8,
         fill: f, stroke: st2, 'stroke-width': .8 }, s);
-      T(x + 30, y, label, { size: 8.5, fill: INK2 });
+      T(x + 30, y, label, { size: 8, fill: INK2 });
     }
     y += 9; line(y);
   }
@@ -756,6 +979,17 @@ function buildChrome() {
     setPending(pending && pending.t === c.t ? null : c);
   };
 
+  $('#need').oninput = e => {
+    const v = parseFloat(e.target.value);
+    if (!isNaN(v)) { need = Math.max(0, v); reportConflicts(); drawUpright(); }
+  };
+  $('#bycl').onchange = e => { byClearance = e.target.checked; paintTrees(); drawUpright(); };
+  $('#tilt').oninput = e => {
+    view.tilt = +e.target.value;
+    $('#tiltval').textContent = view.tilt + '°';
+    apply();
+  };
+
   $('#t-measure').onclick = () => { measureMode = !measureMode; measure = null; syncTools(); drawOverlay(); };
   $('#t-north').onclick = () => {
     view.rot = view.rot ? 0 : -DATA.meta.lawn_axis_deg;
@@ -781,7 +1015,8 @@ function buildChrome() {
     const f = e.target.files[0]; if (!f) return;
     f.text().then(t => {
       const d = JSON.parse(t);
-      items = d.items || []; nextId = Math.max(0, ...items.map(i => i.id)) + 1;
+      items = (d.items || []).map(withHeight);
+      nextId = Math.max(0, ...items.map(i => i.id)) + 1;
       selected = null; drawItems(); save(); say(`Opened ${items.length} items`);
     }).catch(() => say('Could not read that file'));
     e.target.value = '';
@@ -851,12 +1086,19 @@ function exportPNG() {
 /* ----------------------------------------------------------- persistence */
 
 const KEY = 'voorhees-plan-v1';
+// plans saved before items had heights: take the height from the catalog
+function withHeight(it) {
+  if (it.z != null) return it;
+  const c = CATALOG.find(x => x.t === it.t);
+  return { ...it, z: c && c.z != null ? c.z : 8 };
+}
 function save() { try { localStorage.setItem(KEY, JSON.stringify(items)); } catch {} }
 function restore() {
   try {
     const d = JSON.parse(localStorage.getItem(KEY) || '[]');
     if (Array.isArray(d) && d.length) {
-      items = d; nextId = Math.max(0, ...items.map(i => i.id)) + 1;
+      items = d.map(withHeight);
+      nextId = Math.max(0, ...items.map(i => i.id)) + 1;
     }
   } catch {}
 }

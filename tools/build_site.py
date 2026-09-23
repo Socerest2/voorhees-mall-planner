@@ -158,7 +158,11 @@ def load_inventory(proj, near):
         r = round(crown / 2, 1) if crown else 8.0
         rec = {"p": p, "r": max(4.0, min(45.0, r)), "src": "rutgers",
                "sp": t.get("species") or "", "dbh": t.get("dbh_in"),
-               "cond": t.get("condition") or ""}
+               "cond": t.get("condition") or "",
+               # h = total height, clr = height to the lowest limbs. Both are
+               # estimated from DBH; clr is what decides what fits underneath.
+               "h": t.get("height_ft"), "clr": t.get("clear_ft"),
+               "hab": t.get("habit")}
         # a dead tree or a stump casts no shade -- flag it so the app can say so
         if st in ("Dead", "Stump") or rec["cond"] == "Dead":
             rec["gone"] = st or "Dead"
@@ -264,7 +268,9 @@ def main():
             "lawn_axis_deg": round(axis_deg, 2),
             "source": "OpenStreetMap contributors, ODbL 1.0",
             "tree_source": ("Rutgers TreePlotter Community Engagement Map "
-                            "(PlanIT Geo); crown radius estimated from DBH"),
+                            "(PlanIT Geo). Species, DBH, condition and status "
+                            "are surveyed; crown, height and clearance are "
+                            "estimated from DBH by growth habit"),
             "generated_by": "tools/build_site.py",
         },
         "lawn": lawn,

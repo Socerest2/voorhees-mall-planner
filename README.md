@@ -67,6 +67,55 @@ tent has to thread between two crowns.
 Tile positions are good to roughly 0.75 ft (zoom 15, 4096-unit extent), well
 under the GPS error in the survey itself.
 
+### Clearance — what fits underneath
+
+The question that actually matters when siting a tent is not how wide a tree is
+but **how high its lowest limbs are**. A 54-inch elm limbed up to 25 ft is a
+roof; a Kousa dogwood branching at 3 ft is a wall. The mall has 77 of the
+former and 69 of the latter.
+
+The inventory records trunk diameter but **no height at all**, so total height
+and height-to-lowest-limb are derived in `tools/fetch_trees.py` from DBH by
+growth habit:
+
+| Habit | Examples | Height | Crown base |
+|---|---|---|---|
+| `shade` | oak, elm, zelkova, honeylocust, linden | 4.5 + 2.3 × DBH, cap 85 ft | 35% of height |
+| `conifer_open` | pine, larch, cedar | 4.5 + 2.8 × DBH, cap 90 ft | 35% |
+| `conifer_dense` | spruce, fir, holly, arborvitae | 4.5 + 2.6 × DBH, cap 70 ft | 5% — skirted to the ground |
+| `ornamental` | dogwood, cherry, magnolia, redbud | 4.5 + 1.6 × DBH, cap 32 ft | 20% |
+
+Crown base is also capped at 25 ft (nobody prunes a park tree higher) and held
+at least 6 ft below the top (a tree needs a crown). The result for the 427
+trees on the plan:
+
+- **211 block everything** — under 8 ft of clearance
+- **87 people only** — 8 to 14 ft
+- **46 take a pop-up tent** — 14 to 20 ft
+- **78 take a truck or a frame tent** — 20 ft and over
+
+Set **Fits under** to the height you care about and the canopies recolour.
+Every catalog item carries a real height — a 20 × 40 frame tent is 18 ft to the
+peak, a box truck 13 ft 6 in, a banquet table 2 ft 6 in — so placing one
+immediately reports which trees it fouls, and the item draws dashed until it
+clears.
+
+**These are screening figures, not survey data.** Position, species and trunk
+diameter come from Rutgers; every height on this map is inferred. Use it to
+narrow down where a tent can go, then measure the two or three candidate spots
+on site before you commit.
+
+### Tilt
+
+The **Tilt** slider lays the ground plane back to 60°. Trunks rise to their
+first limb, crowns sit at their real heights, and placed items extrude to
+theirs, painted far-to-near so a tent under a canopy looks like it is under it.
+It only foreshortens the y axis, so hit-testing still lands on the ground plane
+and the plan stays measurable along x.
+
+Tilt is a screen affordance only — **the printed sheet is always a true plan**,
+whatever the screen is doing, so drawings stay measurable with a scale rule.
+
 ## Using it
 
 - **Scroll** to zoom (the point under the cursor stays put), **drag** to pan

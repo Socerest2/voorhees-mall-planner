@@ -8,7 +8,7 @@
   40.5036,
   -74.4432
  ],
- "note": "dbh_in is surveyed; crown_ft is ESTIMATED from dbh by growth habit",
+ "note": "dbh_in, species, condition and status are surveyed; crown_ft, height_ft and clear_ft are ESTIMATED from dbh by growth habit -- screening figures, not survey data",
  "trees": [
   {
    "lat": 40.5035149,
@@ -17,7 +17,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.503466,
@@ -26,7 +29,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5034191,
@@ -35,7 +41,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5034252,
@@ -44,7 +53,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5034293,
@@ -53,7 +65,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5033844,
@@ -62,7 +77,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5034232,
@@ -71,7 +89,10 @@
    "dbh_in": 4.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5034069,
@@ -80,7 +101,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5033661,
@@ -89,7 +113,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.6
+   "habit": "conifer_open",
+   "crown_ft": 15.6,
+   "height_ft": 38.1,
+   "clear_ft": 13.3
   },
   {
    "lat": 40.5033885,
@@ -98,7 +125,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.8
+   "habit": "conifer_open",
+   "crown_ft": 7.8,
+   "height_ft": 21.3,
+   "clear_ft": 7.5
   },
   {
    "lat": 40.5035149,
@@ -107,7 +137,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.8
+   "habit": "conifer_open",
+   "crown_ft": 7.8,
+   "height_ft": 21.3,
+   "clear_ft": 7.5
   },
   {
    "lat": 40.5034395,
@@ -116,7 +149,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 48.4
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.5033926,
@@ -125,7 +161,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5035109,
@@ -134,7 +173,10 @@
    "dbh_in": 6.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5034497,
@@ -143,7 +185,10 @@
    "dbh_in": 7.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5034069,
@@ -152,7 +197,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5034823,
@@ -161,7 +209,10 @@
    "dbh_in": 6.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5034211,
@@ -170,7 +221,10 @@
    "dbh_in": 26.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.5034374,
@@ -179,7 +233,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.503468,
@@ -188,7 +245,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5034191,
@@ -197,7 +257,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.503364,
@@ -206,7 +269,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.503519,
@@ -215,7 +281,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5035394,
@@ -224,7 +293,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5034497,
@@ -233,7 +305,10 @@
    "dbh_in": 9.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5035292,
@@ -242,7 +317,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5034986,
@@ -251,7 +329,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5034109,
@@ -260,7 +341,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5031295,
@@ -269,7 +353,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 32.3
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.5031927,
@@ -278,7 +365,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5030785,
@@ -287,7 +377,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.502846,
@@ -296,7 +389,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5027848,
@@ -305,7 +401,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5027257,
@@ -314,7 +413,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5026747,
@@ -323,7 +425,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5026237,
@@ -332,7 +437,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5027807,
@@ -341,7 +449,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5027461,
@@ -350,7 +461,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5027073,
@@ -359,7 +473,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.502793,
@@ -368,7 +485,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.502744,
@@ -377,7 +497,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5026257,
@@ -386,7 +509,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5026624,
@@ -395,7 +521,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5023708,
@@ -404,7 +533,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5025584,
@@ -413,7 +545,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.502485,
@@ -422,7 +557,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.8
+   "habit": "shade",
+   "crown_ft": 8.8,
+   "height_ft": 13.7,
+   "clear_ft": 4.8
   },
   {
    "lat": 40.5025666,
@@ -431,7 +569,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5025095,
@@ -440,7 +581,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5033253,
@@ -449,7 +593,10 @@
    "dbh_in": 7.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 9.1
+   "habit": "conifer_open",
+   "crown_ft": 9.1,
+   "height_ft": 24.1,
+   "clear_ft": 8.4
   },
   {
    "lat": 40.5033457,
@@ -458,7 +605,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 36.1
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5032926,
@@ -467,7 +617,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 43.7
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5033273,
@@ -476,7 +629,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5030744,
@@ -485,7 +641,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5030092,
@@ -494,7 +653,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 36.1
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5028725,
@@ -503,7 +665,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "default",
+   "crown_ft": 15.2,
+   "height_ft": 20.5,
+   "clear_ft": 5.7
   },
   {
    "lat": 40.502952,
@@ -512,7 +677,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.4
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.502897,
@@ -521,7 +689,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5032702,
@@ -530,7 +701,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5033497,
@@ -539,7 +713,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5031744,
@@ -548,7 +725,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5032213,
@@ -557,7 +737,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5031376,
@@ -566,7 +749,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5030479,
@@ -575,7 +761,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.503003,
@@ -584,7 +773,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5030581,
@@ -593,7 +785,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5030867,
@@ -602,7 +797,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5029622,
@@ -611,7 +809,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5028868,
@@ -620,7 +821,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5028664,
@@ -629,7 +833,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5028093,
@@ -638,7 +845,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.5027726,
@@ -647,7 +857,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5027461,
@@ -656,7 +869,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5027216,
@@ -665,7 +881,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5027012,
@@ -674,7 +893,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5026461,
@@ -683,7 +905,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5025911,
@@ -692,7 +917,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5027012,
@@ -701,7 +929,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.502587,
@@ -710,7 +941,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5027236,
@@ -719,7 +953,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5027257,
@@ -728,7 +965,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5026808,
@@ -737,7 +977,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.502693,
@@ -746,7 +989,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5026502,
@@ -755,7 +1001,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5026767,
@@ -764,7 +1013,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.5
+   "habit": "conifer_open",
+   "crown_ft": 6.5,
+   "height_ft": 18.5,
+   "clear_ft": 6.5
   },
   {
    "lat": 40.502638,
@@ -773,7 +1025,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.5025543,
@@ -782,7 +1037,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5023443,
@@ -791,7 +1049,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5023892,
@@ -800,7 +1061,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.502432,
@@ -809,7 +1073,10 @@
    "dbh_in": 10.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5027726,
@@ -818,7 +1085,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5027318,
@@ -827,7 +1097,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5027522,
@@ -836,7 +1109,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5026951,
@@ -845,7 +1121,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5026339,
@@ -854,7 +1133,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5025319,
@@ -863,7 +1145,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5024667,
@@ -872,7 +1157,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5025095,
@@ -881,7 +1169,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "default",
+   "crown_ft": 13.3,
+   "height_ft": 18.5,
+   "clear_ft": 5.2
   },
   {
    "lat": 40.5024055,
@@ -890,7 +1181,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.502381,
@@ -899,7 +1193,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5023545,
@@ -908,7 +1205,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5023178,
@@ -917,7 +1217,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5023545,
@@ -926,7 +1229,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5023178,
@@ -935,7 +1241,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.502534,
@@ -944,7 +1253,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5025605,
@@ -953,7 +1265,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5021403,
@@ -962,7 +1277,10 @@
    "dbh_in": 11.0,
    "condition": "Dead",
    "status": "Stump",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5021199,
@@ -971,7 +1289,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.502073,
@@ -980,7 +1301,10 @@
    "dbh_in": 4.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5023137,
@@ -989,7 +1313,10 @@
    "dbh_in": 9.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5022545,
@@ -998,7 +1325,10 @@
    "dbh_in": 8.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5020975,
@@ -1007,7 +1337,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 48.4
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.5023015,
@@ -1016,7 +1349,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5022545,
@@ -1025,7 +1361,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5022321,
@@ -1034,7 +1373,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5021995,
@@ -1043,7 +1385,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.502177,
@@ -1052,7 +1397,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5020057,
@@ -1061,7 +1409,10 @@
    "dbh_in": 50.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 110.0
+   "habit": "shade",
+   "crown_ft": 110.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5020343,
@@ -1070,7 +1421,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.5018059,
@@ -1079,7 +1433,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5018364,
@@ -1088,7 +1445,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5018711,
@@ -1097,7 +1457,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5021995,
@@ -1106,7 +1469,10 @@
    "dbh_in": 40.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 52.0
+   "habit": "conifer_dense",
+   "crown_ft": 48.0,
+   "height_ft": 70,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5022403,
@@ -1115,7 +1481,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5022974,
@@ -1124,7 +1493,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.502279,
@@ -1133,7 +1505,10 @@
    "dbh_in": 8.0,
    "condition": "Poor",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5022036,
@@ -1142,7 +1517,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 42.9
+   "habit": "conifer_dense",
+   "crown_ft": 39.6,
+   "height_ft": 70,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5021301,
@@ -1151,7 +1529,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5020812,
@@ -1160,7 +1541,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5020343,
@@ -1169,7 +1553,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5020282,
@@ -1178,7 +1565,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5019547,
@@ -1187,7 +1577,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.5019099,
@@ -1196,7 +1589,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5016978,
@@ -1205,7 +1601,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5015795,
@@ -1214,7 +1613,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.6
+   "habit": "conifer_dense",
+   "crown_ft": 14.4,
+   "height_ft": 35.7,
+   "clear_ft": 1.8
   },
   {
    "lat": 40.5015162,
@@ -1223,7 +1625,10 @@
    "dbh_in": 29.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.5012899,
@@ -1232,7 +1637,10 @@
    "dbh_in": 17.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 22.1
+   "habit": "conifer_dense",
+   "crown_ft": 20.4,
+   "height_ft": 48.7,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.5032804,
@@ -1241,7 +1649,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5033457,
@@ -1250,7 +1661,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.503209,
@@ -1259,7 +1673,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5032743,
@@ -1268,7 +1685,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 32.3
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.5031478,
@@ -1277,7 +1697,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5031784,
@@ -1286,7 +1709,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5031968,
@@ -1295,7 +1721,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5031621,
@@ -1304,7 +1733,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5030479,
@@ -1313,7 +1745,10 @@
    "dbh_in": 25.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.5029826,
@@ -1322,7 +1757,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5029582,
@@ -1331,7 +1769,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5029153,
@@ -1340,7 +1781,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.502846,
@@ -1349,7 +1793,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5030948,
@@ -1358,7 +1805,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5030357,
@@ -1367,7 +1817,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5028684,
@@ -1376,7 +1829,10 @@
    "dbh_in": 27.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 35.1
+   "habit": "conifer_open",
+   "crown_ft": 35.1,
+   "height_ft": 80.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5028582,
@@ -1385,7 +1841,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 32.3
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.5032417,
@@ -1394,7 +1853,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 31.2
+   "habit": "conifer_dense",
+   "crown_ft": 28.8,
+   "height_ft": 66.9,
+   "clear_ft": 3.3
   },
   {
    "lat": 40.50326,
@@ -1403,7 +1865,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.0
+   "habit": "ornamental",
+   "crown_ft": 28.0,
+   "height_ft": 26.9,
+   "clear_ft": 5.4
   },
   {
    "lat": 40.5032437,
@@ -1412,7 +1877,10 @@
    "dbh_in": 11.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5032111,
@@ -1421,7 +1889,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5032355,
@@ -1430,7 +1901,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.9
+   "habit": "conifer_dense",
+   "crown_ft": 15.6,
+   "height_ft": 38.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5029194,
@@ -1439,7 +1913,10 @@
    "dbh_in": 16.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 30.4
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.502844,
@@ -1448,7 +1925,10 @@
    "dbh_in": 13.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5029684,
@@ -1457,7 +1937,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.4
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5027542,
@@ -1466,7 +1949,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5026808,
@@ -1475,7 +1961,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5026155,
@@ -1484,7 +1973,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5028032,
@@ -1493,7 +1985,10 @@
    "dbh_in": 11.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5027807,
@@ -1502,7 +1997,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5026482,
@@ -1511,7 +2009,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.502691,
@@ -1520,7 +2021,10 @@
    "dbh_in": 12.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.5025727,
@@ -1529,7 +2033,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5025564,
@@ -1538,7 +2045,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5028134,
@@ -1547,7 +2057,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.502642,
@@ -1556,7 +2069,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.7
+   "habit": "conifer_open",
+   "crown_ft": 11.7,
+   "height_ft": 29.7,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5025788,
@@ -1565,7 +2081,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5028154,
@@ -1574,7 +2093,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5027889,
@@ -1583,7 +2105,10 @@
    "dbh_in": 10.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5026155,
@@ -1592,7 +2117,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5025482,
@@ -1601,7 +2129,10 @@
    "dbh_in": 29.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.502383,
@@ -1610,7 +2141,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5023504,
@@ -1619,7 +2153,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5023769,
@@ -1628,7 +2165,10 @@
    "dbh_in": 5.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5033049,
@@ -1637,7 +2177,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 9.1
+   "habit": "conifer_dense",
+   "crown_ft": 8.4,
+   "height_ft": 22.7,
+   "clear_ft": 1.1
   },
   {
    "lat": 40.5033273,
@@ -1646,7 +2189,10 @@
    "dbh_in": 4.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5033028,
@@ -1655,7 +2201,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5033294,
@@ -1664,7 +2213,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5030765,
@@ -1673,7 +2225,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5031642,
@@ -1682,7 +2237,10 @@
    "dbh_in": 16.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5033497,
@@ -1691,7 +2249,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5030316,
@@ -1700,7 +2261,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5029888,
@@ -1709,7 +2273,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5029439,
@@ -1718,7 +2285,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5028236,
@@ -1727,7 +2297,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.502642,
@@ -1736,7 +2309,10 @@
    "dbh_in": 9.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5023157,
@@ -1745,7 +2321,10 @@
    "dbh_in": 31.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 68.2
+   "habit": "shade",
+   "crown_ft": 68.2,
+   "height_ft": 75.8,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5025605,
@@ -1754,7 +2333,10 @@
    "dbh_in": 6.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.502691,
@@ -1763,7 +2345,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.4
+   "habit": "conifer_dense",
+   "crown_ft": 9.6,
+   "height_ft": 25.3,
+   "clear_ft": 1.3
   },
   {
    "lat": 40.5026522,
@@ -1772,7 +2357,10 @@
    "dbh_in": 24.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 31.2
+   "habit": "conifer_open",
+   "crown_ft": 31.2,
+   "height_ft": 71.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5026094,
@@ -1781,7 +2369,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5026461,
@@ -1790,7 +2381,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5027012,
@@ -1799,7 +2393,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5023341,
@@ -1808,7 +2405,10 @@
    "dbh_in": 6.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5021587,
@@ -1817,7 +2417,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5020853,
@@ -1826,7 +2429,10 @@
    "dbh_in": 50.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 65.0
+   "habit": "conifer_open",
+   "crown_ft": 65.0,
+   "height_ft": 90,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5017936,
@@ -1835,7 +2441,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5022851,
@@ -1844,7 +2453,10 @@
    "dbh_in": 15.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5023055,
@@ -1853,7 +2465,10 @@
    "dbh_in": 31.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 68.2
+   "habit": "shade",
+   "crown_ft": 68.2,
+   "height_ft": 75.8,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5021934,
@@ -1862,7 +2477,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "default",
+   "crown_ft": 34.2,
+   "height_ft": 40.5,
+   "clear_ft": 11.3
   },
   {
    "lat": 40.5021709,
@@ -1871,7 +2489,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "default",
+   "crown_ft": 41.8,
+   "height_ft": 48.5,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5022362,
@@ -1880,7 +2501,10 @@
    "dbh_in": 15.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 28.5
+   "habit": "default",
+   "crown_ft": 28.5,
+   "height_ft": 34.5,
+   "clear_ft": 9.7
   },
   {
    "lat": 40.5017018,
@@ -1889,7 +2513,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5015917,
@@ -1898,7 +2525,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5013408,
@@ -1907,7 +2537,10 @@
    "dbh_in": 36.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 79.2
+   "habit": "shade",
+   "crown_ft": 79.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5012797,
@@ -1916,7 +2549,10 @@
    "dbh_in": 28.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 61.6
+   "habit": "shade",
+   "crown_ft": 61.6,
+   "height_ft": 68.9,
+   "clear_ft": 24.1
   },
   {
    "lat": 40.5014877,
@@ -1925,7 +2561,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5013918,
@@ -1934,7 +2573,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.501296,
@@ -1943,7 +2585,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5022525,
@@ -1952,7 +2597,10 @@
    "dbh_in": 7.0,
    "condition": "Dead",
    "status": "Dead",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5010777,
@@ -1961,7 +2609,10 @@
    "dbh_in": 33.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5005128,
@@ -1970,7 +2621,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.500474,
@@ -1979,7 +2633,10 @@
    "dbh_in": 8.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5011797,
@@ -1988,7 +2645,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "conifer_dense",
+   "crown_ft": 26.4,
+   "height_ft": 61.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5011654,
@@ -1997,7 +2657,10 @@
    "dbh_in": 19.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_open",
+   "crown_ft": 24.7,
+   "height_ft": 57.7,
+   "clear_ft": 20.2
   },
   {
    "lat": 40.5009391,
@@ -2006,7 +2669,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5010431,
@@ -2015,7 +2681,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5011736,
@@ -2024,7 +2693,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5010818,
@@ -2033,7 +2705,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5009125,
@@ -2042,7 +2717,10 @@
    "dbh_in": 4.0,
    "condition": "Dead",
    "status": "Stump",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5007718,
@@ -2051,7 +2729,10 @@
    "dbh_in": 44.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 83.6
+   "habit": "default",
+   "crown_ft": 83.6,
+   "height_ft": 60,
+   "clear_ft": 16.8
   },
   {
    "lat": 40.5009493,
@@ -2060,7 +2741,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.5008452,
@@ -2069,7 +2753,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5005107,
@@ -2078,7 +2765,10 @@
    "dbh_in": 26.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 49.4
+   "habit": "default",
+   "crown_ft": 49.4,
+   "height_ft": 56.5,
+   "clear_ft": 15.8
   },
   {
    "lat": 40.500729,
@@ -2087,7 +2777,10 @@
    "dbh_in": 17.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 32.3
+   "habit": "default",
+   "crown_ft": 32.3,
+   "height_ft": 38.5,
+   "clear_ft": 10.8
   },
   {
    "lat": 40.5009737,
@@ -2096,7 +2789,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5007718,
@@ -2105,7 +2801,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5008595,
@@ -2114,7 +2813,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.500784,
@@ -2123,7 +2825,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.8
+   "habit": "conifer_open",
+   "crown_ft": 7.8,
+   "height_ft": 21.3,
+   "clear_ft": 7.5
   },
   {
    "lat": 40.5007004,
@@ -2132,7 +2837,10 @@
    "dbh_in": 18.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5006025,
@@ -2141,7 +2849,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "ornamental",
+   "crown_ft": 36.0,
+   "height_ft": 32,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5006658,
@@ -2150,7 +2861,10 @@
    "dbh_in": 26.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.5005719,
@@ -2159,7 +2873,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5005026,
@@ -2168,7 +2885,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5005944,
@@ -2177,7 +2897,10 @@
    "dbh_in": 26.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.5004027,
@@ -2186,7 +2909,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5003333,
@@ -2195,7 +2921,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5004842,
@@ -2204,7 +2933,10 @@
    "dbh_in": 31.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 68.2
+   "habit": "shade",
+   "crown_ft": 68.2,
+   "height_ft": 75.8,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5003884,
@@ -2213,7 +2945,10 @@
    "dbh_in": 19.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5001824,
@@ -2222,7 +2957,10 @@
    "dbh_in": 16.0,
    "condition": "Poor",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5000906,
@@ -2231,7 +2969,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5033701,
@@ -2240,7 +2981,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5033926,
@@ -2249,7 +2993,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5035517,
@@ -2258,7 +3005,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5035639,
@@ -2267,7 +3017,10 @@
    "dbh_in": 17.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 22.1
+   "habit": "conifer_open",
+   "crown_ft": 22.1,
+   "height_ft": 52.1,
+   "clear_ft": 18.2
   },
   {
    "lat": 40.5035435,
@@ -2276,7 +3029,10 @@
    "dbh_in": 16.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 20.8
+   "habit": "conifer_open",
+   "crown_ft": 20.8,
+   "height_ft": 49.3,
+   "clear_ft": 17.3
   },
   {
    "lat": 40.5032213,
@@ -2285,7 +3041,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5032233,
@@ -2294,7 +3053,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5032967,
@@ -2303,7 +3065,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5032722,
@@ -2312,7 +3077,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5033069,
@@ -2321,7 +3089,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5029378,
@@ -2330,7 +3101,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5030948,
@@ -2339,7 +3113,10 @@
    "dbh_in": 26.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.5029419,
@@ -2348,7 +3125,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.502897,
@@ -2357,7 +3137,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.502744,
@@ -2366,7 +3149,10 @@
    "dbh_in": 11.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5026563,
@@ -2375,7 +3161,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5026135,
@@ -2384,7 +3173,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5024483,
@@ -2393,7 +3185,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5023953,
@@ -2402,7 +3197,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5023382,
@@ -2411,7 +3209,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5027399,
@@ -2420,7 +3221,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5027318,
@@ -2429,7 +3233,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5026135,
@@ -2438,7 +3245,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5026155,
@@ -2447,7 +3257,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5026951,
@@ -2456,7 +3269,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5026094,
@@ -2465,7 +3281,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5026563,
@@ -2474,7 +3293,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5025788,
@@ -2483,7 +3305,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5026278,
@@ -2492,7 +3317,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5025197,
@@ -2501,7 +3329,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.502485,
@@ -2510,7 +3341,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5024279,
@@ -2519,7 +3353,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5032478,
@@ -2528,7 +3365,10 @@
    "dbh_in": 9.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5031193,
@@ -2537,7 +3377,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5031784,
@@ -2546,7 +3389,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.502999,
@@ -2555,7 +3401,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5030499,
@@ -2564,7 +3413,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5031662,
@@ -2573,7 +3425,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5031152,
@@ -2582,7 +3437,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.503054,
@@ -2591,7 +3449,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.502846,
@@ -2600,7 +3461,10 @@
    "dbh_in": 4.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.502589,
@@ -2609,7 +3473,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5025503,
@@ -2618,7 +3485,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5024768,
@@ -2627,7 +3497,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5025054,
@@ -2636,7 +3509,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5024544,
@@ -2645,7 +3521,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.502434,
@@ -2654,7 +3533,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5024646,
@@ -2663,7 +3545,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5025482,
@@ -2672,7 +3557,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5025217,
@@ -2681,7 +3569,10 @@
    "dbh_in": 8.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5023892,
@@ -2690,7 +3581,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5024075,
@@ -2699,7 +3593,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.50233,
@@ -2708,7 +3605,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.502744,
@@ -2717,7 +3617,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5026951,
@@ -2726,7 +3629,10 @@
    "dbh_in": 4.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5025849,
@@ -2735,7 +3641,10 @@
    "dbh_in": 4.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5026053,
@@ -2744,7 +3653,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.502793,
@@ -2753,7 +3665,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5026706,
@@ -2762,7 +3677,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5027012,
@@ -2771,7 +3689,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5026992,
@@ -2780,7 +3701,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "default",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5025645,
@@ -2789,7 +3713,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5025462,
@@ -2798,7 +3725,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5025217,
@@ -2807,7 +3737,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5024789,
@@ -2816,7 +3749,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5024667,
@@ -2825,7 +3761,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5024014,
@@ -2834,7 +3773,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5023484,
@@ -2843,7 +3785,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5023993,
@@ -2852,7 +3797,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5024238,
@@ -2861,7 +3809,10 @@
    "dbh_in": 4.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5022056,
@@ -2870,7 +3821,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5022974,
@@ -2879,7 +3833,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5021301,
@@ -2888,7 +3845,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.502071,
@@ -2897,7 +3857,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5022811,
@@ -2906,7 +3869,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5021934,
@@ -2915,7 +3881,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Dead",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5022219,
@@ -2924,7 +3893,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.50202,
@@ -2933,7 +3905,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5022382,
@@ -2942,7 +3917,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5022117,
@@ -2951,7 +3929,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5021077,
@@ -2960,7 +3941,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.501865,
@@ -2969,7 +3953,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.501816,
@@ -2978,7 +3965,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5022688,
@@ -2987,7 +3977,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5022892,
@@ -2996,7 +3989,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5022443,
@@ -3005,7 +4001,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5021893,
@@ -3014,7 +4013,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5023055,
@@ -3023,7 +4025,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5023015,
@@ -3032,7 +4037,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.502224,
@@ -3041,7 +4049,10 @@
    "dbh_in": 5.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5021281,
@@ -3050,7 +4061,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.502073,
@@ -3059,7 +4073,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5020098,
@@ -3068,7 +4085,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5016733,
@@ -3077,7 +4097,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5014306,
@@ -3086,7 +4109,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5015224,
@@ -3095,7 +4121,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5014734,
@@ -3104,7 +4133,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5013979,
@@ -3113,7 +4145,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5012715,
@@ -3122,7 +4157,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5014245,
@@ -3131,7 +4169,10 @@
    "dbh_in": 22.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 48.4
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.5013347,
@@ -3140,7 +4181,10 @@
    "dbh_in": 24.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.5012899,
@@ -3149,7 +4193,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5013837,
@@ -3158,7 +4205,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5013204,
@@ -3167,7 +4217,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5012797,
@@ -3176,7 +4229,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5016631,
@@ -3185,7 +4241,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5017855,
@@ -3194,7 +4253,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5017202,
@@ -3203,7 +4265,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5015835,
@@ -3212,7 +4277,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5014612,
@@ -3221,7 +4289,10 @@
    "dbh_in": 2.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.501502,
@@ -3230,7 +4301,10 @@
    "dbh_in": 33.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5014285,
@@ -3239,7 +4313,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5013878,
@@ -3248,7 +4325,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5012735,
@@ -3257,7 +4337,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5013531,
@@ -3266,7 +4349,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.5013082,
@@ -3275,7 +4361,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.0
+   "habit": "ornamental",
+   "crown_ft": 26.0,
+   "height_ft": 25.3,
+   "clear_ft": 5.1
   },
   {
    "lat": 40.5015224,
@@ -3284,7 +4373,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.0
+   "habit": "ornamental",
+   "crown_ft": 26.0,
+   "height_ft": 25.3,
+   "clear_ft": 5.1
   },
   {
    "lat": 40.5014,
@@ -3293,7 +4385,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5013449,
@@ -3302,7 +4397,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.501296,
@@ -3311,7 +4409,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5013266,
@@ -3320,7 +4421,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5029806,
@@ -3329,7 +4433,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.502899,
@@ -3338,7 +4445,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.502844,
@@ -3347,7 +4457,10 @@
    "dbh_in": 3.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.502848,
@@ -3356,7 +4469,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5027338,
@@ -3365,7 +4481,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5028113,
@@ -3374,7 +4493,10 @@
    "dbh_in": 3.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.502538,
@@ -3383,7 +4505,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5024565,
@@ -3392,7 +4517,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.502328,
@@ -3401,7 +4529,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5025707,
@@ -3410,7 +4541,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.5024952,
@@ -3419,7 +4553,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5025727,
@@ -3428,7 +4565,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5025258,
@@ -3437,7 +4577,10 @@
    "dbh_in": 3.0,
    "condition": "Dead",
    "status": "Dead",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5023422,
@@ -3446,7 +4589,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5027603,
@@ -3455,7 +4601,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5027175,
@@ -3464,7 +4613,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5026522,
@@ -3473,7 +4625,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.502642,
@@ -3482,7 +4637,10 @@
    "dbh_in": null,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5024095,
@@ -3491,7 +4649,10 @@
    "dbh_in": 2.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5023688,
@@ -3500,7 +4661,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5025645,
@@ -3509,7 +4673,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.502536,
@@ -3518,7 +4685,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5025074,
@@ -3527,7 +4697,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5024626,
@@ -3536,7 +4709,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5023565,
@@ -3545,7 +4721,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5023178,
@@ -3554,7 +4733,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5022505,
@@ -3563,7 +4745,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5021872,
@@ -3572,7 +4757,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5021811,
@@ -3581,7 +4769,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "default",
+   "crown_ft": 17.1,
+   "height_ft": 22.5,
+   "clear_ft": 6.3
   },
   {
    "lat": 40.5022913,
@@ -3590,7 +4781,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.5019527,
@@ -3599,7 +4793,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5018834,
@@ -3608,7 +4805,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5018059,
@@ -3617,7 +4817,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5019241,
@@ -3626,7 +4829,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5018854,
@@ -3635,7 +4841,10 @@
    "dbh_in": 11.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.501967,
@@ -3644,7 +4853,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5019976,
@@ -3653,7 +4865,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5018609,
@@ -3662,7 +4877,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5018201,
@@ -3671,7 +4889,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5018446,
@@ -3680,7 +4901,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_dense",
+   "crown_ft": 22.8,
+   "height_ft": 53.9,
+   "clear_ft": 2.7
   },
   {
    "lat": 40.5017651,
@@ -3689,7 +4913,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5016672,
@@ -3698,7 +4925,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.501553,
@@ -3707,7 +4937,10 @@
    "dbh_in": 23.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 43.7
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5017793,
@@ -3716,7 +4949,10 @@
    "dbh_in": 25.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.5016407,
@@ -3725,7 +4961,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5016447,
@@ -3734,7 +4973,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5014347,
@@ -3743,7 +4985,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5013653,
@@ -3752,7 +4997,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5013327,
@@ -3761,7 +5009,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.501298,
@@ -3770,7 +5021,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5013408,
@@ -3779,7 +5033,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.501296,
@@ -3788,7 +5045,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5013041,
@@ -3797,7 +5057,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5012735,
@@ -3806,7 +5069,10 @@
    "dbh_in": 4.0,
    "condition": "Poor",
    "status": "Alive",
-   "crown_ft": 8.8
+   "habit": "shade",
+   "crown_ft": 8.8,
+   "height_ft": 13.7,
+   "clear_ft": 4.8
   },
   {
    "lat": 40.5016753,
@@ -3815,7 +5081,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.2
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5014265,
@@ -3824,7 +5093,10 @@
    "dbh_in": 8.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 15.2
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5013714,
@@ -3833,7 +5105,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5012858,
@@ -3842,7 +5117,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5013816,
@@ -3851,7 +5129,10 @@
    "dbh_in": 9.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5021934,
@@ -3860,7 +5141,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5020791,
@@ -3869,7 +5153,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5019996,
@@ -3878,7 +5165,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.5020363,
@@ -3887,7 +5177,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.8
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5019364,
@@ -3896,7 +5189,10 @@
    "dbh_in": 24.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 31.2
+   "habit": "conifer_dense",
+   "crown_ft": 28.8,
+   "height_ft": 66.9,
+   "clear_ft": 3.3
   },
   {
    "lat": 40.5019486,
@@ -3905,7 +5201,10 @@
    "dbh_in": 29.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 37.7
+   "habit": "conifer_open",
+   "crown_ft": 37.7,
+   "height_ft": 85.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5017651,
@@ -3914,7 +5213,10 @@
    "dbh_in": 4.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5017018,
@@ -3923,7 +5225,10 @@
    "dbh_in": null,
    "condition": "",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5016814,
@@ -3932,7 +5237,10 @@
    "dbh_in": 25.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.5015835,
@@ -3941,7 +5249,10 @@
    "dbh_in": 16.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 20.8
+   "habit": "conifer_open",
+   "crown_ft": 20.8,
+   "height_ft": 49.3,
+   "clear_ft": 17.3
   },
   {
    "lat": 40.5016692,
@@ -3950,7 +5261,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.5016284,
@@ -3959,7 +5273,10 @@
    "dbh_in": 54.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 118.8
+   "habit": "shade",
+   "crown_ft": 118.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5009656,
@@ -3968,7 +5285,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5009513,
@@ -3977,7 +5297,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5009798,
@@ -3986,7 +5309,10 @@
    "dbh_in": 36.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 68.4
+   "habit": "default",
+   "crown_ft": 68.4,
+   "height_ft": 60,
+   "clear_ft": 16.8
   },
   {
    "lat": 40.5009044,
@@ -3995,7 +5321,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "default",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5007535,
@@ -4004,7 +5333,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5007718,
@@ -4013,7 +5345,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5011471,
@@ -4022,7 +5357,10 @@
    "dbh_in": 3.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5010798,
@@ -4031,7 +5369,10 @@
    "dbh_in": 31.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 68.2
+   "habit": "shade",
+   "crown_ft": 68.2,
+   "height_ft": 75.8,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5010696,
@@ -4040,7 +5381,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 60.8
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5011287,
@@ -4049,7 +5393,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5011654,
@@ -4058,7 +5405,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5009146,
@@ -4067,7 +5417,10 @@
    "dbh_in": 37.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 70.3
+   "habit": "default",
+   "crown_ft": 70.3,
+   "height_ft": 60,
+   "clear_ft": 16.8
   },
   {
    "lat": 40.5007412,
@@ -4076,7 +5429,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5007473,
@@ -4085,7 +5441,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5007412,
@@ -4094,7 +5453,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5003027,
@@ -4103,7 +5465,10 @@
    "dbh_in": 18.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5002476,
@@ -4112,7 +5477,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5006454,
@@ -4121,7 +5489,10 @@
    "dbh_in": 18.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5005719,
@@ -4130,7 +5501,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.0
+   "habit": "ornamental",
+   "crown_ft": 46.0,
+   "height_ft": 32,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5002864,
@@ -4139,7 +5513,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 66.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5011552,
@@ -4148,7 +5525,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5012368,
@@ -4157,7 +5537,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.501194,
@@ -4166,7 +5549,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.5010737,
@@ -4175,7 +5561,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.50099,
@@ -4184,7 +5573,10 @@
    "dbh_in": 21.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 27.3
+   "habit": "conifer_dense",
+   "crown_ft": 25.2,
+   "height_ft": 59.1,
+   "clear_ft": 3.0
   },
   {
    "lat": 40.5010064,
@@ -4193,7 +5585,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.5009574,
@@ -4202,7 +5597,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5009431,
@@ -4211,7 +5609,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5009125,
@@ -4220,7 +5621,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5008044,
@@ -4229,7 +5633,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5012246,
@@ -4238,7 +5645,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.0
+   "habit": "ornamental",
+   "crown_ft": 30.0,
+   "height_ft": 28.5,
+   "clear_ft": 5.7
   },
   {
    "lat": 40.5011512,
@@ -4247,7 +5657,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5011532,
@@ -4256,7 +5669,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.0
+   "habit": "ornamental",
+   "crown_ft": 28.0,
+   "height_ft": 26.9,
+   "clear_ft": 5.4
   },
   {
    "lat": 40.5010757,
@@ -4265,7 +5681,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.501092,
@@ -4274,7 +5693,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.501247,
@@ -4283,7 +5705,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.501143,
@@ -4292,7 +5717,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5010512,
@@ -4301,7 +5729,10 @@
    "dbh_in": 26.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.5009798,
@@ -4310,7 +5741,10 @@
    "dbh_in": 35.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 77.0
+   "habit": "shade",
+   "crown_ft": 77.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5008881,
@@ -4319,7 +5753,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5008208,
@@ -4328,7 +5765,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5007596,
@@ -4337,7 +5777,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5007698,
@@ -4346,7 +5789,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.5009207,
@@ -4355,7 +5801,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5007983,
@@ -4364,7 +5813,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5007616,
@@ -4373,7 +5825,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5007657,
@@ -4382,7 +5837,10 @@
    "dbh_in": 49.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 107.8
+   "habit": "shade",
+   "crown_ft": 107.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5007677,
@@ -4391,7 +5849,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5007167,
@@ -4400,7 +5861,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5003455,
@@ -4409,7 +5873,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5002578,
@@ -4418,7 +5885,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5006515,
@@ -4427,7 +5897,10 @@
    "dbh_in": 1.0,
    "condition": "Poor",
    "status": "Alive",
-   "crown_ft": 2.2
+   "habit": "shade",
+   "crown_ft": 2.2,
+   "height_ft": 6.8,
+   "clear_ft": 0.8
   },
   {
    "lat": 40.5005067,
@@ -4436,7 +5909,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.5005964,
@@ -4445,7 +5921,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.50068,
@@ -4454,7 +5933,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5006678,
@@ -4463,7 +5945,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5006168,
@@ -4472,7 +5957,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5005536,
@@ -4481,7 +5969,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.5004149,
@@ -4490,7 +5981,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5002721,
@@ -4499,7 +5993,10 @@
    "dbh_in": 36.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 79.2
+   "habit": "shade",
+   "crown_ft": 79.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5004434,
@@ -4508,7 +6005,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5003741,
@@ -4517,7 +6017,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5004414,
@@ -4526,7 +6029,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5004027,
@@ -4535,7 +6041,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.500421,
@@ -4544,7 +6053,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.5003761,
@@ -4553,7 +6065,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5003884,
@@ -4562,7 +6077,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5003353,
@@ -4571,7 +6089,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5002986,
@@ -4580,7 +6101,10 @@
    "dbh_in": 27.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.5003048,
@@ -4589,7 +6113,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5002884,
@@ -4598,7 +6125,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5003517,
@@ -4607,7 +6137,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5003313,
@@ -4616,7 +6149,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.500315,
@@ -4625,7 +6161,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5002966,
@@ -4634,7 +6173,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.500213,
@@ -4643,7 +6185,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.5000947,
@@ -4652,7 +6197,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5001192,
@@ -4661,7 +6209,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5000335,
@@ -4670,7 +6221,10 @@
    "dbh_in": 17.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4998785,
@@ -4679,7 +6233,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5001253,
@@ -4688,7 +6245,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4997602,
@@ -4697,7 +6257,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4998214,
@@ -4706,7 +6269,10 @@
    "dbh_in": 15.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.4993339,
@@ -4715,7 +6281,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.4993849,
@@ -4724,7 +6293,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.4994175,
@@ -4733,7 +6305,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.4994563,
@@ -4742,7 +6317,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 19.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.4994971,
@@ -4751,7 +6329,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.1
+   "habit": "shade",
+   "crown_ft": 19.8,
+   "height_ft": 25.2,
+   "clear_ft": 8.8
   },
   {
    "lat": 40.5001824,
@@ -4760,7 +6341,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.500009,
@@ -4769,7 +6353,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5000784,
@@ -4778,7 +6365,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4999213,
@@ -4787,7 +6377,10 @@
    "dbh_in": 40.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 88.0
+   "habit": "shade",
+   "crown_ft": 88.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5001844,
@@ -4796,7 +6389,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.5000722,
@@ -4805,7 +6401,10 @@
    "dbh_in": 35.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 77.0
+   "habit": "shade",
+   "crown_ft": 77.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5000315,
@@ -4814,7 +6413,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4997072,
@@ -4823,7 +6425,10 @@
    "dbh_in": 22.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.4996378,
@@ -4832,7 +6437,10 @@
    "dbh_in": 10.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.499648,
@@ -4841,7 +6449,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4995562,
@@ -4850,7 +6461,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "default",
+   "crown_ft": 26.6,
+   "height_ft": 32.5,
+   "clear_ft": 9.1
   },
   {
    "lat": 40.4995481,
@@ -4859,7 +6473,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "default",
+   "crown_ft": 22.8,
+   "height_ft": 28.5,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.4995032,
@@ -4868,7 +6485,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.8
+   "habit": "default",
+   "crown_ft": 22.8,
+   "height_ft": 28.5,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.4993829,
@@ -4877,7 +6497,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.4994543,
@@ -4886,7 +6509,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "default",
+   "crown_ft": 20.9,
+   "height_ft": 26.5,
+   "clear_ft": 7.4
   },
   {
    "lat": 40.499701,
@@ -4895,7 +6521,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4996582,
@@ -4904,7 +6533,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_dense",
+   "crown_ft": 22.8,
+   "height_ft": 53.9,
+   "clear_ft": 2.7
   },
   {
    "lat": 40.4994155,
@@ -4913,7 +6545,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "default",
+   "crown_ft": 20.9,
+   "height_ft": 26.5,
+   "clear_ft": 7.4
   },
   {
    "lat": 40.4994298,
@@ -4922,7 +6557,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.9
+   "habit": "default",
+   "crown_ft": 20.9,
+   "height_ft": 26.5,
+   "clear_ft": 7.4
   },
   {
    "lat": 40.4992217,
@@ -4931,7 +6569,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.2
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.4992238,
@@ -4940,7 +6581,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5011491,
@@ -4949,7 +6593,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5010206,
@@ -4958,7 +6605,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5012062,
@@ -4967,7 +6617,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5012022,
@@ -4976,7 +6629,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5011614,
@@ -4985,7 +6641,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5012654,
@@ -4994,7 +6653,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.501247,
@@ -5003,7 +6665,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5011552,
@@ -5012,7 +6677,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5011247,
@@ -5021,7 +6689,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5010675,
@@ -5030,7 +6701,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5009554,
@@ -5039,7 +6713,10 @@
    "dbh_in": 41.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 90.2
+   "habit": "shade",
+   "crown_ft": 90.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5008065,
@@ -5048,7 +6725,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5008493,
@@ -5057,7 +6737,10 @@
    "dbh_in": 44.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 96.8
+   "habit": "shade",
+   "crown_ft": 96.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5007902,
@@ -5066,7 +6749,10 @@
    "dbh_in": 38.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 83.6
+   "habit": "shade",
+   "crown_ft": 83.6,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5012307,
@@ -5075,7 +6761,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5012613,
@@ -5084,7 +6773,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.501247,
@@ -5093,7 +6785,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.5012307,
@@ -5102,7 +6797,10 @@
    "dbh_in": 41.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 90.2
+   "habit": "shade",
+   "crown_ft": 90.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5011818,
@@ -5111,7 +6809,10 @@
    "dbh_in": 16.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5010594,
@@ -5120,7 +6821,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "default",
+   "crown_ft": 11.4,
+   "height_ft": 16.5,
+   "clear_ft": 4.6
   },
   {
    "lat": 40.5010125,
@@ -5129,7 +6833,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5010329,
@@ -5138,7 +6845,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.501192,
@@ -5147,7 +6857,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.8
+   "habit": "conifer_open",
+   "crown_ft": 20.8,
+   "height_ft": 49.3,
+   "clear_ft": 17.3
   },
   {
    "lat": 40.5009533,
@@ -5156,7 +6869,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "default",
+   "crown_ft": 9.5,
+   "height_ft": 14.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.5009676,
@@ -5165,7 +6881,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "default",
+   "crown_ft": 11.4,
+   "height_ft": 16.5,
+   "clear_ft": 4.6
   },
   {
    "lat": 40.5008942,
@@ -5174,7 +6893,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.0
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.500937,
@@ -5183,7 +6905,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Removed",
-   "crown_ft": 11.4
+   "habit": "default",
+   "crown_ft": 11.4,
+   "height_ft": 16.5,
+   "clear_ft": 4.6
   },
   {
    "lat": 40.5007575,
@@ -5192,7 +6917,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5008024,
@@ -5201,7 +6929,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5008921,
@@ -5210,7 +6941,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.5008942,
@@ -5219,7 +6953,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Stump",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5007657,
@@ -5228,7 +6965,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.5008187,
@@ -5237,7 +6977,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.4
+   "habit": "conifer_dense",
+   "crown_ft": 9.6,
+   "height_ft": 25.3,
+   "clear_ft": 1.3
   },
   {
    "lat": 40.5006086,
@@ -5246,7 +6989,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5005006,
@@ -5255,7 +7001,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 70.4
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5005801,
@@ -5264,7 +7013,10 @@
    "dbh_in": 35.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 77.0
+   "habit": "shade",
+   "crown_ft": 77.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5007065,
@@ -5273,7 +7025,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5005026,
@@ -5282,7 +7037,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 70.4
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.500474,
@@ -5291,7 +7049,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5004088,
@@ -5300,7 +7061,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.5004516,
@@ -5309,7 +7073,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.5004373,
@@ -5318,7 +7085,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "ornamental",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5002374,
@@ -5327,7 +7097,10 @@
    "dbh_in": 34.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 74.8
+   "habit": "shade",
+   "crown_ft": 74.8,
+   "height_ft": 82.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5007371,
@@ -5336,7 +7109,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.0
+   "habit": "ornamental",
+   "crown_ft": 46.0,
+   "height_ft": 32,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5005984,
@@ -5345,7 +7121,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Dead",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5006433,
@@ -5354,7 +7133,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.5005944,
@@ -5363,7 +7145,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.5005515,
@@ -5372,7 +7157,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.50037,
@@ -5381,7 +7169,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5004373,
@@ -5390,7 +7181,10 @@
    "dbh_in": 42.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 92.4
+   "habit": "shade",
+   "crown_ft": 92.4,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5003353,
@@ -5399,7 +7193,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.5002436,
@@ -5408,7 +7205,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.5003476,
@@ -5417,7 +7217,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.500264,
@@ -5426,7 +7229,10 @@
    "dbh_in": 36.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 79.2
+   "habit": "shade",
+   "crown_ft": 79.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5002599,
@@ -5435,7 +7241,10 @@
    "dbh_in": 46.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 101.2
+   "habit": "shade",
+   "crown_ft": 101.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5010186,
@@ -5444,7 +7253,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 2.6
+   "habit": "conifer_dense",
+   "crown_ft": 2.4,
+   "height_ft": 9.7,
+   "clear_ft": 0.5
   },
   {
    "lat": 40.5010247,
@@ -5453,7 +7265,10 @@
    "dbh_in": 3.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 3.9
+   "habit": "conifer_dense",
+   "crown_ft": 3.6,
+   "height_ft": 12.3,
+   "clear_ft": 0.6
   },
   {
    "lat": 40.5009778,
@@ -5462,7 +7277,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.500884,
@@ -5471,7 +7289,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.5008514,
@@ -5480,7 +7301,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.5012654,
@@ -5489,7 +7313,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.6
+   "habit": "conifer_open",
+   "crown_ft": 15.6,
+   "height_ft": 38.1,
+   "clear_ft": 13.3
   },
   {
    "lat": 40.5011552,
@@ -5498,7 +7325,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.5003823,
@@ -5507,7 +7337,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5004394,
@@ -5516,7 +7349,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "shade",
+   "crown_ft": 8.8,
+   "height_ft": 13.7,
+   "clear_ft": 4.8
   },
   {
    "lat": 40.5003455,
@@ -5525,7 +7361,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.5003435,
@@ -5534,7 +7373,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.5002619,
@@ -5543,7 +7385,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5003598,
@@ -5552,7 +7397,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5003761,
@@ -5561,7 +7409,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 43.7
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.5004455,
@@ -5570,7 +7421,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5004516,
@@ -5579,7 +7433,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5004047,
@@ -5588,7 +7445,10 @@
    "dbh_in": 12.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 15.6
+   "habit": "conifer_open",
+   "crown_ft": 15.6,
+   "height_ft": 38.1,
+   "clear_ft": 13.3
   },
   {
    "lat": 40.5004516,
@@ -5597,7 +7457,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.6
+   "habit": "conifer_open",
+   "crown_ft": 15.6,
+   "height_ft": 38.1,
+   "clear_ft": 13.3
   },
   {
    "lat": 40.500423,
@@ -5606,7 +7469,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.5004149,
@@ -5615,7 +7481,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.4
+   "habit": "conifer_open",
+   "crown_ft": 10.4,
+   "height_ft": 26.9,
+   "clear_ft": 9.4
   },
   {
    "lat": 40.5001701,
@@ -5624,7 +7493,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 47.5
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.5000743,
@@ -5633,7 +7505,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.1
+   "habit": "conifer_dense",
+   "crown_ft": 20.4,
+   "height_ft": 48.7,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.5001477,
@@ -5642,7 +7517,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5001028,
@@ -5651,7 +7529,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 57.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4999234,
@@ -5660,7 +7541,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 23.4
+   "habit": "conifer_dense",
+   "crown_ft": 21.6,
+   "height_ft": 51.3,
+   "clear_ft": 2.6
   },
   {
    "lat": 40.5000967,
@@ -5669,7 +7553,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.5000233,
@@ -5678,7 +7565,10 @@
    "dbh_in": 29.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.4999764,
@@ -5687,7 +7577,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4999968,
@@ -5696,7 +7589,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 70.4
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4998744,
@@ -5705,7 +7601,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.4996766,
@@ -5714,7 +7613,10 @@
    "dbh_in": 21.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 39.9
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.4994094,
@@ -5723,7 +7625,10 @@
    "dbh_in": 37.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 81.4
+   "habit": "shade",
+   "crown_ft": 81.4,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4993135,
@@ -5732,7 +7637,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.3
+   "habit": "conifer_dense",
+   "crown_ft": 13.2,
+   "height_ft": 33.1,
+   "clear_ft": 1.7
   },
   {
    "lat": 40.4991871,
@@ -5741,7 +7649,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.4993808,
@@ -5750,7 +7661,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.4994196,
@@ -5759,7 +7673,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "default",
+   "crown_ft": 13.3,
+   "height_ft": 18.5,
+   "clear_ft": 5.2
   },
   {
    "lat": 40.4994379,
@@ -5768,7 +7685,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "default",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4992136,
@@ -5777,7 +7697,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.4992687,
@@ -5786,7 +7709,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.499236,
@@ -5795,7 +7721,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 15.4
+   "habit": "shade",
+   "crown_ft": 15.4,
+   "height_ft": 20.6,
+   "clear_ft": 7.2
   },
   {
    "lat": 40.4996888,
@@ -5804,7 +7733,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.4996541,
@@ -5813,7 +7745,10 @@
    "dbh_in": 4.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.4996133,
@@ -5822,7 +7757,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 7.6
+   "habit": "default",
+   "crown_ft": 7.6,
+   "height_ft": 12.5,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.4992809,
@@ -5831,7 +7769,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.4993931,
@@ -5840,7 +7781,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.3
+   "habit": "default",
+   "crown_ft": 13.3,
+   "height_ft": 18.5,
+   "clear_ft": 5.2
   },
   {
    "lat": 40.4994135,
@@ -5849,7 +7793,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "default",
+   "crown_ft": 11.4,
+   "height_ft": 16.5,
+   "clear_ft": 4.6
   },
   {
    "lat": 40.4993523,
@@ -5858,7 +7805,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.500111,
@@ -5867,7 +7817,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.5002109,
@@ -5876,7 +7829,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.5001375,
@@ -5885,7 +7841,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.4999988,
@@ -5894,7 +7853,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4999376,
@@ -5903,7 +7865,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4999132,
@@ -5912,7 +7877,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4997867,
@@ -5921,7 +7889,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.4997378,
@@ -5930,7 +7901,10 @@
    "dbh_in": 39.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 85.8
+   "habit": "shade",
+   "crown_ft": 85.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.499907,
@@ -5939,7 +7913,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "shade",
+   "crown_ft": 13.2,
+   "height_ft": 18.3,
+   "clear_ft": 6.4
   },
   {
    "lat": 40.4997908,
@@ -5948,7 +7925,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 66.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.5001967,
@@ -5957,7 +7937,10 @@
    "dbh_in": 8.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5001722,
@@ -5966,7 +7949,10 @@
    "dbh_in": 8.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 17.6
+   "habit": "shade",
+   "crown_ft": 17.6,
+   "height_ft": 22.9,
+   "clear_ft": 8.0
   },
   {
    "lat": 40.5001457,
@@ -5975,7 +7961,10 @@
    "dbh_in": 10.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.499854,
@@ -5984,7 +7973,10 @@
    "dbh_in": 5.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 9.5
+   "habit": "shade",
+   "crown_ft": 11.0,
+   "height_ft": 16.0,
+   "clear_ft": 5.6
   },
   {
    "lat": 40.4995827,
@@ -5993,7 +7985,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4996011,
@@ -6002,7 +7997,10 @@
    "dbh_in": 35.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 77.0
+   "habit": "shade",
+   "crown_ft": 77.0,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4995338,
@@ -6011,7 +8009,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.499646,
@@ -6020,7 +8021,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4994502,
@@ -6029,7 +8033,10 @@
    "dbh_in": 10.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.4995522,
@@ -6038,7 +8045,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.499442,
@@ -6047,7 +8057,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.4994012,
@@ -6056,7 +8069,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.4992442,
@@ -6065,7 +8081,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4995909,
@@ -6074,7 +8093,10 @@
    "dbh_in": 48.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 105.6
+   "habit": "shade",
+   "crown_ft": 105.6,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4996786,
@@ -6083,7 +8105,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.4995848,
@@ -6092,7 +8117,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 28.0
+   "habit": "ornamental",
+   "crown_ft": 28.0,
+   "height_ft": 26.9,
+   "clear_ft": 5.4
   },
   {
    "lat": 40.4996174,
@@ -6101,7 +8129,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.0
+   "habit": "ornamental",
+   "crown_ft": 34.0,
+   "height_ft": 31.7,
+   "clear_ft": 6.3
   },
   {
    "lat": 40.4993135,
@@ -6110,7 +8141,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 66.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4992931,
@@ -6119,7 +8153,10 @@
    "dbh_in": 28.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 61.6
+   "habit": "shade",
+   "crown_ft": 61.6,
+   "height_ft": 68.9,
+   "clear_ft": 24.1
   },
   {
    "lat": 40.49903,
@@ -6128,7 +8165,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.4991585,
@@ -6137,7 +8177,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4991524,
@@ -6146,7 +8189,10 @@
    "dbh_in": 29.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.4989097,
@@ -6155,7 +8201,10 @@
    "dbh_in": 39.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 85.8
+   "habit": "shade",
+   "crown_ft": 85.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4986608,
@@ -6164,7 +8213,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.4986976,
@@ -6173,7 +8225,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.4
+   "habit": "default",
+   "crown_ft": 11.4,
+   "height_ft": 16.5,
+   "clear_ft": 4.6
   },
   {
    "lat": 40.4988036,
@@ -6182,7 +8237,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.6
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.4986058,
@@ -6191,7 +8249,10 @@
    "dbh_in": 44.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 96.8
+   "habit": "shade",
+   "crown_ft": 96.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4982733,
@@ -6200,7 +8261,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.4982774,
@@ -6209,7 +8273,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 43.7
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.4989729,
@@ -6218,7 +8285,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4990219,
@@ -6227,7 +8297,10 @@
    "dbh_in": 19.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_open",
+   "crown_ft": 24.7,
+   "height_ft": 57.7,
+   "clear_ft": 20.2
   },
   {
    "lat": 40.4987853,
@@ -6236,7 +8309,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4988587,
@@ -6245,7 +8321,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4988628,
@@ -6254,7 +8333,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 48.4
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.4986955,
@@ -6263,7 +8345,10 @@
    "dbh_in": 24.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.499134,
@@ -6272,7 +8357,10 @@
    "dbh_in": 2.0,
    "condition": "Dead",
    "status": "Dead",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4991034,
@@ -6281,7 +8369,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 66.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.498979,
@@ -6290,7 +8381,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.4990545,
@@ -6299,7 +8393,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.4989688,
@@ -6308,7 +8405,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4990259,
@@ -6317,7 +8417,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4987751,
@@ -6326,7 +8429,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.498465,
@@ -6335,7 +8441,10 @@
    "dbh_in": 28.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 61.6
+   "habit": "shade",
+   "crown_ft": 61.6,
+   "height_ft": 68.9,
+   "clear_ft": 24.1
   },
   {
    "lat": 40.4985446,
@@ -6344,7 +8453,10 @@
    "dbh_in": 14.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.4984508,
@@ -6353,7 +8465,10 @@
    "dbh_in": 10.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 22.0
+   "habit": "shade",
+   "crown_ft": 22.0,
+   "height_ft": 27.5,
+   "clear_ft": 9.6
   },
   {
    "lat": 40.498155,
@@ -6362,7 +8477,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.4984895,
@@ -6371,7 +8489,10 @@
    "dbh_in": 21.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 39.9
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.4984447,
@@ -6380,7 +8501,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.4985793,
@@ -6389,7 +8513,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "default",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4986037,
@@ -6398,7 +8525,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "conifer_open",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4985833,
@@ -6407,7 +8537,10 @@
    "dbh_in": 19.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_open",
+   "crown_ft": 24.7,
+   "height_ft": 57.7,
+   "clear_ft": 20.2
   },
   {
    "lat": 40.4985079,
@@ -6416,7 +8549,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.4984161,
@@ -6425,7 +8561,10 @@
    "dbh_in": 2.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4984447,
@@ -6434,7 +8573,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4982366,
@@ -6443,7 +8585,10 @@
    "dbh_in": 15.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.4981489,
@@ -6452,7 +8597,10 @@
    "dbh_in": 13.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 28.6
+   "habit": "shade",
+   "crown_ft": 28.6,
+   "height_ft": 34.4,
+   "clear_ft": 12.0
   },
   {
    "lat": 40.4983855,
@@ -6461,7 +8609,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.4991524,
@@ -6470,7 +8621,10 @@
    "dbh_in": 28.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 61.6
+   "habit": "shade",
+   "crown_ft": 61.6,
+   "height_ft": 68.9,
+   "clear_ft": 24.1
   },
   {
    "lat": 40.4989301,
@@ -6479,7 +8633,10 @@
    "dbh_in": 23.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 50.6
+   "habit": "shade",
+   "crown_ft": 50.6,
+   "height_ft": 57.4,
+   "clear_ft": 20.1
   },
   {
    "lat": 40.4990443,
@@ -6488,7 +8645,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4989403,
@@ -6497,7 +8657,10 @@
    "dbh_in": 39.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 85.8
+   "habit": "shade",
+   "crown_ft": 85.8,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4991361,
@@ -6506,7 +8669,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4990892,
@@ -6515,7 +8681,10 @@
    "dbh_in": 7.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4989933,
@@ -6524,7 +8693,10 @@
    "dbh_in": 17.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 32.3
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4989158,
@@ -6533,7 +8705,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.4988669,
@@ -6542,7 +8717,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.498875,
@@ -6551,7 +8729,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.4991014,
@@ -6560,7 +8741,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4989566,
@@ -6569,7 +8753,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4990973,
@@ -6578,7 +8765,10 @@
    "dbh_in": 42.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 92.4
+   "habit": "shade",
+   "crown_ft": 92.4,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.499079,
@@ -6587,7 +8777,10 @@
    "dbh_in": 37.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 81.4
+   "habit": "shade",
+   "crown_ft": 81.4,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4989953,
@@ -6596,7 +8789,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.4
+   "habit": "shade",
+   "crown_ft": 26.4,
+   "height_ft": 32.1,
+   "clear_ft": 11.2
   },
   {
    "lat": 40.498926,
@@ -6605,7 +8801,10 @@
    "dbh_in": 28.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 61.6
+   "habit": "shade",
+   "crown_ft": 61.6,
+   "height_ft": 68.9,
+   "clear_ft": 24.1
   },
   {
    "lat": 40.498979,
@@ -6614,7 +8813,10 @@
    "dbh_in": 37.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 81.4
+   "habit": "shade",
+   "crown_ft": 81.4,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4988872,
@@ -6623,7 +8825,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4983875,
@@ -6632,7 +8837,10 @@
    "dbh_in": 29.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.4983896,
@@ -6641,7 +8849,10 @@
    "dbh_in": 41.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 90.2
+   "habit": "shade",
+   "crown_ft": 90.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4982692,
@@ -6650,7 +8861,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4986364,
@@ -6659,7 +8873,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.4986241,
@@ -6668,7 +8885,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.4986201,
@@ -6677,7 +8897,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4986303,
@@ -6686,7 +8909,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.4985344,
@@ -6695,7 +8921,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.4984569,
@@ -6704,7 +8933,10 @@
    "dbh_in": 29.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.4983508,
@@ -6713,7 +8945,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4983977,
@@ -6722,7 +8957,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4981713,
@@ -6731,7 +8969,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.498155,
@@ -6740,7 +8981,10 @@
    "dbh_in": 24.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 52.8
+   "habit": "shade",
+   "crown_ft": 52.8,
+   "height_ft": 59.7,
+   "clear_ft": 20.9
   },
   {
    "lat": 40.4983712,
@@ -6749,7 +8993,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4983529,
@@ -6758,7 +9005,10 @@
    "dbh_in": 29.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 63.8
+   "habit": "shade",
+   "crown_ft": 63.8,
+   "height_ft": 71.2,
+   "clear_ft": 24.9
   },
   {
    "lat": 40.4982774,
@@ -6767,7 +9017,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 70.4
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.498257,
@@ -6776,7 +9029,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.498155,
@@ -6785,7 +9041,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4981387,
@@ -6794,7 +9053,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.4980734,
@@ -6803,7 +9065,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4981244,
@@ -6812,7 +9077,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.4980796,
@@ -6821,7 +9089,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 27.3
+   "habit": "conifer_open",
+   "crown_ft": 27.3,
+   "height_ft": 63.3,
+   "clear_ft": 22.2
   },
   {
    "lat": 40.4980224,
@@ -6830,7 +9101,10 @@
    "dbh_in": 34.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 74.8
+   "habit": "shade",
+   "crown_ft": 74.8,
+   "height_ft": 82.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4980102,
@@ -6839,7 +9113,10 @@
    "dbh_in": 6.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.498,
@@ -6848,7 +9125,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4980388,
@@ -6857,7 +9137,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 22.0
+   "habit": "ornamental",
+   "crown_ft": 22.0,
+   "height_ft": 22.1,
+   "clear_ft": 4.4
   },
   {
    "lat": 40.4981102,
@@ -6866,7 +9149,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4980184,
@@ -6875,7 +9161,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4980632,
@@ -6884,7 +9173,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4980367,
@@ -6893,7 +9185,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.5012022,
@@ -6902,7 +9197,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.500525,
@@ -6911,7 +9209,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 20.0
+   "habit": "ornamental",
+   "crown_ft": 20.0,
+   "height_ft": 20.5,
+   "clear_ft": 4.1
   },
   {
    "lat": 40.500421,
@@ -6920,7 +9221,10 @@
    "dbh_in": 8.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.5004434,
@@ -6929,7 +9233,10 @@
    "dbh_in": 24.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 45.6
+   "habit": "default",
+   "crown_ft": 45.6,
+   "height_ft": 52.5,
+   "clear_ft": 14.7
   },
   {
    "lat": 40.500421,
@@ -6938,7 +9245,10 @@
    "dbh_in": 8.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 16.0
+   "habit": "ornamental",
+   "crown_ft": 16.0,
+   "height_ft": 17.3,
+   "clear_ft": 3.5
   },
   {
    "lat": 40.4997541,
@@ -6947,7 +9257,10 @@
    "dbh_in": 11.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.2
+   "habit": "shade",
+   "crown_ft": 24.2,
+   "height_ft": 29.8,
+   "clear_ft": 10.4
   },
   {
    "lat": 40.4997683,
@@ -6956,7 +9269,10 @@
    "dbh_in": 6.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 12.0
+   "habit": "ornamental",
+   "crown_ft": 12.0,
+   "height_ft": 14.1,
+   "clear_ft": 2.8
   },
   {
    "lat": 40.4997989,
@@ -6965,7 +9281,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.4998112,
@@ -6974,7 +9293,10 @@
    "dbh_in": 13.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 26.0
+   "habit": "ornamental",
+   "crown_ft": 26.0,
+   "height_ft": 25.3,
+   "clear_ft": 5.1
   },
   {
    "lat": 40.4996358,
@@ -6983,7 +9305,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 34.0
+   "habit": "ornamental",
+   "crown_ft": 34.0,
+   "height_ft": 31.7,
+   "clear_ft": 6.3
   },
   {
    "lat": 40.4996582,
@@ -6992,7 +9317,10 @@
    "dbh_in": 12.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.0
+   "habit": "ornamental",
+   "crown_ft": 24.0,
+   "height_ft": 23.7,
+   "clear_ft": 4.7
   },
   {
    "lat": 40.4996786,
@@ -7001,7 +9329,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.0
+   "habit": "ornamental",
+   "crown_ft": 30.0,
+   "height_ft": 28.5,
+   "clear_ft": 5.7
   },
   {
    "lat": 40.4993625,
@@ -7010,7 +9341,10 @@
    "dbh_in": 30.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 66.0
+   "habit": "shade",
+   "crown_ft": 66.0,
+   "height_ft": 73.5,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4992544,
@@ -7019,7 +9353,10 @@
    "dbh_in": 19.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.4994053,
@@ -7028,7 +9365,10 @@
    "dbh_in": 34.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 74.8
+   "habit": "shade",
+   "crown_ft": 74.8,
+   "height_ft": 82.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.499391,
@@ -7037,7 +9377,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4995807,
@@ -7046,7 +9389,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4995583,
@@ -7055,7 +9401,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.4995664,
@@ -7064,7 +9413,10 @@
    "dbh_in": 31.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 68.2
+   "habit": "shade",
+   "crown_ft": 68.2,
+   "height_ft": 75.8,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4994359,
@@ -7073,7 +9425,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 27.3
+   "habit": "conifer_open",
+   "crown_ft": 27.3,
+   "height_ft": 63.3,
+   "clear_ft": 22.2
   },
   {
    "lat": 40.5000335,
@@ -7082,7 +9437,10 @@
    "dbh_in": 5.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 10.0
+   "habit": "ornamental",
+   "crown_ft": 10.0,
+   "height_ft": 12.5,
+   "clear_ft": 2.5
   },
   {
    "lat": 40.4996052,
@@ -7091,7 +9449,10 @@
    "dbh_in": 34.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 74.8
+   "habit": "shade",
+   "crown_ft": 74.8,
+   "height_ft": 82.7,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4994808,
@@ -7100,7 +9461,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4993094,
@@ -7109,7 +9473,10 @@
    "dbh_in": 22.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 28.6
+   "habit": "conifer_open",
+   "crown_ft": 28.6,
+   "height_ft": 66.1,
+   "clear_ft": 23.1
   },
   {
    "lat": 40.499234,
@@ -7118,7 +9485,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.4991687,
@@ -7127,7 +9497,10 @@
    "dbh_in": 16.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.4989933,
@@ -7136,7 +9509,10 @@
    "dbh_in": 17.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 37.4
+   "habit": "shade",
+   "crown_ft": 37.4,
+   "height_ft": 43.6,
+   "clear_ft": 15.3
   },
   {
    "lat": 40.4987363,
@@ -7145,7 +9521,10 @@
    "dbh_in": 4.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 8.0
+   "habit": "ornamental",
+   "crown_ft": 8.0,
+   "height_ft": 10.9,
+   "clear_ft": 2.2
   },
   {
    "lat": 40.498771,
@@ -7154,7 +9533,10 @@
    "dbh_in": 3.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 6.0
+   "habit": "ornamental",
+   "crown_ft": 6.0,
+   "height_ft": 9.3,
+   "clear_ft": 1.9
   },
   {
    "lat": 40.4987445,
@@ -7163,7 +9545,10 @@
    "dbh_in": 2.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 4.0
+   "habit": "ornamental",
+   "crown_ft": 4.0,
+   "height_ft": 7.7,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4989505,
@@ -7172,7 +9557,10 @@
    "dbh_in": 10.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 13.0
+   "habit": "conifer_dense",
+   "crown_ft": 12.0,
+   "height_ft": 30.5,
+   "clear_ft": 1.5
   },
   {
    "lat": 40.4989913,
@@ -7181,7 +9569,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 11.7
+   "habit": "conifer_dense",
+   "crown_ft": 10.8,
+   "height_ft": 27.9,
+   "clear_ft": 1.4
   },
   {
    "lat": 40.4986751,
@@ -7190,7 +9581,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4988648,
@@ -7199,7 +9593,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 47.5
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4987995,
@@ -7208,7 +9605,10 @@
    "dbh_in": 7.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 14.0
+   "habit": "ornamental",
+   "crown_ft": 14.0,
+   "height_ft": 15.7,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4986119,
@@ -7217,7 +9617,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4984895,
@@ -7226,7 +9629,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.4986507,
@@ -7235,7 +9641,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 41.8,
+   "height_ft": 48.2,
+   "clear_ft": 16.9
   },
   {
    "lat": 40.4985589,
@@ -7244,7 +9653,10 @@
    "dbh_in": 25.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 55.0
+   "habit": "shade",
+   "crown_ft": 55.0,
+   "height_ft": 62.0,
+   "clear_ft": 21.7
   },
   {
    "lat": 40.4986568,
@@ -7253,7 +9665,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 48.4
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.4984385,
@@ -7262,7 +9677,10 @@
    "dbh_in": 43.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 94.6
+   "habit": "shade",
+   "crown_ft": 94.6,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4982815,
@@ -7271,7 +9689,10 @@
    "dbh_in": null,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": null
+   "habit": "shade",
+   "crown_ft": null,
+   "height_ft": null,
+   "clear_ft": null
   },
   {
    "lat": 40.4983977,
@@ -7280,7 +9701,10 @@
    "dbh_in": 18.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.4981856,
@@ -7289,7 +9713,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.4981836,
@@ -7298,7 +9725,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4985507,
@@ -7307,7 +9737,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.4985813,
@@ -7316,7 +9749,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4984814,
@@ -7325,7 +9761,10 @@
    "dbh_in": 21.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 46.2
+   "habit": "shade",
+   "crown_ft": 46.2,
+   "height_ft": 52.8,
+   "clear_ft": 18.5
   },
   {
    "lat": 40.4986445,
@@ -7334,7 +9773,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.498359,
@@ -7343,7 +9785,10 @@
    "dbh_in": 20.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 44.0
+   "habit": "shade",
+   "crown_ft": 44.0,
+   "height_ft": 50.5,
+   "clear_ft": 17.7
   },
   {
    "lat": 40.4982203,
@@ -7352,7 +9797,10 @@
    "dbh_in": 36.0,
    "condition": "Dead",
    "status": "Removed",
-   "crown_ft": 79.2
+   "habit": "shade",
+   "crown_ft": 79.2,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4982733,
@@ -7361,7 +9809,10 @@
    "dbh_in": 19.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_open",
+   "crown_ft": 24.7,
+   "height_ft": 57.7,
+   "clear_ft": 20.2
   },
   {
    "lat": 40.4982325,
@@ -7370,7 +9821,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 5.7
+   "habit": "default",
+   "crown_ft": 5.7,
+   "height_ft": 10.5,
+   "clear_ft": 2.9
   },
   {
    "lat": 40.4990137,
@@ -7379,7 +9833,10 @@
    "dbh_in": 32.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 70.4
+   "habit": "shade",
+   "crown_ft": 70.4,
+   "height_ft": 78.1,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4989505,
@@ -7388,7 +9845,10 @@
    "dbh_in": 9.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 18.0
+   "habit": "ornamental",
+   "crown_ft": 18.0,
+   "height_ft": 18.9,
+   "clear_ft": 3.8
   },
   {
    "lat": 40.499132,
@@ -7397,7 +9857,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.4989994,
@@ -7406,7 +9869,10 @@
    "dbh_in": 16.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 35.2
+   "habit": "shade",
+   "crown_ft": 35.2,
+   "height_ft": 41.3,
+   "clear_ft": 14.5
   },
   {
    "lat": 40.4988689,
@@ -7415,7 +9881,10 @@
    "dbh_in": 15.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 33.0
+   "habit": "shade",
+   "crown_ft": 33.0,
+   "height_ft": 39.0,
+   "clear_ft": 13.6
   },
   {
    "lat": 40.4987975,
@@ -7424,7 +9893,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.4987445,
@@ -7433,7 +9905,10 @@
    "dbh_in": 22.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 41.8
+   "habit": "shade",
+   "crown_ft": 48.4,
+   "height_ft": 55.1,
+   "clear_ft": 19.3
   },
   {
    "lat": 40.4988505,
@@ -7442,7 +9917,10 @@
    "dbh_in": 19.0,
    "condition": "Fair",
    "status": "Alive",
-   "crown_ft": 24.7
+   "habit": "conifer_open",
+   "crown_ft": 24.7,
+   "height_ft": 57.7,
+   "clear_ft": 20.2
   },
   {
    "lat": 40.49872,
@@ -7451,7 +9929,10 @@
    "dbh_in": 18.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 39.6
+   "habit": "shade",
+   "crown_ft": 39.6,
+   "height_ft": 45.9,
+   "clear_ft": 16.1
   },
   {
    "lat": 40.4986608,
@@ -7460,7 +9941,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   },
   {
    "lat": 40.4988791,
@@ -7469,7 +9953,10 @@
    "dbh_in": 27.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 59.4
+   "habit": "shade",
+   "crown_ft": 59.4,
+   "height_ft": 66.6,
+   "clear_ft": 23.3
   },
   {
    "lat": 40.4986996,
@@ -7478,7 +9965,10 @@
    "dbh_in": 38.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 83.6
+   "habit": "shade",
+   "crown_ft": 83.6,
+   "height_ft": 85,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4986037,
@@ -7487,7 +9977,10 @@
    "dbh_in": 26.0,
    "condition": "Good",
    "status": "Alive",
-   "crown_ft": 49.4
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.498516,
@@ -7496,7 +9989,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 4.4
+   "habit": "shade",
+   "crown_ft": 4.4,
+   "height_ft": 9.1,
+   "clear_ft": 3.1
   },
   {
    "lat": 40.4984548,
@@ -7505,7 +10001,10 @@
    "dbh_in": 2.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 3.8
+   "habit": "default",
+   "crown_ft": 3.8,
+   "height_ft": 8.5,
+   "clear_ft": 2.4
   },
   {
    "lat": 40.4983916,
@@ -7514,7 +10013,10 @@
    "dbh_in": 26.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 57.2
+   "habit": "shade",
+   "crown_ft": 57.2,
+   "height_ft": 64.3,
+   "clear_ft": 22.5
   },
   {
    "lat": 40.49831,
@@ -7523,7 +10025,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4983488,
@@ -7532,7 +10037,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4985364,
@@ -7541,7 +10049,10 @@
    "dbh_in": 33.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 72.6
+   "habit": "shade",
+   "crown_ft": 72.6,
+   "height_ft": 80.4,
+   "clear_ft": 25.0
   },
   {
    "lat": 40.4983733,
@@ -7550,7 +10061,10 @@
    "dbh_in": 3.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 6.6
+   "habit": "shade",
+   "crown_ft": 6.6,
+   "height_ft": 11.4,
+   "clear_ft": 4.0
   },
   {
    "lat": 40.4980796,
@@ -7559,7 +10073,10 @@
    "dbh_in": 14.0,
    "condition": "Excellent",
    "status": "Alive",
-   "crown_ft": 30.8
+   "habit": "shade",
+   "crown_ft": 30.8,
+   "height_ft": 36.7,
+   "clear_ft": 12.8
   }
  ]
 }

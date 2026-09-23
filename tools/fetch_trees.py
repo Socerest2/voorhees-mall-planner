@@ -32,17 +32,59 @@ CONFIG = BASE + "/customers/Rutgers/tree_map_config.json"
 BBOX = (40.4980, -74.4512, 40.5036, -74.4432)      # s, w, n, e
 ZOOM = 15                                          # tileset maxzoom
 
-# Crown spread is not surveyed, so estimate it from trunk diameter. Ratios are
-# crown diameter in feet per inch of DBH, by growth habit.
-SPREAD = [
-    (1.3, ("pine", "spruce", "fir", "cedar", "arborvitae", "juniper", "cypress",
-           "hemlock", "holly", "yew", "larch")),
-    (2.0, ("dogwood", "cherry", "crabapple", "apple", "magnolia", "redbud",
-           "serviceberry", "hawthorn", "lilac", "witchhazel", "viburnum")),
-    (2.2, ("oak", "maple", "sycamore", "elm", "linden", "beech", "ash",
-           "hickory", "walnut", "planetree", "tuliptree", "zelkova")),
+# Nothing but trunk diameter is surveyed, so canopy spread, total height and
+# height to the lowest branch are all DERIVED from DBH by growth habit. Height
+# uses H = base + ratio x DBH, capped, because the linear form badly
+# under-predicts saplings. CROWN_BASE is the fraction of total height below the
+# lowest limbs -- the number that decides whether anything fits underneath.
+#
+#   (spread per in, height per in, height cap ft, crown-base fraction)
+HABIT = {
+    # limbed-up park and street trees: the ones you can walk or drive under
+    "shade": (2.2, 2.3, 85, 0.35),
+    # pines, larch, cedar -- self-pruning, open beneath when mature
+    "conifer_open": (1.3, 2.8, 90, 0.35),
+    # spruce, fir, holly, arborvitae -- skirted to the ground, never passable
+    "conifer_dense": (1.2, 2.6, 70, 0.05),
+    # small flowering trees that branch low and stay low
+    "ornamental": (2.0, 1.6, 32, 0.20),
+    "default": (1.9, 2.0, 60, 0.28),
+}
+HABIT_WORDS = [
+    ("conifer_dense", ("spruce", "fir", "arborvitae", "juniper", "cypress",
+                       "hemlock", "holly", "yew", "cryptomeria", "boxwood")),
+    ("conifer_open", ("pine", "larch", "cedar")),
+    ("ornamental", ("dogwood", "cherry", "crabapple", "apple", "magnolia",
+                    "redbud", "serviceberry", "hawthorn", "lilac", "witchhazel",
+                    "viburnum", "chokeberry", "plum", "pear", "star ")),
+    ("shade", ("oak", "maple", "elm", "zelkova", "honeylocust", "linden",
+               "beech", "ash", "hickory", "walnut", "sycamore", "planetree",
+               "tuliptree", "scholar", "ginkgo", "katsura", "basswood",
+               "hackberry", "corktree", "locust", "sweetgum", "birch")),
 ]
-DEFAULT_SPREAD = 1.9
+HEIGHT_BASE = 4.5          # ft of stem before the ratio takes over
+MAX_LIMBED = 25.0          # nobody prunes a park tree higher than this
+
+
+def habit(species):
+    s = (species or "").lower()
+    for name, words in HABIT_WORDS:
+        if any(w in s for w in words):
+            return name
+    return "default"
+
+
+def dimensions(species, dbh):
+    """-> (crown_ft, height_ft, clear_ft) from trunk diameter and growth habit."""
+    spread, hr, cap, base = HABIT[habit(species)]
+    if not dbh:
+        return None, None, None
+    crown = dbh * spread
+    height = min(cap, HEIGHT_BASE + hr * dbh)
+    # leave a real crown on the tree, and don't claim a limbed-up height
+    # that no one would prune to
+    clear = min(height * base, MAX_LIMBED, max(0.0, height - 6))
+    return round(crown, 1), round(height, 1), round(clear, 1)
 
 
 def get(url, binary=False):
@@ -68,14 +110,6 @@ def lookups():
             out[f["name"]] = {v["value"]: (v.get("alias") or "").strip()
                               for v in vals}
     return out
-
-
-def spread_ratio(species):
-    s = (species or "").lower()
-    for ratio, words in SPREAD:
-        if any(w in s for w in words):
-            return ratio
-    return DEFAULT_SPREAD
 
 
 def main():
@@ -113,13 +147,17 @@ def main():
                     sp = species.get(a.get("species_common"), "")
                     dbh = a.get("dbh_exact")
                     dbh = float(dbh) if isinstance(dbh, (int, float)) else None
+                    crown, height, clear = dimensions(sp, dbh)
                     trees.append({
                         "lat": round(lat, 7), "lon": round(lon, 7),
                         "species": sp,
                         "dbh_in": dbh,
                         "condition": condition.get(a.get("condition"), ""),
                         "status": status.get(a.get("status"), ""),
-                        "crown_ft": round(dbh * spread_ratio(sp), 1) if dbh else None,
+                        "habit": habit(sp),
+                        "crown_ft": crown,
+                        "height_ft": height,
+                        "clear_ft": clear,
                     })
 
     with open(OUT, "w") as fh:
@@ -127,7 +165,9 @@ def main():
             "source": "Rutgers TreePlotter Community Engagement Map "
                       "(PlanIT Geo) — cem.pg-cloud.com/Rutgers",
             "tiles": TILES, "zoom": zoom, "bbox": list(BBOX),
-            "note": "dbh_in is surveyed; crown_ft is ESTIMATED from dbh by growth habit",
+            "note": "dbh_in, species, condition and status are surveyed; "
+                    "crown_ft, height_ft and clear_ft are ESTIMATED from dbh "
+                    "by growth habit -- screening figures, not survey data",
             "trees": trees,
         }, fh, indent=1)
 
