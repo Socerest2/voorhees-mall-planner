@@ -177,6 +177,46 @@
   }
   #status.show{opacity:1}
 
+  /* ---------- who ---------- */
+  #who[hidden]{display:none}
+  #who{
+    position:fixed;inset:0;z-index:60;background:var(--panelbg);
+    display:flex;align-items:center;justify-content:center;padding:20px;
+  }
+  #whobox{max-width:430px;width:100%}
+  #whobox h2{
+    font-family:var(--num);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink3);margin:0 0 10px;font-weight:600;
+  }
+  #whobox p{margin:0 0 16px;color:var(--ink2);font-size:13px;max-width:44ch}
+  #names{display:flex;flex-wrap:wrap;gap:7px}
+  #names button{
+    background:var(--paper);border:1px solid var(--rule);color:var(--ink);
+    padding:9px 15px;cursor:pointer;font:inherit;font-size:14px;
+  }
+  #names button:hover{border-color:var(--ink);background:#fff}
+
+  .whoami{margin:0 0 8px;font-size:11.5px;color:var(--ink2)}
+  .whoami b{color:var(--ink);font-weight:600}
+  .linkish{
+    background:none;border:0;color:var(--ink3);cursor:pointer;font:inherit;
+    font-size:11px;text-decoration:underline;padding:0 0 0 5px;
+  }
+  .linkish:hover{color:var(--mark)}
+  #syncmsg.dirty{color:var(--mark)}
+  #history{margin-top:9px}
+  .ver{
+    display:flex;align-items:baseline;gap:7px;padding:3px 0;font-size:11px;
+    border-top:1px solid var(--rule2);
+  }
+  .ver .vwho{color:var(--ink);font-weight:500}
+  .ver .vwhen{color:var(--ink3);font-family:var(--num);font-size:10px;flex:1}
+  .ver button{
+    background:none;border:0;color:var(--ink3);cursor:pointer;font:inherit;
+    font-size:10.5px;text-decoration:underline;padding:0;
+  }
+  .ver button:hover{color:var(--mark)}
+
   /* ---------- print setup ---------- */
   #dlg[hidden]{display:none}
   #dlg{
@@ -227,7 +267,7 @@
 
   @media print{
     body{display:block;background:#fff;overflow:visible;height:auto}
-    #side,#stage,#dlgform,#dlgfoot{display:none!important}
+    #side,#stage,#who,#dlgform,#dlgfoot{display:none!important}
     #dlg,#dlg[hidden]{
       position:static;display:block!important;background:none;inset:auto;
     }
@@ -293,6 +333,19 @@
         <kbd>[</kbd><kbd>]</kbd> rotate, <kbd>⌫</kbd> delete, <kbd>D</kbd> duplicate.</p>
     </section>
 
+    <section id="team">
+      <h2>Team</h2>
+      <p class="whoami">Signed in as <b id="me">—</b>
+        <button class="linkish" id="switch">switch</button></p>
+      <div class="btnrow">
+        <button class="btn wide primary" id="t-save2">Save</button>
+      </div>
+      <label class="lyr" style="margin-top:7px">
+        <input type="checkbox" id="auto"> Auto-save as I work</label>
+      <p class="note" id="syncmsg">Working on this device only.</p>
+      <div id="history"></div>
+    </section>
+
     <section>
       <h2>Schedule</h2>
       <table class="tally" id="tally"></table>
@@ -348,6 +401,15 @@
   <div class="hud" id="status"></div>
 </main>
 
+<div id="who" hidden>
+  <div id="whobox">
+    <h2>Who's planning?</h2>
+    <p>Pick your name so the team can see who changed what. No password —
+      this only labels your edits.</p>
+    <div id="names"></div>
+  </div>
+</div>
+
 <div id="dlg" hidden>
   <div id="dlgbox">
     <form id="dlgform" onsubmit="return false">
@@ -400,6 +462,8 @@
     </div>
   </div>
 </div>
+<script src="config.js"></script>
+<script src="sync.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

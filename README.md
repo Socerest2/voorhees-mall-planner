@@ -183,6 +183,56 @@ whatever the screen is doing, so drawings stay measurable with a scale rule.
 - Placed items autosave to localStorage. **Export plan** writes a JSON file;
   **Import** reads one back. **PNG** exports the current view.
 
+## Working on it together
+
+The map is static, but the plan is shared. Five people can edit one drawing,
+and every change is labelled with who made it.
+
+**Pick your name** on first load — Kacper, Emma, Vivian, Joseph or Vince. It is
+not a login and there is no password; it labels your edits so the team can see
+who moved what, and so the merge has something to break ties with.
+
+**Save** pushes your work to the shared plan and keeps a restorable snapshot
+with an optional label. ⌘S does the same. Turn on **Auto-save as I work** and
+it pushes about a second after you stop, so you never think about it. Until you
+save, your edits are yours alone — the panel says how many are pending, and the
+browser warns you if you try to leave with unsaved work.
+
+Other people's saves arrive on their own every few seconds.
+
+### The merge
+
+Two people editing one drawing can't be settled by last-writer-wins on the
+whole document — whoever saves second would wipe out the other's afternoon. So
+the merge is **per item**: everything carries a `uid` and the timestamp of its
+last edit, deletions leave a tombstone, and the most recent edit to each
+individual item wins. Move the stage while someone else moves a tent and both
+survive. Delete something that someone else has since edited and it comes back,
+on the grounds that a live edit beats a stale delete.
+
+### Setting up the shared plan
+
+Without configuration the planner still works — just on your own machine. To
+share it:
+
+1. Make a **new** Supabase project. A free one is ample. Do not reuse an
+   existing project: this repository is public, and its anon key is published
+   along with it.
+2. Run `tools/schema.sql` in the SQL editor.
+3. Copy the project URL and the **anon / public** key from Settings → API into
+   `config.js`, and push.
+
+Both values are meant to be public; what guards the data is the row-level
+security in `schema.sql`. It lets anyone with the link read the plan, edit it
+and add versions — but never delete a version, so anything that goes wrong is
+recoverable from the history.
+
+Be clear-eyed about that: with a public repo, anyone who finds the key can edit
+your plan. For a campus event that is a fair trade for having no accounts to
+manage, and the version history is the backstop. If it ever isn't, move the
+repo private (Pages then needs a paid plan) or put the site behind Cloudflare
+Access.
+
 ## Printing
 
 **Print / PDF…** opens sheet setup. The preview is the same element that goes

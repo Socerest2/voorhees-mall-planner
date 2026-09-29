@@ -333,11 +333,29 @@ const CATALOG = [
 ];
 
 let items = [], nextId = 1, selected = null, pending = null;
+let deleted = {};                     // uid -> when it was removed
+const TEAM = ['Kacper', 'Emma', 'Vivian', 'Joseph', 'Vince'];
+let me = null, dirty = false, lastSaved = null, autoSave = false;
+
+const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+
+/* Every edit stamps who and when, which is what lets five people merge. */
+function touch(it) {
+  it.at = Date.now();
+  it.by = me || '?';
+  markDirty();
+  return it;
+}
+function markDirty() {
+  dirty = true;
+  syncMsg();
+  if (autoSave) scheduleAuto();
+}
 
 function addItem(spec, x, y) {
-  const it = { id: nextId++, t: spec.t, w: spec.w, h: spec.h, shape: spec.shape,
-               z: spec.z == null ? 8 : spec.z,
-               x: +x.toFixed(2), y: +y.toFixed(2), rot: -view.rot };
+  const it = touch({ id: nextId++, uid: uid(), t: spec.t, w: spec.w, h: spec.h,
+               shape: spec.shape, z: spec.z == null ? 8 : spec.z,
+               x: +x.toFixed(2), y: +y.toFixed(2), rot: -view.rot });
   items.push(it); selected = it.id; touched = true; drawItems(); save(); return it;
 }
 
@@ -554,7 +572,8 @@ function annotate(target, P, zoom, opts = {}) {
       if (!isSel && big < 34) continue;
       const lines = isSel
         ? [it.t, `${trim(it.w)}′ × ${trim(it.h)}′ × ${trim(it.z)}′ h · ` +
-                 `${Math.round(((it.rot % 360) + 360) % 360)}°`]
+                 `${Math.round(((it.rot % 360) + 360) % 360)}°` +
+                 (it.by && it.by !== me ? ` · ${it.by}` : '')]
         : [it.t];
       lines.forEach((s, i) =>
         txt(sx, sy + (i - (lines.length - 1) / 2) * 12, s,
@@ -700,12 +719,13 @@ stage.addEventListener('pointermove', e => {
     const snap = e.altKey ? 0.01 : 0.5;              // 6 in, or free with Alt
     drag.it.x = Math.round((wx - drag.ox) / snap) * snap;
     drag.it.y = Math.round((wy - drag.oy) / snap) * snap;
+    touch(drag.it);
     drawItems();
   }
 });
 
 stage.addEventListener('pointerup', e => {
-  if (drag && drag.kind === 'item') save();
+  if (drag && drag.kind === 'item') { markDirty(); save(); }
   drag = null; stage.classList.remove('panning');
   try { stage.releasePointerCapture(e.pointerId); } catch {}
 });
@@ -723,6 +743,11 @@ stage.addEventListener('wheel', e => {
 }, { passive: false });
 
 addEventListener('keydown', e => {
+  if ((e.metaKey || e.ctrlKey) && e.key === 's') {
+    e.preventDefault();
+    if (Sync.on) pushNow('');
+    return;
+  }
   if (/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
   if (!$('#dlg').hidden) { if (e.key === 'Escape') closePrint(); return; }
   const it = items.find(i => i.id === selected);
@@ -734,12 +759,15 @@ addEventListener('keydown', e => {
   } else if (k === 'm' || k === 'M') {
     measureMode = !measureMode; measure = null; syncTools(); drawOverlay();
   } else if (it && (k === 'Backspace' || k === 'Delete')) {
-    items = items.filter(i => i.id !== it.id); selected = null; drawItems(); save();
+    items = items.filter(i => i.id !== it.id);
+    deleted[it.uid] = Date.now();                 // tombstone, so the delete syncs
+    selected = null; markDirty(); drawItems(); save();
   } else if (it && (k === 'd' || k === 'D')) {
-    const c = { ...it, id: nextId++, x: it.x + 4, y: it.y - 4 };
+    const c = touch({ ...it, id: nextId++, uid: uid(), x: it.x + 4, y: it.y - 4 });
     items.push(c); selected = c.id; drawItems(); save();
   } else if (it && (k === '[' || k === ']')) {
-    it.rot += (k === '[' ? -1 : 1) * (e.shiftKey ? 45 : 5); drawItems(); save();
+    it.rot += (k === '[' ? -1 : 1) * (e.shiftKey ? 45 : 5);
+    touch(it); drawItems(); save();
   } else if (it && k.startsWith('Arrow')) {
     e.preventDefault();
     const step = e.shiftKey ? 1 / 12 : 1;            // 1 inch, or 1 foot
@@ -748,7 +776,7 @@ addEventListener('keydown', e => {
     const dy = { ArrowUp: 1, ArrowDown: -1 }[k] || 0;
     it.x += (dx * c + dy * s) * step;
     it.y += (-dx * s + dy * c) * step;
-    drawItems(); save();
+    touch(it); drawItems(); save();
   }
 });
 
@@ -1031,7 +1059,9 @@ function buildChrome() {
   $('#t-fit').onclick = () => { touched = false; fit(DATA.lawn); };
   $('#t-clear').onclick = () => {
     if (items.length && confirm(`Remove all ${items.length} placed items?`)) {
-      items = []; selected = null; drawItems(); save();
+      const now = Date.now();
+      for (const it of items) deleted[it.uid] = now;
+      items = []; selected = null; markDirty(); drawItems(); save();
     }
   };
   $('#t-save').onclick = () => {
@@ -1047,13 +1077,32 @@ function buildChrome() {
     const f = e.target.files[0]; if (!f) return;
     f.text().then(t => {
       const d = JSON.parse(t);
-      items = (d.items || []).map(withHeight);
-      nextId = Math.max(0, ...items.map(i => i.id)) + 1;
-      selected = null; drawItems(); save(); say(`Opened ${items.length} items`);
+      adoptDoc({ items: d.items || [], deleted: {} });
+      markDirty(); drawItems(); save(); say(`Opened ${items.length} items`);
     }).catch(() => say('Could not read that file'));
     e.target.value = '';
   };
   $('#t-png').onclick = exportPNG;
+
+  // --- team ---
+  $('#switch').onclick = () => askWho(true);
+  const doSave = () => {
+    const label = prompt('Label this version (optional)', '') ?? '';
+    pushNow(label.trim());
+  };
+  $('#t-save2').onclick = doSave;
+  try { autoSave = localStorage.getItem(AUTO_KEY) === '1'; } catch {}
+  $('#auto').checked = autoSave;
+  $('#auto').onchange = e => {
+    autoSave = e.target.checked;
+    try { localStorage.setItem(AUTO_KEY, autoSave ? '1' : '0'); } catch {}
+    if (autoSave && dirty) scheduleAuto();
+    syncMsg();
+  };
+  if (!Sync.on) {
+    $('#t-save2').disabled = true;
+    $('#auto').disabled = true;
+  }
 
   // print dialog
   $('#p-size').innerHTML = SHEETS.map(([n], i) =>
@@ -1115,6 +1164,140 @@ function exportPNG() {
   img.src = url;
 }
 
+/* -------------------------------------------------------- team & sharing
+   GitHub Pages can't hold shared state, so the plan lives in Supabase and
+   this is the client. Picking a name isn't a login — it just labels edits so
+   the team can see who moved what, and so a merge can pick a winner.       */
+
+const WHO_KEY = 'voorhees-who', AUTO_KEY = 'voorhees-auto';
+let autoTimer = null, pollTimer = null, pulling = false;
+
+function localDoc() { return { items, deleted }; }
+
+function adoptDoc(doc) {
+  items = (doc.items || []).map(withHeight);
+  deleted = doc.deleted || {};
+  let n = 0;
+  for (const it of items) {                     // ids are per-session, uids are not
+    it.id = ++n;
+    if (!it.uid) it.uid = uid();
+  }
+  nextId = n + 1;
+  selected = null;
+}
+
+function syncMsg() {
+  const m = $('#syncmsg');
+  if (!m) return;
+  if (!Sync.on) {
+    m.textContent = 'Working on this device only — not shared yet.';
+    m.classList.remove('dirty');
+    return;
+  }
+  if (dirty) {
+    m.textContent = autoSave ? 'Saving…' : 'Unsaved changes — press Save.';
+    m.classList.add('dirty');
+  } else {
+    m.textContent = lastSaved
+      ? `Saved by ${lastSaved.by || 'someone'} ${ago(lastSaved.at)}.`
+      : 'Up to date.';
+    m.classList.remove('dirty');
+  }
+}
+
+function ago(iso) {
+  const s = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (s < 60) return 'just now';
+  if (s < 3600) return `${Math.round(s / 60)} min ago`;
+  if (s < 86400) return `${Math.round(s / 3600)} h ago`;
+  return new Date(iso).toLocaleDateString();
+}
+
+function scheduleAuto() {
+  clearTimeout(autoTimer);
+  autoTimer = setTimeout(() => pushNow(null), 1200);   // batch a flurry of edits
+}
+
+async function pushNow(label) {
+  if (!Sync.on) { dirty = false; syncMsg(); return; }
+  try {
+    const doc = await Sync.push(localDoc(), me, label === null ? undefined : label);
+    adoptDoc(doc);
+    dirty = false;
+    lastSaved = { by: me, at: new Date().toISOString() };
+    drawItems(); save(); syncMsg();
+    if (label !== null) loadHistory();
+  } catch (e) {
+    $('#syncmsg').textContent = 'Could not save: ' + e.message;
+    $('#syncmsg').classList.add('dirty');
+  }
+}
+
+async function poll() {
+  if (!Sync.on || pulling) return;
+  pulling = true;
+  try {
+    const row = await Sync.pull();
+    if (row) {
+      const before = JSON.stringify(items.map(i => [i.uid, i.at]).sort());
+      const merged = Sync.merge(row.doc || { items: [] }, localDoc());
+      adoptDoc(merged);
+      const after = JSON.stringify(items.map(i => [i.uid, i.at]).sort());
+      if (before !== after) { drawItems(); save(); }
+      if (row.updated_at) lastSaved = { by: row.updated_by, at: row.updated_at };
+      syncMsg();
+    }
+  } catch (e) { /* offline or misconfigured: keep working locally */ }
+  pulling = false;
+}
+
+async function loadHistory() {
+  const box = $('#history');
+  if (!box || !Sync.on) return;
+  try {
+    const vs = await Sync.versions(12);
+    box.innerHTML = vs.length
+      ? vs.map(v => `<div class="ver"><span class="vwho">${v.saved_by || '—'}</span>` +
+          `<span class="vwhen">${v.label ? v.label + ' · ' : ''}${ago(v.saved_at)}</span>` +
+          `<button data-v="${v.id}">restore</button></div>`).join('')
+      : '<p class="note">No saved versions yet.</p>';
+    box.querySelectorAll('button[data-v]').forEach(b => {
+      b.onclick = async () => {
+        if (!confirm('Restore this version? Current work is saved as a version first.')) return;
+        await pushNow('before restore');
+        const doc = await Sync.version(+b.dataset.v);
+        if (!doc) return;
+        const now = Date.now();
+        for (const it of items) deleted[it.uid] = now;       // clear, then take theirs
+        adoptDoc(Sync.merge({ items: [], deleted }, { items: doc.items || [], deleted: {} }));
+        for (const it of items) { it.at = now + 1; }
+        markDirty(); drawItems();
+        await pushNow('restored');
+      };
+    });
+  } catch (e) { box.innerHTML = '<p class="note">History unavailable.</p>'; }
+}
+
+function askWho(force) {
+  const saved = (() => { try { return localStorage.getItem(WHO_KEY); } catch { return null; } })();
+  if (saved && !force) { setMe(saved); return; }
+  const box = $('#who');
+  $('#names').innerHTML = TEAM.map(n => `<button data-n="${n}">${n}</button>`).join('');
+  $('#names').onclick = e => {
+    const b = e.target.closest('button');
+    if (!b) return;
+    setMe(b.dataset.n);
+    box.hidden = true;
+  };
+  box.hidden = false;
+}
+
+function setMe(name) {
+  me = name;
+  try { localStorage.setItem(WHO_KEY, name); } catch {}
+  $('#me').textContent = name;
+}
+
 /* ----------------------------------------------------------- persistence */
 
 const KEY = 'voorhees-plan-v1';
@@ -1124,14 +1307,18 @@ function withHeight(it) {
   const c = CATALOG.find(x => x.t === it.t);
   return { ...it, z: c && c.z != null ? c.z : 8 };
 }
-function save() { try { localStorage.setItem(KEY, JSON.stringify(items)); } catch {} }
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify({ items, deleted })); } catch {}
+}
 function restore() {
   try {
-    const d = JSON.parse(localStorage.getItem(KEY) || '[]');
-    if (Array.isArray(d) && d.length) {
-      items = d.map(withHeight);
-      nextId = Math.max(0, ...items.map(i => i.id)) + 1;
-    }
+    const d = JSON.parse(localStorage.getItem(KEY) || 'null');
+    if (!d) return;
+    const arr = Array.isArray(d) ? d : (d.items || []);     // older saves were a bare array
+    deleted = Array.isArray(d) ? {} : (d.deleted || {});
+    items = arr.map(withHeight);
+    items.forEach((it, i) => { it.id = i + 1; if (!it.uid) it.uid = uid(); });
+    nextId = items.length + 1;
   } catch {}
 }
 
@@ -1145,6 +1332,15 @@ fetch('data/voorhees-mall.json').then(r => r.json()).then(d => {
   restore(); drawItems();
   lastPtr = [stage.clientWidth / 2, stage.clientHeight / 2];
   resize();
+  askWho(false);
+  syncMsg();
+  if (Sync.on) {
+    poll().then(loadHistory);
+    pollTimer = setInterval(poll, Sync.pollMs);
+    addEventListener('beforeunload', e => {
+      if (dirty) { e.preventDefault(); e.returnValue = ''; }
+    });
+  }
   const real = d.trees.filter(t => t.src === 'rutgers').length;
   $('#credit').innerHTML =
     `Footprints, walks and streets © OpenStreetMap contributors (ODbL). ` +
