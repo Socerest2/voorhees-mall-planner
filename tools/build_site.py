@@ -203,7 +203,8 @@ def load_inventory(proj, near):
         if st in ("Dead", "Stump") or rec["cond"] == "Dead":
             rec["gone"] = st or "Dead"
         out.append(rec)
-    print(f"{n_meas} of {len(out)} trees have LiDAR-measured height", file=sys.stderr)
+    print(f"{n_meas} of {len(out)} trees have LiDAR-measured height "
+          f"(before the lawn-proximity filter)", file=sys.stderr)
     return out
 
 
@@ -249,7 +250,11 @@ def main():
     lx0, ly0, lx1, ly1 = bbox(lawn)
     # Just the mall. Enough to carry the buildings that front it, the streets
     # that bound it and Lot 9 off the south end -- nothing beyond that.
-    PAD = 150.0
+    PAD = 110.0
+    # Trees get a tighter leash than the rest. A tree 200 ft away constrains
+    # nothing you can put on the lawn, and hundreds of them turn the drawing
+    # into noise, so only keep what could actually reach over the mall.
+    TREE_PAD = 50.0
 
     def near(ring_):
         x0, y0, x1, y1 = bbox(ring_)
@@ -294,7 +299,24 @@ def main():
             greens.append({"id": e["id"], "name": name, "ring": pts,
                            "kind": t.get("leisure") or t.get("landuse")})
 
-    inv = load_inventory(proj, near)
+    def near_lawn(p, limit=TREE_PAD):
+        """Distance from a projected point to the lawn polygon, 0 if inside."""
+        px, py = p
+        inside, best = False, 1e18
+        n = len(lawn)
+        for i in range(n):
+            x1, y1 = lawn[i]
+            x2, y2 = lawn[(i + 1) % n]
+            if (y1 > py) != (y2 > py):
+                if px < x1 + (py - y1) * (x2 - x1) / (y2 - y1):
+                    inside = not inside
+            dx, dy = x2 - x1, y2 - y1
+            L2 = dx * dx + dy * dy
+            t = 0 if L2 == 0 else max(0, min(1, ((px - x1) * dx + (py - y1) * dy) / L2))
+            best = min(best, math.hypot(px - (x1 + t * dx), py - (y1 + t * dy)))
+        return inside or best <= limit
+
+    inv = [t for t in load_inventory(proj, near) if near_lawn(t["p"])]
     if inv:
         trees = inv                      # real survey beats anything generated
     elif not trees:

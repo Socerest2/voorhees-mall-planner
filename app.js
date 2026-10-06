@@ -104,7 +104,7 @@ const LAYERS = [
   ['parking',   'Parking',       '#e0dcd2', true],
   ['paths',     'Walkways',      '#eceadf', true],
   ['buildings', 'Buildings',     '#ddd6c6', true],
-  ['canopy',    'Tree canopy',   '#c3d3ab', true],
+  ['canopy',    'Tree canopy',   '#b7cd99', true],
   ['trees',     'Trunks',        '#4d6135', true],
   ['labels',    'Names',         '#948d80', true],
   ['objects',   'Placed items',  '#9e2233', true],
@@ -116,15 +116,16 @@ let DATA = null;
 /* What fits underneath. `clr` is the estimated height to the lowest limbs, so
    these bands are really "what can stand here", not a description of the tree. */
 const BANDS = [
-  { max: 8,    key: 'block',  name: 'Blocks everything', sub: 'under 8 ft',
-    fill: '#a8532c', line: '#83371a' },
-  { max: 14,   key: 'people', name: 'People only',       sub: '8 – 14 ft',
-    fill: '#cf9a3c', line: '#a97a24' },
-  { max: 20,   key: 'popup',  name: 'Pop-up tents',      sub: '14 – 20 ft',
-    fill: '#93ab6b', line: '#728b4b' },
-  { max: 1e9,  key: 'clear',  name: 'Trucks, big tents', sub: '20 ft and over',
-    fill: '#c3d3ab', line: '#8aa76a' },
+  { max: 8,   key: 'block',  name: 'Blocks everything', sub: 'under 8 ft' },
+  { max: 14,  key: 'people', name: 'People only',       sub: '8 – 14 ft' },
+  { max: 20,  key: 'popup',  name: 'Pop-up tents',      sub: '14 – 20 ft' },
+  { max: 1e9, key: 'clear',  name: 'Trucks, big tents', sub: '20 ft and over' },
 ];
+/* Two colours, not four. Every tree is either in the way of what you're
+   placing or it isn't — that's the only question the drawing has to answer,
+   and a four-hue gradient across 157 overlapping circles answers it worse. */
+const CANOPY = '#b7cd99', CANOPY_BLOCK = '#cf8a52';
+const CANOPY_ALPHA = 0.34;
 function bandOf(t) {
   if (t.gone || t.clr == null) return null;      // no crown, or nothing to go on
   return BANDS.find(b => t.clr < b.max);
@@ -174,17 +175,11 @@ function buildBase(d) {
 
   // Crowns and trunks are separate layers: 400-odd overlapping canopies hide
   // the lawn, but you still need to know where the shade and the trunks are.
-  const C = $('#l-canopy'), T = $('#l-trees');
+  const T = $('#l-trees');
   d.trees.forEach((t, i) => {
-    // a dead tree or a stump is still an obstruction, but it casts no shade
-    el('circle', { cx: t.p[0], cy: t.p[1], r: t.r,
-      fill: t.gone ? 'none' : '#a8c187', 'fill-opacity': .30,
-      stroke: t.gone ? '#a8917a' : '#8aa76a', 'stroke-width': .7,
-      'stroke-dasharray': t.gone ? '4 4' : null, 'data-tree': i, ...hair }, C);
-    /* index matters: paintTrees addresses these by position */
-    const rt = t.dbh ? Math.max(0.6, t.dbh / 24) : 0.8;   // trunk at true diameter
+    const rt = t.dbh ? Math.max(0.7, t.dbh / 24) : 0.9;   // trunk at true diameter
     el('circle', { cx: t.p[0], cy: t.p[1], r: rt,
-      fill: t.gone ? '#8a7458' : '#4d6135',
+      fill: t.gone ? '#a08a6d' : '#5f7347',
       'data-tree': i, style: 'cursor:pointer' }, T);
   });
 
@@ -224,44 +219,40 @@ let clash = { byItem: new Map(), hitTrees: new Set() };
 
 function paintTrees() {
   if (!DATA) return;
-  const counts = {};
-  const canopies = $('#l-canopy').children;
+  const C = $('#l-canopy');
+  C.textContent = '';
+  // Opacity on the GROUP, not per circle: overlapping canopies then read as
+  // one soft mass instead of hundreds of stacked translucent rings.
+  C.setAttribute('opacity', CANOPY_ALPHA);
+
+  const counts = {}, plain = [], blocks = [], gone = [];
   DATA.trees.forEach((t, i) => {
     const b = bandOf(t);
     if (b) counts[b.key] = (counts[b.key] || 0) + 1;
-    const c = canopies[i];
-    if (!c) return;
-    const blocks = b && t.clr < need;
-    if (t.gone) {
-      c.setAttribute('fill', 'none');
-      c.setAttribute('stroke', '#a8917a');
-      c.setAttribute('stroke-width', .7);
-    } else if (byClearance) {
-      c.setAttribute('fill', b ? b.fill : '#c3d3ab');
-      c.setAttribute('fill-opacity', blocks ? .42 : .26);
-      c.setAttribute('stroke', b ? b.line : '#8aa76a');
-      c.setAttribute('stroke-width', blocks ? 1.3 : .7);
-    } else {
-      c.setAttribute('fill', '#a8c187');
-      c.setAttribute('fill-opacity', .30);
-      c.setAttribute('stroke', '#8aa76a');
-      c.setAttribute('stroke-width', .7);
-    }
-    c.setAttribute('stroke-opacity', clash.hitTrees.has(i) ? 1 : .55);
-    if (clash.hitTrees.has(i)) {
-      c.setAttribute('stroke', MARK);
-      c.setAttribute('stroke-width', 2);
-    }
+    if (t.gone) gone.push([t, i]);
+    else if (byClearance && t.clr != null && t.clr < need) blocks.push([t, i]);
+    else plain.push([t, i]);
   });
-  const total = Object.values(counts).reduce((a, b) => a + b, 0);
-  $('#bands').innerHTML = BANDS.map(b =>
-    `<div class="bandrow${b.max <= need ? ' blocked' : ''}">` +
-    `<span class="sw" style="background:${b.fill}"></span>` +
-    `<span class="nm">${b.name}</span><span class="ft">${b.sub}</span>` +
-    `<span class="ct">${counts[b.key] || 0}</span></div>`).join('') +
-    `<div class="bandrow"><span class="sw" style="border-style:dashed;background:none">` +
-    `</span><span class="nm">Dead or stump</span><span class="ct">` +
-    `${DATA.trees.length - total}</span></div>`;
+
+  const add = (list, attrs) => list.forEach(([t, i]) =>
+    el('circle', { cx: t.p[0], cy: t.p[1], r: t.r, 'data-tree': i, ...attrs }, C));
+  add(gone, { fill: 'none', stroke: '#b7a893', 'stroke-width': .7,
+              'stroke-dasharray': '5 4', 'vector-effect': 'non-scaling-stroke' });
+  add(plain, { fill: CANOPY });
+  add(blocks, { fill: CANOPY_BLOCK });        // last, so they sit on top
+
+  const nblock = blocks.length, nclear = plain.length;
+  $('#bands').innerHTML =
+    (byClearance
+      ? `<div class="bandrow"><span class="sw" style="background:${CANOPY_BLOCK}"></span>` +
+        `<span class="nm">In the way at ${trim(need)} ft</span><span class="ct">${nblock}</span></div>` +
+        `<div class="bandrow"><span class="sw" style="background:${CANOPY}"></span>` +
+        `<span class="nm">Clears it</span><span class="ct">${nclear}</span></div>`
+      : `<div class="bandrow"><span class="sw" style="background:${CANOPY}"></span>` +
+        `<span class="nm">Tree canopy</span><span class="ct">${plain.length}</span></div>`) +
+    `<div class="split">Clearance underneath</div>` +
+    BANDS.map(b => `<div class="bandrow sub"><span class="nm">${b.sub}</span>` +
+      `<span class="ft">${b.name}</span><span class="ct">${counts[b.key] || 0}</span></div>`).join('');
 }
 let byClearance = true;
 
@@ -473,10 +464,9 @@ function treeUp(L, t, i) {
   el('ellipse', { cx: mx, cy: my,
     rx: t.r * z,
     ry: Math.hypot(t.r * z * tiltY(), vh * z * tiltZ()),
-    fill: byClearance && b ? b.fill : '#a8c187',
-    'fill-opacity': t.clr < need ? .46 : .3,
-    stroke: hit ? MARK : (byClearance && b ? b.line : '#8aa76a'),
-    'stroke-width': hit ? 2 : .9 }, L);
+    fill: byClearance && t.clr < need ? CANOPY_BLOCK : CANOPY,
+    'fill-opacity': .32,
+    stroke: hit ? MARK : 'none', 'stroke-width': hit ? 1.6 : 0 }, L);
 }
 
 function itemUp(L, it) {
@@ -601,6 +591,16 @@ function drawOverlay() {
     names: on.labels, items: on.objects, selected,
     inside: (x, y) => x > -60 && y > -20 && x < W + 60 && y < H + 20,
   });
+
+  if (DATA && on.objects && clash.hitTrees.size) {
+    for (const i of clash.hitTrees) {
+      const t = DATA.trees[i];
+      const [sx, sy] = toScreen(t.p[0], t.p[1]);
+      if (sx < -40 || sy < -40 || sx > W + 40 || sy > H + 40) continue;
+      el('circle', { cx: sx, cy: sy, r: Math.max(5, t.r * view.zoom), fill: 'none',
+        stroke: '#b8471f', 'stroke-width': 1.4, 'stroke-dasharray': '4 3' }, overlay);
+    }
+  }
 
   if (selTree !== null && DATA && (on.trees || on.canopy)) {
     const t = DATA.trees[selTree];
@@ -854,6 +854,8 @@ function renderSheet() {
   };
   show('l-grid', $('#p-grid').checked);
   show('l-canopy', $('#p-trees').checked && on.canopy);
+  const pc = plan.querySelector('[opacity]');
+  if (pc) pc.setAttribute('opacity', Math.min(0.5, CANOPY_ALPHA + 0.1));  // ink a little denser on paper
   show('l-trees', $('#p-trees').checked && on.trees);
   // strip every id: two copies of the drawing must not share them
   plan.removeAttribute('id');
@@ -956,8 +958,9 @@ function sheetColumn(s, sp, ftPerIn) {
     ];
     // when the canopy is colour-coded, the bands are the legend that matters
     if ($('#p-trees').checked && on.canopy) {
-      if (byClearance) for (const b of BANDS) rows.push([b.fill, b.line, b.name + ', ' + b.sub]);
-      else rows.push(['#c3d3ab', '#8aa76a', 'Tree canopy']);
+      rows.push([CANOPY, '#8aa76a', 'Tree canopy']);
+      if (byClearance)
+        rows.push([CANOPY_BLOCK, '#a9683a', `Lowest limbs under ${trim(need)} ft`]);
     }
     if ((DATA.parking || []).length) rows.push(['#e2ded4', '#c0b9a9', 'Parking']);
     if (items.length) rows.push([MARK + '26', MARK, 'Placed item']);

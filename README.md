@@ -93,6 +93,23 @@ trees on the plan:
 - **46 take a pop-up tent** — 14 to 20 ft
 - **78 take a truck or a frame tent** — 20 ft and over
 
+### Drawing 157 canopies without it turning to mush
+
+Overlapping translucent circles are the enemy here. Each one carrying its own
+`fill-opacity` and stroke means every overlap compounds into a darker patch
+ringed with edges, and a few hundred of them read as static rather than as
+trees. Two rules fix it:
+
+- **Opacity goes on the group, not the circle.** The canopy layer is one `<g>`
+  at 34%, with solid-filled children and no strokes, so a thicket paints as one
+  soft mass at a single value instead of a stack of rings.
+- **Two colours, not four.** Every tree either blocks what you're placing or it
+  doesn't — that's the only question the drawing has to answer, and a four-hue
+  gradient answers it worse. Blockers draw last so they sit on top.
+
+The four clearance bands still appear in the panel as a breakdown with counts;
+they just don't fight for the reader's attention on the map.
+
 Set **Fits under** to the height you care about and the canopies recolour.
 Every catalog item carries a real height — a 20 × 40 frame tent is 18 ft to the
 peak, a box truck 13 ft 6 in, a banquet table 2 ft 6 in — so placing one
@@ -146,9 +163,11 @@ go, then measure the two or three candidate spots on site.
 
 ### Extent, and Lot 9
 
-The map is cropped to the mall itself — 150 ft of context past the lawn, which
+The map is cropped to the mall itself — 110 ft of context past the lawn, which
 carries the buildings that front it and the streets that bound it, and nothing
-further. That is 31 buildings and 294 trees, down from 54 and 427.
+further. **Trees get a tighter leash still, 50 ft**, because a tree 200 ft away
+constrains nothing you can put on the lawn and hundreds of them turn the
+drawing into noise. That is 25 buildings and 157 trees, down from 54 and 427.
 
 Parking is included as its own layer. **Lot 9** sits directly off the south tip
 of the mall (centre E −2, N −344 on the plan grid; about 10,300 sq ft, call it
