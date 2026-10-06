@@ -220,7 +220,12 @@ share it:
    along with it.
 2. Run `tools/schema.sql` in the SQL editor.
 3. Copy the project URL and the **anon / public** key from Settings → API into
-   `config.js`, and push.
+   `config.js`, bump the `?v=` on the script tags in `index.html`, and push.
+
+That last bit matters: GitHub Pages serves everything with `max-age=600`, so a
+changed `config.js` can sit stale in people's browsers for ten minutes. The
+version query makes the new file a new URL, so it is picked up on the next
+load.
 
 Both values are meant to be public; what guards the data is the row-level
 security in `schema.sql`. It lets anyone with the link read the plan, edit it
