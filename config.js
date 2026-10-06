@@ -9,8 +9,8 @@
 
    Settings -> API in the Supabase dashboard has both values. */
 window.PLANNER_CONFIG = {
-  url: '',            // e.g. 'https://abcdefgh.supabase.co'
-  key: '',            // the anon / public key, not the service key
+  url: 'https://ffsbfyhvzbpuyeukoghh.supabase.co',
+  key: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmc2JmeWh2emJwdXlldWtvZ2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzMTg4MDksImV4cCI6MjEwNjg5NDgwOX0.5HvCDswbOzAXZkg2feBlNIzpUS0R4myFrxN2-eiwt54',
   planId: 'voorhees', // which shared plan this page edits
   pollSeconds: 6,     // how often to look for other people's saves
 };
