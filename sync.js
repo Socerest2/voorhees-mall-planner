@@ -19,8 +19,11 @@
     fetch(C.url.replace(/\/$/, '') + '/rest/v1/' + path, {
       ...opts, headers: { ...head, ...(opts.headers || {}) },
     }).then(async r => {
-      if (!r.ok) throw new Error(`${r.status} ${(await r.text()).slice(0, 200)}`);
-      return r.status === 204 ? null : r.json();
+      // PostgREST answers a write with 200 or 201 and an EMPTY body unless you
+      // ask for a representation, so never hand a blank response to JSON.parse.
+      const text = await r.text();
+      if (!r.ok) throw new Error(`${r.status} ${text.slice(0, 200)}`);
+      return text ? JSON.parse(text) : null;
     });
 
   /* Merge two plan docs. Each item: {uid, at, ...}. Tombstones: {uid: at}. */
