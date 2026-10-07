@@ -216,6 +216,23 @@ function findConflicts() {
   return { byItem, hitTrees };
 }
 let clash = { byItem: new Map(), hitTrees: new Set() };
+let stakeHits = new Set(), stakePairs = [];
+
+/* A staked item overlapping the no-stake ring round a head, valve or lateral. */
+function findStakeClashes() {
+  stakeHits = new Set(); stakePairs = [];
+  const heads = items.filter(i => i.util && i.clear);
+  if (!heads.length) return;
+  for (const it of items) {
+    if (it.util || !STAKED.test(it.t)) continue;
+    for (const h of heads) {
+      if (overlaps(it, { p: [h.x, h.y], r: h.clear })) {
+        stakeHits.add(it.id); stakeHits.add(h.id);
+        stakePairs.push([it.t, h.t]);
+      }
+    }
+  }
+}
 
 function paintTrees() {
   if (!DATA) return;
@@ -258,6 +275,7 @@ let byClearance = true;
 
 function reportConflicts() {
   clash = findConflicts();
+  findStakeClashes();
   const n = clash.hitTrees.size, m = clash.byItem.size;
   const el2 = $('#conflict');
   if (!items.length) {
@@ -274,6 +292,20 @@ function reportConflicts() {
       `${n} tree${n > 1 ? 's' : ''} branch too low. Worst: ${worst[0].t} at ` +
       `${trim(worst[0].z)}′ into ${worst[1].length} tree${worst[1].length > 1 ? 's' : ''}.`;
     el2.classList.add('bad');
+  }
+  const sm = $('#stakemsg');
+  if (sm) {
+    const heads = items.filter(i => i.util).length;
+    if (!heads) sm.textContent = 'No irrigation marked yet.';
+    else if (!stakePairs.length) {
+      sm.textContent = `${heads} marked — nothing staked over them.`;
+      sm.classList.remove('bad');
+    } else {
+      sm.innerHTML = `<strong>${stakePairs.length} stake conflict` +
+        `${stakePairs.length > 1 ? 's' : ''}</strong> — ` +
+        `${stakePairs[0][0]} sits over a ${stakePairs[0][1].toLowerCase()}.`;
+      sm.classList.add('bad');
+    }
   }
   paintTrees();
 }
@@ -323,6 +355,26 @@ const CATALOG = [
   { t: 'Custom…',     w: 10,  h: 10,  shape: 'rect',   z: 10,   note: 'any size' },
 ];
 
+/* Irrigation. Nobody publishes sprinkler positions — not OSM, not the tree
+   inventory, and LiDAR can't see a flush pop-up — so these get marked by hand
+   off the as-builts or a walk of the site. They matter because a tent stake
+   through a lateral line is the classic way to ruin a campus lawn. */
+const UTILITY = [
+  { t: 'Sprinkler head', w: 0.4, h: 0.4, shape: 'circle', z: 0.2,
+    util: true, clear: 2,   note: 'pop-up · 2′ no-stake' },
+  { t: 'Rotor head',     w: 0.5, h: 0.5, shape: 'circle', z: 0.2,
+    util: true, clear: 3,   note: 'large · 3′ no-stake' },
+  { t: 'Valve box',      w: 1.5, h: 1,   shape: 'rect',   z: 0.1,
+    util: true, clear: 2,   note: '10 × 15″ lid' },
+  { t: 'Irrigation line', w: 40, h: 0.5, shape: 'rect',   z: 0.1,
+    util: true, clear: 1.5, note: 'lateral · set length' },
+];
+const UTIL_INK = '#6b4e9e';        // utilities read violet, the drafting convention
+
+/* Tents and anything else that gets pinned down. A stake near a head or a
+   lateral is what we're trying to catch. */
+const STAKED = /tent|dance floor/i;
+
 let items = [], nextId = 1, selected = null, pending = null;
 let deleted = {};                     // uid -> when it was removed
 const TEAM = ['Kacper', 'Emma', 'Vivian', 'Joseph', 'Vince'];
@@ -346,6 +398,7 @@ function markDirty() {
 function addItem(spec, x, y) {
   const it = touch({ id: nextId++, uid: uid(), t: spec.t, w: spec.w, h: spec.h,
                shape: spec.shape, z: spec.z == null ? 8 : spec.z,
+               util: spec.util || undefined, clear: spec.clear,
                x: +x.toFixed(2), y: +y.toFixed(2), rot: -view.rot });
   items.push(it); selected = it.id; touched = true; drawItems(); save(); return it;
 }
@@ -361,8 +414,14 @@ function drawItemShapes(target, sel) {
   target.textContent = '';
   for (const it of items) {
     const isSel = it.id === sel;
-    const bad = clash.byItem.has(it.id);
-    const hue = bad ? '#b8471f' : MARK;
+    const bad = clash.byItem.has(it.id) || stakeHits.has(it.id);
+    const hue = bad ? '#b8471f' : (it.util ? UTIL_INK : MARK);
+    if (it.util && it.clear) {
+      // the circle you must not drive a stake into
+      el('circle', { cx: it.x, cy: it.y, r: it.clear, fill: UTIL_INK,
+        'fill-opacity': .07, stroke: UTIL_INK, 'stroke-width': .8,
+        'stroke-dasharray': '3 3', 'vector-effect': 'non-scaling-stroke' }, target);
+    }
     const g = el('g', { 'data-id': it.id, style: 'cursor:move' }, target);
     const style = { fill: hue, 'fill-opacity': isSel ? .26 : .13,
       stroke: hue, 'stroke-width': isSel ? 2 : 1.1,
@@ -1020,7 +1079,7 @@ function closePrint() { $('#dlg').hidden = true; $('#pagesize').textContent = ''
 function setPending(spec) {
   pending = spec;
   stage.classList.toggle('placing', !!spec);
-  [...$('#palette').rows].forEach(r =>
+  [...$('#palette').rows, ...$('#utility').rows].forEach(r =>
     r.classList.toggle('on', !!spec && r.dataset.t === spec.t));
 }
 function syncTools() {
@@ -1034,13 +1093,17 @@ function buildChrome() {
     `<span class="sw" style="background:${color}"></span>${name}</label>`).join('');
   $('#layers').onchange = e => { on[e.target.dataset.k] = e.target.checked; syncLayers(); };
 
-  $('#palette').innerHTML = CATALOG.map(c =>
-    `<tr data-t="${c.t}"><td>${c.t}</td><td class="dim">${c.note}</td></tr>`).join('');
-  $('#palette').onclick = e => {
+  const row = c => `<tr data-t="${c.t}"><td>${c.t}</td>` +
+    `<td class="dim">${c.note}</td></tr>`;
+  $('#palette').innerHTML = CATALOG.map(row).join('');
+  $('#utility').innerHTML = UTILITY.map(row).join('');
+  const pick = e => {
     const r = e.target.closest('tr'); if (!r) return;
-    const c = CATALOG.find(x => x.t === r.dataset.t);
+    const c = [...CATALOG, ...UTILITY].find(x => x.t === r.dataset.t);
     setPending(pending && pending.t === c.t ? null : c);
   };
+  $('#palette').onclick = pick;
+  $('#utility').onclick = pick;
 
   $('#need').oninput = e => {
     const v = parseFloat(e.target.value);
@@ -1307,7 +1370,7 @@ const KEY = 'voorhees-plan-v1';
 // plans saved before items had heights: take the height from the catalog
 function withHeight(it) {
   if (it.z != null) return it;
-  const c = CATALOG.find(x => x.t === it.t);
+  const c = [...CATALOG, ...UTILITY].find(x => x.t === it.t);
   return { ...it, z: c && c.z != null ? c.z : 8 };
 }
 function save() {

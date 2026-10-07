@@ -257,6 +257,25 @@ manage, and the version history is the backstop. If it ever isn't, move the
 repo private (Pages then needs a paid plan) or put the site behind Cloudflare
 Access.
 
+## Irrigation and staking
+
+A tent stake through a lateral line is the classic way to ruin a campus lawn,
+so the **Irrigation** section carries sprinkler heads, rotor heads, valve boxes
+and lateral lines. They draw violet — the drafting convention for utilities —
+each inside a dashed **no-stake ring**: 2 ft for a spray head, 3 ft for a
+rotor, 1.5 ft either side of a lateral.
+
+Put a tent or a dance floor over one and both turn red and the panel names the
+conflict. Those are the two things in the catalog that get pinned down; a table
+sitting over a head is nobody's problem.
+
+**You have to mark these yourself, and there is no shortcut.** Sprinkler heads
+are in no public dataset — not OpenStreetMap, not the tree inventory, and LiDAR
+cannot see a flush pop-up. The only real sources are the Rutgers Facilities
+irrigation as-built or an hour walking the mall with the heads popped up. Note
+also that 811 / NJ One Call does **not** cover irrigation: it is a private
+system, so a utility markout will not flag it.
+
 ## Printing
 
 **Print / PDF…** opens sheet setup. The preview is the same element that goes
