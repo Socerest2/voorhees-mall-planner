@@ -101,6 +101,7 @@ const LAYERS = [
   ['roads',     'Streets',       '#dcd7cc', true],
   ['green',     'Other green',   '#dde5d0', true],
   ['lawn',      'Mall lawn',     '#d3ddc0', true],
+  ['venues',    'The Yard',      '#ddd4c4', true],
   ['parking',   'Parking',       '#e0dcd2', true],
   ['paths',     'Walkways',      '#eceadf', true],
   ['buildings', 'Buildings',     '#ddd6c6', true],
@@ -151,6 +152,11 @@ function buildBase(d) {
   for (const g of d.greens)
     el('polygon', { points: ptsAttr(g.ring), fill: '#dde5d0' }, $('#l-green'));
 
+  // The Yard is hardscape, not lawn — a paved courtyard reads as paving
+  for (const v of (d.venues || []))
+    el('polygon', { points: ptsAttr(v.ring), fill: '#e0d7c6', stroke: '#b0a28c',
+      'stroke-width': 1.2, ...hair }, $('#l-venues'));
+
   el('polygon', { points: ptsAttr(d.lawn), fill: '#d3ddc0', stroke: '#a9bb8c',
     'stroke-width': 1, ...hair }, $('#l-lawn'));
 
@@ -185,6 +191,16 @@ function buildBase(d) {
 
   d.buildings.forEach(b => b.c = centroid(b.ring));     // for name placement
   (d.parking || []).forEach(k => k.c = centroid(k.ring));
+  // two polygons make up The Yard, so only the bigger one carries the name
+  const byName = new Map();
+  for (const v of (d.venues || [])) {
+    v.c = centroid(v.ring);
+    const xs = v.ring.map(p => p[0]), ys = v.ring.map(p => p[1]);
+    v.area = (Math.max(...xs) - Math.min(...xs)) * (Math.max(...ys) - Math.min(...ys));
+    const cur = byName.get(v.name);
+    if (!cur || v.area > cur.area) byName.set(v.name, v);
+  }
+  for (const v of (d.venues || [])) v.label = byName.get(v.name) === v;
   syncLayers();
   reportConflicts();
 }
@@ -310,17 +326,26 @@ function reportConflicts() {
   paintTrees();
 }
 
+/* Area centroid, with a guard. Some OSM ways come back unclosed — The Yard is
+   four nodes, not five — and the shoelace on an open ring returns a point that
+   can land anywhere. Anything outside the ring's own bounding box is wrong by
+   definition, so fall back to the box centre. */
 function centroid(ring) {
   let a = 0, x = 0, y = 0;
-  for (let i = 0; i < ring.length - 1; i++) {
-    const [x1, y1] = ring[i], [x2, y2] = ring[i + 1];
+  const n = ring.length;
+  for (let i = 0; i < n; i++) {
+    const [x1, y1] = ring[i], [x2, y2] = ring[(i + 1) % n];
     const f = x1 * y2 - x2 * y1;
     a += f; x += (x1 + x2) * f; y += (y1 + y2) * f;
   }
-  if (Math.abs(a) < 1e-9)
-    return [ring.reduce((s, p) => s + p[0], 0) / ring.length,
-            ring.reduce((s, p) => s + p[1], 0) / ring.length];
-  return [x / (3 * a), y / (3 * a)];
+  const xs = ring.map(p => p[0]), ys = ring.map(p => p[1]);
+  const bx = (Math.min(...xs) + Math.max(...xs)) / 2;
+  const by = (Math.min(...ys) + Math.max(...ys)) / 2;
+  if (Math.abs(a) < 1e-9) return [bx, by];
+  const cx = x / (3 * a), cy = y / (3 * a);
+  if (cx < Math.min(...xs) || cx > Math.max(...xs) ||
+      cy < Math.min(...ys) || cy > Math.max(...ys)) return [bx, by];
+  return [cx, cy];
 }
 
 function syncLayers() {
@@ -596,6 +621,13 @@ function annotate(target, P, zoom, opts = {}) {
       if (far * zoom < 46) continue;           // too small on this surface to name
       if (!clear(sx, sy, b.name.length * 5.6 + 8, 14)) continue;
       txt(sx, sy, b.name, { size: 10, fill: '#6b6459' });
+    }
+    for (const v of (DATA.venues || [])) {
+      if (!v.label || !v.c) continue;
+      const [sx, sy] = P(v.c[0], v.c[1]);
+      if (!opts.inside(sx, sy)) continue;
+      if (!clear(sx, sy, 70, 15)) continue;
+      txt(sx, sy, 'THE YARD', { size: 10.5, weight: 600, fill: '#8a7a60', track: 1.5 });
     }
     for (const k of (DATA.parking || [])) {
       if (!k.name || !k.c) continue;
@@ -1021,6 +1053,7 @@ function sheetColumn(s, sp, ftPerIn) {
       if (byClearance)
         rows.push([CANOPY_BLOCK, '#a9683a', `Lowest limbs under ${trim(need)} ft`]);
     }
+    if ((DATA.venues || []).length) rows.push(['#e0d7c6', '#b0a28c', 'The Yard']);
     if ((DATA.parking || []).length) rows.push(['#e2ded4', '#c0b9a9', 'Parking']);
     if (items.length) rows.push([MARK + '26', MARK, 'Placed item']);
     for (const [f, st2, label] of rows) {

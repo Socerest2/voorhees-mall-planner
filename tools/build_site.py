@@ -26,6 +26,8 @@ QUERY = f"""
   way["landuse"]({BBOX});
   way["highway"]({BBOX});
   way["amenity"="parking"]({BBOX});
+  way["name"~"The Yard",i]({BBOX});
+  node["highway"="bus_stop"]({BBOX});
   way["natural"]({BBOX});
   node["natural"="tree"]({BBOX});
 );
@@ -235,6 +237,18 @@ def main():
 
     lawn = ring(mall)
 
+    # The Yard carries only name/description/website in OSM -- no leisure or
+    # landuse tag at all -- so it has to be picked up by name. It is a venue in
+    # its own right, so it joins the lawn in defining how far the sheet reaches.
+    venues = [{"id": e["id"], "name": e["tags"]["name"], "ring": ring(e),
+               "desc": e["tags"].get("description", "").strip(),
+               "url": e["tags"].get("website", "")}
+              for e in els
+              if e["type"] == "way" and e.get("geometry")
+              # "the yard", not "yard" -- Rodkin Courtyard matches the latter
+              # and drags the sheet 800 ft north of anything we care about
+              and "the yard" in e.get("tags", {}).get("name", "").lower()]
+
     # ---- principal axis of the lawn, so the app can lay it out landscape ----
     cx = sum(p[0] for p in lawn) / len(lawn)
     cy = sum(p[1] for p in lawn) / len(lawn)
@@ -247,7 +261,8 @@ def main():
         xs = [p[0] for p in ring_]; ys = [p[1] for p in ring_]
         return min(xs), min(ys), max(xs), max(ys)
 
-    lx0, ly0, lx1, ly1 = bbox(lawn)
+    site = lawn + [p for v in venues for p in v["ring"]]
+    lx0, ly0, lx1, ly1 = bbox(site)
     # Just the mall. Enough to carry the buildings that front it, the streets
     # that bound it and Lot 9 off the south end -- nothing beyond that.
     PAD = 110.0
@@ -299,14 +314,14 @@ def main():
             greens.append({"id": e["id"], "name": name, "ring": pts,
                            "kind": t.get("leisure") or t.get("landuse")})
 
-    def near_lawn(p, limit=TREE_PAD):
-        """Distance from a projected point to the lawn polygon, 0 if inside."""
+    def near_poly(p, poly, limit):
+        """Within `limit` feet of this polygon (or inside it)."""
         px, py = p
         inside, best = False, 1e18
-        n = len(lawn)
+        n = len(poly)
         for i in range(n):
-            x1, y1 = lawn[i]
-            x2, y2 = lawn[(i + 1) % n]
+            x1, y1 = poly[i]
+            x2, y2 = poly[(i + 1) % n]
             if (y1 > py) != (y2 > py):
                 if px < x1 + (py - y1) * (x2 - x1) / (y2 - y1):
                     inside = not inside
@@ -316,7 +331,11 @@ def main():
             best = min(best, math.hypot(px - (x1 + t * dx), py - (y1 + t * dy)))
         return inside or best <= limit
 
-    inv = [t for t in load_inventory(proj, near) if near_lawn(t["p"])]
+    def near_site(p):
+        return (near_poly(p, lawn, TREE_PAD)
+                or any(near_poly(p, v["ring"], TREE_PAD) for v in venues))
+
+    inv = [t for t in load_inventory(proj, near) if near_site(t["p"])]
     if inv:
         trees = inv                      # real survey beats anything generated
     elif not trees:
@@ -342,6 +361,7 @@ def main():
         },
         "lawn": lawn,
         "greens": greens,
+        "venues": venues,
         "parking": sorted(parking, key=lambda p: p["name"] or "zz"),
         "buildings": sorted(buildings, key=lambda b: -abs(b["ring"][0][0])),
         "paths": paths,
@@ -353,9 +373,10 @@ def main():
         json.dump(out, f, separators=(",", ":"))
 
     span = math.hypot(lx1 - lx0, ly1 - ly0)
-    print(f"lawn bbox {lx1-lx0:.0f} x {ly1-ly0:.0f} ft (diag {span:.0f} ft), axis {axis_deg:.1f}°")
+    print(f"site bbox {lx1-lx0:.0f} x {ly1-ly0:.0f} ft (diag {span:.0f} ft), axis {axis_deg:.1f}°")
     print(f"{len(buildings)} buildings, {len(paths)} paths, {len(roads)} roads, "
-          f"{len(greens)} other green, {len(parking)} parking, {len(trees)} trees "
+          f"{len(greens)} other green, {len(parking)} parking, "
+          f"{len(venues)} venue, {len(trees)} trees "
           f"({sum(1 for t in trees if t['src'] == 'rutgers')} from the Rutgers "
           f"inventory, {sum(1 for t in trees if t['src'] == 'approx')} approximated)")
     print(f"wrote {OUT} ({os.path.getsize(OUT)/1024:.0f} KB)")

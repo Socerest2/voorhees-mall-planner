@@ -161,6 +161,22 @@ Tree positions come from the inventory's GPS, so a tree recorded a few metres
 off samples its neighbour's crown. Use this to narrow down where a tent can
 go, then measure the two or three candidate spots on site.
 
+### The Yard
+
+**The Yard at Rutgers** — the open courtyard behind the Hamilton Street
+restaurants — is on the map as a second venue, and the sheet's extent is the
+lawn *and* The Yard rather than the lawn alone. It sits at about x −369..−115,
+y −555..−317 on the plan grid, roughly 440 ft south-west of the mall origin.
+
+Two things made it awkward. In OSM it carries only `name`, `description` and
+`website` — no `leisure`, `landuse` or `building` tag at all — so the normal
+filters never saw it and it has to be fetched by name. And matching on "yard"
+alone also catches Rodkin Court**yard**, which drags the extent 800 ft north of
+anything relevant, so the match is on "the yard".
+
+It draws as paving rather than lawn, because that is what it is. The venue is
+two OSM polygons, so only the larger one carries the label.
+
 ### Extent, and Lot 9
 
 The map is cropped to the mall itself — 110 ft of context past the lawn, which

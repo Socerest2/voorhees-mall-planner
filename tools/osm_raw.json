@@ -2,11 +2,78 @@
   "version": 0.6,
   "generator": "Overpass API 0.7.62.11 87bfad18",
   "osm3s": {
-    "timestamp_osm_base": "2026-09-23T20:42:23Z",
+    "timestamp_osm_base": "2026-10-21T02:53:13Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
 
+{
+  "type": "node",
+  "id": 2924047495,
+  "lat": 40.4995561,
+  "lon": -74.4483426,
+  "tags": {
+    "alt_name": "Scott Hall",
+    "bench": "no",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "The Yard",
+    "network": "Rutgers University New Brunswick Campus Buses",
+    "operator": "Rutgers University",
+    "public_transport": "platform",
+    "ref:signed": "no",
+    "shelter": "yes",
+    "tactile_paving": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4404639775,
+  "lat": 40.4996697,
+  "lon": -74.4453894,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "public_transport": "platform"
+  }
+},
+{
+  "type": "node",
+  "id": 12777095048,
+  "lat": 40.4996634,
+  "lon": -74.4450180,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "local_ref": "NB",
+    "name": "Zimmerli Art Muesum",
+    "network": "Rutgers University New Brunswick Campus Buses",
+    "operator": "Rutgers University",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12777095049,
+  "lat": 40.4999304,
+  "lon": -74.4453091,
+  "tags": {
+    "bench": "no",
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "bus_stop",
+    "local_ref": "SB",
+    "name": "Zimmerli Art Muesum",
+    "network": "Rutgers University New Brunswick Campus Buses",
+    "operator": "Rutgers University",
+    "public_transport": "platform",
+    "shelter": "no"
+  }
+},
 {
   "type": "way",
   "id": 11656187,
@@ -8100,6 +8167,33 @@
 },
 {
   "type": "way",
+  "id": 508549053,
+  "bounds": {
+    "minlat": 40.4988967,
+    "minlon": -74.4485314,
+    "maxlat": 40.4995503,
+    "maxlon": -74.4479066
+  },
+  "nodes": [
+    4978432688,
+    4978432689,
+    5625487771,
+    5522688107
+  ],
+  "geometry": [
+    { "lat": 40.4988967, "lon": -74.4485314 },
+    { "lat": 40.4990617, "lon": -74.4479066 },
+    { "lat": 40.4992671, "lon": -74.4481066 },
+    { "lat": 40.4995503, "lon": -74.4484106 }
+  ],
+  "tags": {
+    "description": "The Yard is an open courtyard behind the restaurants facing Hamilton Street. There are chairs, tables, and a giant TV for public viewing. ",
+    "name": "The Yard at Rutgers",
+    "website": "https://theyardru.com/"
+  }
+},
+{
+  "type": "way",
   "id": 572157207,
   "bounds": {
     "minlat": 40.5006201,
@@ -11280,6 +11374,33 @@
   "tags": {
     "footway": "sidewalk",
     "highway": "footway"
+  }
+},
+{
+  "type": "way",
+  "id": 961800309,
+  "bounds": {
+    "minlat": 40.4988967,
+    "minlon": -74.4488187,
+    "maxlat": 40.4995503,
+    "maxlon": -74.4484106
+  },
+  "nodes": [
+    5522688107,
+    4937817174,
+    9002019315,
+    4978432688
+  ],
+  "geometry": [
+    { "lat": 40.4995503, "lon": -74.4484106 },
+    { "lat": 40.4993029, "lon": -74.4488187 },
+    { "lat": 40.4990592, "lon": -74.4486464 },
+    { "lat": 40.4988967, "lon": -74.4485314 }
+  ],
+  "tags": {
+    "description": "The Yard is an open courtyard behind the restaurants facing Hamilton Street. There are chairs, tables, and a giant TV for public viewing.",
+    "name": "The Yard at Rutgers",
+    "website": "https://theyardru.com/"
   }
 },
 {
