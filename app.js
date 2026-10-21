@@ -235,16 +235,46 @@ let clash = { byItem: new Map(), hitTrees: new Set() };
 let stakeHits = new Set(), stakePairs = [];
 
 /* A staked item overlapping the no-stake ring round a head, valve or lateral. */
+/* Separating-axis test between two oriented rectangles. The circle-vs-box
+   test is fine for a sprinkler head but wrong for a 12 ft planting bed. */
+function boxesOverlap(a, b) {
+  const corn = it => corners(it);
+  const axes = it => {
+    const r = rad(it.rot);
+    return [[Math.cos(r), Math.sin(r)], [-Math.sin(r), Math.cos(r)]];
+  };
+  const ca = corn(a), cb = corn(b);
+  for (const ax of [...axes(a), ...axes(b)]) {
+    let a0 = Infinity, a1 = -Infinity, b0 = Infinity, b1 = -Infinity;
+    for (const [x, y] of ca) { const d = x * ax[0] + y * ax[1]; a0 = Math.min(a0, d); a1 = Math.max(a1, d); }
+    for (const [x, y] of cb) { const d = x * ax[0] + y * ax[1]; b0 = Math.min(b0, d); b1 = Math.max(b1, d); }
+    if (a1 < b0 || b1 < a0) return false;          // a gap on this axis: no overlap
+  }
+  return true;
+}
+
 function findStakeClashes() {
   stakeHits = new Set(); stakePairs = [];
   const heads = items.filter(i => i.util && i.clear);
-  if (!heads.length) return;
+  const keepoff = items.filter(i => i.keepoff);
   for (const it of items) {
-    if (it.util || !STAKED.test(it.t)) continue;
+    if (it.util || it.site) continue;             // existing conditions don't clash
     for (const h of heads) {
+      if (!STAKED.test(it.t)) continue;
       if (overlaps(it, { p: [h.x, h.y], r: h.clear })) {
         stakeHits.add(it.id); stakeHits.add(h.id);
         stakePairs.push([it.t, h.t]);
+      }
+    }
+    for (const k of keepoff) {
+      const hit = k.shape === 'circle'
+        ? overlaps(it, { p: [k.x, k.y], r: k.w / 2 })
+        : (it.shape === 'circle'
+            ? overlaps(k, { p: [it.x, it.y], r: it.w / 2 })
+            : boxesOverlap(it, k));
+      if (hit) {
+        stakeHits.add(it.id); stakeHits.add(k.id);
+        stakePairs.push([it.t, k.t]);
       }
     }
   }
@@ -311,13 +341,13 @@ function reportConflicts() {
   }
   const sm = $('#stakemsg');
   if (sm) {
-    const heads = items.filter(i => i.util).length;
-    if (!heads) sm.textContent = 'No irrigation marked yet.';
+    const heads = items.filter(i => i.util || i.site).length;
+    if (!heads) sm.textContent = 'Nothing marked on site yet.';
     else if (!stakePairs.length) {
-      sm.textContent = `${heads} marked — nothing staked over them.`;
+      sm.textContent = `${heads} site feature${heads > 1 ? 's' : ''} marked — nothing on top of them.`;
       sm.classList.remove('bad');
     } else {
-      sm.innerHTML = `<strong>${stakePairs.length} stake conflict` +
+      sm.innerHTML = `<strong>${stakePairs.length} conflict` +
         `${stakePairs.length > 1 ? 's' : ''}</strong> — ` +
         `${stakePairs[0][0]} sits over a ${stakePairs[0][1].toLowerCase()}.`;
       sm.classList.add('bad');
@@ -396,6 +426,38 @@ const UTILITY = [
 ];
 const UTIL_INK = '#6b4e9e';        // utilities read violet, the drafting convention
 
+/* Things already on the ground that you plan around, as opposed to kit you
+   bring. Existing conditions are drawn in slate and sit visually behind your
+   own items — the usual convention of light for existing, bold for new.
+   None of this is in any dataset; it gets marked from the site itself. */
+const SITE = [
+  { t: 'Power outlet',  w: 0.8, h: 0.6, shape: 'rect',   z: 0.3, site: true,
+    note: 'duplex — note the amps' },
+  { t: 'Power pedestal', w: 1.5, h: 1.5, shape: 'rect',  z: 3,   site: true,
+    note: 'distro / stage box' },
+  { t: 'Hose bib',      w: 0.6, h: 0.6, shape: 'circle', z: 1.5, site: true,
+    note: 'water' },
+  { t: 'Planting bed',  w: 12,  h: 4,   shape: 'rect',   z: 1.5, site: true,
+    keepoff: true, note: 'keep off — set size' },
+  { t: 'Planter',       w: 3,   h: 3,   shape: 'circle', z: 2.5, site: true,
+    keepoff: true, note: 'movable tub' },
+  { t: 'Fixed table',   w: 6,   h: 2.5, shape: 'rect',   z: 2.5, site: true,
+    note: 'already there' },
+  { t: 'Bench',         w: 5,   h: 1.5, shape: 'rect',   z: 1.5, site: true,
+    note: 'already there' },
+  { t: 'Big screen',    w: 10,  h: 1,   shape: 'rect',   z: 8,   site: true,
+    note: 'the TV' },
+  { t: 'Light pole',    w: 1,   h: 1,   shape: 'circle', z: 14,  site: true,
+    note: 'overhead' },
+  { t: 'Trash / recycling', w: 2.5, h: 2.5, shape: 'rect', z: 3.5, site: true,
+    note: 'bin' },
+  { t: 'Bollard',       w: 0.8, h: 0.8, shape: 'circle', z: 3,   site: true,
+    note: 'fixed post' },
+  { t: 'Step / kerb',   w: 12,  h: 1,   shape: 'rect',   z: 0.5, site: true,
+    keepoff: true, note: 'level change — set length' },
+];
+const SITE_INK = '#3c6b72';        // existing conditions: slate
+
 /* Tents and anything else that gets pinned down. A stake near a head or a
    lateral is what we're trying to catch. */
 const STAKED = /tent|dance floor/i;
@@ -424,6 +486,7 @@ function addItem(spec, x, y) {
   const it = touch({ id: nextId++, uid: uid(), t: spec.t, w: spec.w, h: spec.h,
                shape: spec.shape, z: spec.z == null ? 8 : spec.z,
                util: spec.util || undefined, clear: spec.clear,
+               site: spec.site || undefined, keepoff: spec.keepoff || undefined,
                x: +x.toFixed(2), y: +y.toFixed(2), rot: -view.rot });
   items.push(it); selected = it.id; touched = true; drawItems(); save(); return it;
 }
@@ -440,7 +503,16 @@ function drawItemShapes(target, sel) {
   for (const it of items) {
     const isSel = it.id === sel;
     const bad = clash.byItem.has(it.id) || stakeHits.has(it.id);
-    const hue = bad ? '#b8471f' : (it.util ? UTIL_INK : MARK);
+    const hue = bad ? '#b8471f' : it.util ? UTIL_INK : it.site ? SITE_INK : MARK;
+    if (it.keepoff && !bad) {
+      const cs2 = it.shape === 'circle' ? null : corners(it);
+      el(it.shape === 'circle' ? 'circle' : 'polygon', {
+        ...(it.shape === 'circle'
+          ? { cx: it.x, cy: it.y, r: it.w / 2 }
+          : { points: cs2.map(p => p.join(',')).join(' ') }),
+        fill: SITE_INK, 'fill-opacity': .1, stroke: SITE_INK, 'stroke-width': 1,
+        'stroke-dasharray': '4 2.5', 'vector-effect': 'non-scaling-stroke' }, target);
+    }
     if (it.util && it.clear) {
       // the circle you must not drive a stake into
       el('circle', { cx: it.x, cy: it.y, r: it.clear, fill: UTIL_INK,
@@ -656,9 +728,12 @@ function annotate(target, P, zoom, opts = {}) {
                  `${Math.round(((it.rot % 360) + 360) % 360)}°` +
                  (it.by && it.by !== me ? ` · ${it.by}` : '')]
         : [it.t];
+      if (it.n) lines.push(it.n);
+      const ink = it.util ? UTIL_INK : it.site ? SITE_INK : MARK;
       lines.forEach((s, i) =>
         txt(sx, sy + (i - (lines.length - 1) / 2) * 12, s,
-          { size: 9.5, weight: i ? 400 : 600, fill: i ? '#8a5560' : MARK }));
+          { size: 9.5, weight: i ? 400 : 600,
+            fill: i ? (it.n && i === lines.length - 1 ? '#5c5349' : '#8a5560') : ink }));
     }
   }
   return txt;
@@ -853,6 +928,13 @@ addEventListener('keydown', e => {
     items = items.filter(i => i.id !== it.id);
     deleted[it.uid] = Date.now();                 // tombstone, so the delete syncs
     selected = null; markDirty(); drawItems(); save();
+  } else if (it && (k === 'n' || k === 'N')) {
+    const t = prompt(`Note on this ${it.t.toLowerCase()}`, it.n || '');
+    if (t !== null) { it.n = t.trim() || undefined; touch(it); drawItems(); save(); }
+  } else if (it && (k === 'r' || k === 'R')) {
+    const v = prompt(`Size in feet — width × depth`, `${trim(it.w)} x ${trim(it.h)}`);
+    const m = v && v.match(/([\d.]+)\s*[x×by ]+\s*([\d.]+)/i);
+    if (m) { it.w = +m[1]; it.h = +m[2]; touch(it); drawItems(); save(); }
   } else if (it && (k === 'd' || k === 'D')) {
     const c = touch({ ...it, id: nextId++, uid: uid(), x: it.x + 4, y: it.y - 4 });
     items.push(c); selected = c.id; drawItems(); save();
@@ -1112,7 +1194,7 @@ function closePrint() { $('#dlg').hidden = true; $('#pagesize').textContent = ''
 function setPending(spec) {
   pending = spec;
   stage.classList.toggle('placing', !!spec);
-  [...$('#palette').rows, ...$('#utility').rows].forEach(r =>
+  [...$('#palette').rows, ...$('#utility').rows, ...$('#sitefx').rows].forEach(r =>
     r.classList.toggle('on', !!spec && r.dataset.t === spec.t));
 }
 function syncTools() {
@@ -1130,13 +1212,15 @@ function buildChrome() {
     `<td class="dim">${c.note}</td></tr>`;
   $('#palette').innerHTML = CATALOG.map(row).join('');
   $('#utility').innerHTML = UTILITY.map(row).join('');
+  $('#sitefx').innerHTML = SITE.map(row).join('');
   const pick = e => {
     const r = e.target.closest('tr'); if (!r) return;
-    const c = [...CATALOG, ...UTILITY].find(x => x.t === r.dataset.t);
+    const c = [...CATALOG, ...UTILITY, ...SITE].find(x => x.t === r.dataset.t);
     setPending(pending && pending.t === c.t ? null : c);
   };
   $('#palette').onclick = pick;
   $('#utility').onclick = pick;
+  $('#sitefx').onclick = pick;
 
   $('#need').oninput = e => {
     const v = parseFloat(e.target.value);
@@ -1403,7 +1487,7 @@ const KEY = 'voorhees-plan-v1';
 // plans saved before items had heights: take the height from the catalog
 function withHeight(it) {
   if (it.z != null) return it;
-  const c = [...CATALOG, ...UTILITY].find(x => x.t === it.t);
+  const c = [...CATALOG, ...UTILITY, ...SITE].find(x => x.t === it.t);
   return { ...it, z: c && c.z != null ? c.z : 8 };
 }
 function save() {

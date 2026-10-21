@@ -273,6 +273,30 @@ manage, and the version history is the backstop. If it ever isn't, move the
 repo private (Pages then needs a paid plan) or put the site behind Cloudflare
 Access.
 
+## Existing conditions
+
+**Already there** is the catalogue of what's on the ground before you arrive:
+power outlets and pedestals, hose bibs, planting beds, planters, fixed tables
+and benches, The Yard's big screen, light poles, bins, bollards and kerbs.
+
+They draw **slate**, against crimson for your own kit and violet for
+irrigation, following the usual convention of light for existing and bold for
+new. Beds, planters and kerbs are **keep-off**: they hatch, and anything placed
+on one is flagged by name.
+
+Two keys earn their place here. <kbd>N</kbd> puts a note on the selected item
+and prints it on the drawing — "20A GFCI", "locked", "Emma to confirm" — and
+<kbd>R</kbd> resizes it, because no real planting bed is the 12 × 4 ft the
+catalogue guesses at.
+
+Keep-off areas use a separating-axis test between oriented rectangles rather
+than the circle approximation the sprinkler rings use. A 12 ft bed is not
+usefully a circle.
+
+**None of this comes from a dataset.** OSM has The Yard as a bare four-node
+rectangle with nothing inside it. Every outlet and bed is marked from the site
+itself, or from a Facilities drawing.
+
 ## Irrigation and staking
 
 A tent stake through a lateral line is the classic way to ruin a campus lawn,

@@ -94,6 +94,8 @@
   table.sched tr:hover td{color:var(--ink);background:#0000000a}
   table.sched tr.on td{color:var(--mark);font-weight:600}
   table.sched.util tr.on td{color:#6b4e9e}
+  table.sched.site tr.on td{color:#3c6b72}
+  table.sched.site td:first-child{color:var(--ink)}
   table.sched.util td:first-child{color:var(--ink)}
   #stakemsg.bad{color:var(--mark)}
   table.sched tr.on td.dim{color:var(--mark)}
@@ -344,6 +346,15 @@
     </section>
 
     <section>
+      <h2>Already there</h2>
+      <table class="sched site" id="sitefx"></table>
+      <p class="note">Outlets, beds, benches, the screen — what's on the ground
+        before you arrive. Beds, planters and kerbs are keep-off: anything
+        placed on one is flagged. <kbd>N</kbd> adds a note,
+        <kbd>R</kbd> resizes.</p>
+    </section>
+
+    <section>
       <h2>Irrigation</h2>
       <table class="sched util" id="utility"></table>
       <p class="note" id="stakemsg">No irrigation marked yet.</p>
@@ -485,8 +496,8 @@
 <!-- GitHub Pages serves everything with max-age=600, so a changed config can
      sit stale in a browser for ten minutes. Bump ?v= when you edit these and
      the new file is picked up on the next load instead. -->
-<script src="config.js?v=6"></script>
-<script src="sync.js?v=6"></script>
-<script src="app.js?v=6"></script>
+<script src="config.js?v=7"></script>
+<script src="sync.js?v=7"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>
